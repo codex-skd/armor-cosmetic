@@ -11,7 +11,6 @@ import net.minecraft.client.gui.navigation.ScreenPosition;
 import net.minecraft.client.gui.screens.inventory.AbstractRecipeBookScreen;
 import net.minecraft.client.gui.screens.inventory.EffectsInInventory;
 import net.minecraft.client.gui.screens.recipebook.CraftingRecipeBookComponent;
-import net.minecraft.client.gui.screens.recipebook.RecipeBookComponent;
 import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
@@ -43,9 +42,10 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
         try {
             java.lang.reflect.Field field = AbstractRecipeBookScreen.class.getDeclaredField("recipeBookComponent");
             field.setAccessible(true);
-            RecipeBookComponent comp = (RecipeBookComponent) field.get(this);
+            Object comp = field.get(this);
             if (comp != null) {
-                comp.setVisible(false);
+                java.lang.reflect.Method setVisible = comp.getClass().getMethod("setVisible", boolean.class);
+                setVisible.invoke(comp, false);
             }
         } catch (Exception ignored) {
         }
