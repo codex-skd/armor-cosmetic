@@ -39,9 +39,6 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
     @Override
     protected void init() {
         super.init();
-        if (this.recipeBookComponent != null) {
-            this.recipeBookComponent.setVisible(this.recipeBookComponent.isVisible() && !recipeBookDisabled);
-        }
         if (menu instanceof ContainerCosArmor container) {
             InventoryCosArmor cosInv = getCosInventory(container);
             if (cosInv != null) {
