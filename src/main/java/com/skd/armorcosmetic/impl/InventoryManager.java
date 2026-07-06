@@ -102,7 +102,7 @@ public class InventoryManager {
         if (!event.getEntity().isEffectiveAi()) return;
         if (event.getEntity().level() instanceof net.minecraft.server.level.ServerLevel serverLevel
                 && serverLevel.getGameRules().get(GameRules.KEEP_INVENTORY)) return;
-        if (ModConfigs.CosArmorKeepThroughDeath.get()) return;
+        if (getConfigBool(ModConfigs.CosArmorKeepThroughDeath)) return;
 
         InventoryCosArmor inventory = getCosArmorInventory(event.getEntity().getUUID());
         CosArmorDeathDrops deathEvent = new CosArmorDeathDrops((Player) event.getEntity(), inventory);
