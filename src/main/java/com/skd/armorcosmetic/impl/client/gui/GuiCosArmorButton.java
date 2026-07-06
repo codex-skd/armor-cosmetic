@@ -5,17 +5,14 @@ import java.util.function.BiConsumer;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
 
 public class GuiCosArmorButton extends Button implements IShiftingWidget, ICreativeInvWidget {
 
     private final BiConsumer<GuiCosArmorButton, Boolean> onCreativeTabChanged;
-    private final Identifier icon;
 
-    public GuiCosArmorButton(int x, int y, int width, int height, Component message, Identifier icon,
+    public GuiCosArmorButton(int x, int y, int width, int height, Component message,
             OnPress onPress, BiConsumer<GuiCosArmorButton, Boolean> onCreativeTabChanged) {
         super(x, y, width, height, message, onPress, DEFAULT_NARRATION);
-        this.icon = icon;
         this.onCreativeTabChanged = onCreativeTabChanged;
     }
 

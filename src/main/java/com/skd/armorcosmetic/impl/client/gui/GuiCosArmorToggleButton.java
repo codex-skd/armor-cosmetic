@@ -3,20 +3,15 @@ package com.skd.armorcosmetic.impl.client.gui;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
 
 public class GuiCosArmorToggleButton extends Button implements IShiftingWidget {
 
     public int state;
-    private final Identifier iconOn;
-    private final Identifier iconOff;
 
     public GuiCosArmorToggleButton(int x, int y, int width, int height, Component message, int state,
-            Identifier iconOn, Identifier iconOff, OnPress onPress) {
+            OnPress onPress) {
         super(x, y, width, height, message, onPress, DEFAULT_NARRATION);
         this.state = state;
-        this.iconOn = iconOn;
-        this.iconOff = iconOff;
     }
 
     @Override

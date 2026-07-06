@@ -1,5 +1,15 @@
 # ArmorCosmetic - Changelog
 
+## [0.1.16-beta] - 2026-07-06
+
+### Changed
+- Removed unused icon textures, simplified button rendering to text labels
+- Recipe book now properly closed (not just hidden) when opening cosmetic inventory
+- Cosmetic label color changed to black for visibility
+
+### Fixed
+- Skin armor toggle no longer hides real equipped armor on player model
+
 ## [0.1.15-beta] - 2026-07-06
 
 ### Fixed

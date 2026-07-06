@@ -46,6 +46,8 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
             if (comp != null) {
                 java.lang.reflect.Method setVisible = comp.getClass().getMethod("setVisible", boolean.class);
                 setVisible.invoke(comp, false);
+                java.lang.reflect.Method setOpen = comp.getClass().getMethod("setOpen", boolean.class);
+                setOpen.invoke(comp, false);
             }
         } catch (Exception ignored) {
         }
@@ -69,7 +71,6 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
                             ModConfigs.SkinArmorToggle_Height.get(),
                             Component.empty(),
                             isSkin ? 1 : 0,
-                            null, null,
                         btn -> {
                             if (btn instanceof GuiCosArmorToggleButton toggleBtn) {
                                 toggleBtn.state = toggleBtn.state == 1 ? 0 : 1;
@@ -105,7 +106,7 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
     @Override
     protected void extractLabels(GuiGraphicsExtractor graphics, int mouseX, int mouseY) {
         graphics.text(this.font, this.title, this.titleLabelX, this.titleLabelY, 4210752, false);
-        graphics.text(this.font, Component.translatable("cos.gui.cosmeticslots"), leftPos + 106, topPos + 52, 0x404040, false);
+        graphics.text(this.font, Component.translatable("cos.gui.cosmeticslots"), leftPos + 106, topPos + 52, 0x000000, false);
     }
 
     @Override
