@@ -28,7 +28,7 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
     private boolean buttonClicked;
 
     public GuiCosArmorInventory(ContainerCosArmor menu, Inventory playerInventory, Component title) {
-        super(menu, ModConfigs.CosArmorDisableRecipeBook.get() ? null : new CraftingRecipeBookComponent(menu), playerInventory, title);
+        super(menu, new CraftingRecipeBookComponent(menu), playerInventory, title);
         this.effects = new EffectsInInventory(this);
         this.titleLabelX = 97;
     }
@@ -75,6 +75,7 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
 
     @Override
     protected void onRecipeBookButtonClick() {
+        if (ModConfigs.CosArmorDisableRecipeBook.get()) return;
         this.minecraft.setScreen(new net.minecraft.client.gui.screens.inventory.InventoryScreen(this.minecraft.player));
     }
 
