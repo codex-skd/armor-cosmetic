@@ -2,7 +2,6 @@
   "cos.key.opencosarmorinventory": "Ouvrir l'inventaire d'armure cosmétique",
   "cos.gui.buttoncos": "Armure cosmétique",
   "cos.gui.buttonnormal": "Normal",
-  "cos.gui.cosmeticslots": "Cosmétique",
   "cos.command.clearcosarmor.success.single": "%s objets retirés de l'inventaire d'armure cosmétique du joueur %s",
   "cos.command.clearcosarmor.success.multiple": "%s objets retirés de l'inventaire d'armure cosmétique de %s joueurs",
   "armor_cosmetic.configuration.title": "Configuration ArmorCosmetic",

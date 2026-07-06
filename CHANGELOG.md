@@ -1,73 +1,29 @@
 # ArmorCosmetic - Changelog
 
-## [0.1.16-beta] - 2026-07-06
+## [1.0.0] - 2026-07-06
 
-### Changed
-- Removed unused icon textures, simplified button rendering to text labels
-- Recipe book now properly closed (not just hidden) when opening cosmetic inventory
-- Cosmetic label color changed to black for visibility
+### First Stable Release
+- Initial release of ArmorCosmetic for NeoForge 26.1.2.76 (Minecraft 26.1.2)
+- Replica of CosmeticArmorReworked by zlainsama, ported by skd
 
-### Fixed
-- Skin armor toggle no longer hides real equipped armor on player model
-
-## [0.1.15-beta] - 2026-07-06
-
-### Fixed
-- Skin armor toggle no longer hides real equipped armor - skin mode now leaves real armor visible
-- Recipe book button and component now properly hidden when config is enabled
-- "Cosmetic" label repositioned and now visible above cosmetic armor slots
-
-## [0.1.14-beta] - 2026-07-06
-
-### Added
-- "Cosmetic" label above armor slots in cosmetic inventory
-- Per-slot skin armor toggles with configurable position, size, and spacing
-- Full translations in 11 languages
-
-### Fixed
-- Per-slot skin armor toggles now correctly sync to server and persist
-- Toggle buttons display in correct order (Head→Chest→Legs→Feet left to right)
-- Recipe book hidden when opening cosmetic inventory
-- Server-side bounds checking prevents crashes from malformed packets
-- Dark background overlay renders in cosmetic inventory
-- Buttons show text labels (S=skin, A=armor) instead of broken icons
-
-## [0.1.12-beta] - 2026-07-06
-
-### Added
-- "Cosmetic" label above armor slots in cosmetic inventory
-- Configurable position, spacing, and size for per-slot skin armor toggles
-- Configurable icon sizes inside buttons (0 = auto-fit)
-- Configurable button width and height for all buttons
-- Button icons for cosmetic armor, normal inventory, and toggle states
-- Full translations in 11 languages (en, es, de, fr, ja, pt, ru, zh, ko, tr, cs)
-- Equipment type filtering per cosmetic armor slot
-
-### Fixed
-- Cosmetic armor no longer replaces or deletes real equipped armor
-- Armor rendering now works correctly on player model
-- Per-slot skin armor toggles persist and sync to server
-- Dark background overlay renders properly in cosmetic inventory
-- Toggle button moved away from crafting label
-- Recipe book disable config no longer crashes the game
-
-## [0.1.1-beta] - 2026-07-06
-
-### Added
-- Initial beta release of ArmorCosmetic for NeoForge 26.1.2.76 (Minecraft 26.1.2)
-- Replica of CosmeticArmorReworked by zlainsama
+### Features
 - Dual armor system: wear one set for stats, another for display
 - Cosmetic armor inventory GUI with 2x2 crafting grid
-- Toggle button to enable/disable cosmetic armor rendering (useful for PvP)
-- Skin armor mode: hide armor slots to show player skin
-- `/clearcosarmor` command to clear cosmetic armor inventories
-- `/coshat` command to toggle helmet as cosmetic/skin
-- Persistent cosmetic armor data (survives relog, per-player NBT files)
+- Global toggle button to enable/disable cosmetic armor rendering (useful for PvP)
+- Per-slot skin armor toggle buttons with configurable position and size
+- Cosmetic armor data persists across sessions (per-player NBT files)
 - Death drop handling for cosmetic armor (configurable)
-- Hidden flags API for addon mods to hide specific armor pieces
-- Configurable GUI button positions and visibility
-- Multi-language support: English (en_us) and Spanish (es_es)
+- Hidden flags API for addon mods
+- Commands: /clearcosarmor, /coshat
+- Full translations in 11 languages (en, es, de, fr, ja, pt, ru, zh, ko, tr, cs)
+- Fully configurable GUI button positions, sizes, and visibility
+- Equipment type filtering per cosmetic armor slot
 - Client-server sync for multiplayer compatibility
+
+### Known Issues
+- Player model not displayed in cosmetic inventory screen
+- Item tooltip may show incorrect armor stats while in cosmetic view
+- Recipe book may remain open when switching to cosmetic inventory
 
 ### Credits
 - Original mod: CosmeticArmorReworked by zlainsama, dmillerw

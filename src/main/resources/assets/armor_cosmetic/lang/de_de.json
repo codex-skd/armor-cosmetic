@@ -2,7 +2,6 @@
   "cos.key.opencosarmorinventory": "Kosmetik-Rüstungsinventar öffnen",
   "cos.gui.buttoncos": "Kosmetik-Rüstung",
   "cos.gui.buttonnormal": "Normal",
-  "cos.gui.cosmeticslots": "Kosmetik",
   "cos.command.clearcosarmor.success.single": "%s Gegenstände aus dem Kosmetik-Rüstungsinventar von Spieler %s entfernt",
   "cos.command.clearcosarmor.success.multiple": "%s Gegenstände aus dem Kosmetik-Rüstungsinventar von %s Spielern entfernt",
   "armor_cosmetic.configuration.title": "ArmorCosmetic Einstellungen",

@@ -2,7 +2,6 @@
   "cos.key.opencosarmorinventory": "打开装饰盔甲背包",
   "cos.gui.buttoncos": "装饰盔甲",
   "cos.gui.buttonnormal": "普通",
-  "cos.gui.cosmeticslots": "装饰",
   "cos.command.clearcosarmor.success.single": "已从玩家%2$s的装饰盔甲背包中移除%1$s个物品",
   "cos.command.clearcosarmor.success.multiple": "已从%2$s名玩家的装饰盔甲背包中移除%1$s个物品",
   "armor_cosmetic.configuration.title": "ArmorCosmetic 配置",

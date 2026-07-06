@@ -2,7 +2,6 @@
   "cos.key.opencosarmorinventory": "Otevřít inventář kosmetické zbroje",
   "cos.gui.buttoncos": "Kosmetická zbroj",
   "cos.gui.buttonnormal": "Normální",
-  "cos.gui.cosmeticslots": "Kosmetika",
   "cos.command.clearcosarmor.success.single": "Odstraněno %s předmětů z kosmetické zbroje hráče %s",
   "cos.command.clearcosarmor.success.multiple": "Odstraněno %s předmětů z kosmetické zbroje %s hráčů",
   "armor_cosmetic.configuration.title": "Nastavení ArmorCosmetic",

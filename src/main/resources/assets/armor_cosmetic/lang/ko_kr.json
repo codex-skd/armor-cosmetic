@@ -2,7 +2,6 @@
   "cos.key.opencosarmorinventory": "화장 갑옷 인벤토리 열기",
   "cos.gui.buttoncos": "화장 갑옷",
   "cos.gui.buttonnormal": "일반",
-  "cos.gui.cosmeticslots": "화장",
   "cos.command.clearcosarmor.success.single": "플레이어 %2$s의 화장 갑옷 인벤토리에서 %1$s개의 아이템을 제거했습니다",
   "cos.command.clearcosarmor.success.multiple": "%2$s명의 플레이어의 화장 갑옷 인벤토리에서 %1$s개의 아이템을 제거했습니다",
   "armor_cosmetic.configuration.title": "ArmorCosmetic 설정",

@@ -145,6 +145,15 @@ public class InventoryManager {
                             new PayloadSyncHiddenFlags(otherUUID, otherInventory, modid, identifier));
                 });
             }
+            InventoryCosArmor ownInventory = getCosArmorInventory(serverPlayer.getUUID());
+            for (int i = 0; i < ownInventory.getSlots(); i++) {
+                PacketDistributor.sendToPlayer(serverPlayer,
+                        new PayloadSyncCosArmor(serverPlayer.getUUID(), ownInventory, i));
+            }
+            ownInventory.forEachHidden((modid, identifier) -> {
+                PacketDistributor.sendToPlayer(serverPlayer,
+                        new PayloadSyncHiddenFlags(serverPlayer.getUUID(), ownInventory, modid, identifier));
+            });
         }
     }
 

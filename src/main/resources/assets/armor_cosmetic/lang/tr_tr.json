@@ -2,7 +2,6 @@
   "cos.key.opencosarmorinventory": "Kozmetik Zırh Envanterini Aç",
   "cos.gui.buttoncos": "Kozmetik Zırh",
   "cos.gui.buttonnormal": "Normal",
-  "cos.gui.cosmeticslots": "Kozmetik",
   "cos.command.clearcosarmor.success.single": "%2$s oyuncusunun kozmetik zırh envanterinden %1$s eşya kaldırıldı",
   "cos.command.clearcosarmor.success.multiple": "%2$s oyuncunun kozmetik zırh envanterinden %1$s eşya kaldırıldı",
   "armor_cosmetic.configuration.title": "ArmorCosmetic Ayarları",

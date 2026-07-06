@@ -2,7 +2,6 @@
   "cos.key.opencosarmorinventory": "コスメ防具インベントリを開く",
   "cos.gui.buttoncos": "コスメ防具",
   "cos.gui.buttonnormal": "通常",
-  "cos.gui.cosmeticslots": "コスメ",
   "cos.command.clearcosarmor.success.single": "プレイヤー%2$sのコスメ防具インベントリから%1$s個のアイテムを削除しました",
   "cos.command.clearcosarmor.success.multiple": "%2$s人のプレイヤーのコスメ防具インベントリから%1$s個のアイテムを削除しました",
   "armor_cosmetic.configuration.title": "ArmorCosmetic 設定",

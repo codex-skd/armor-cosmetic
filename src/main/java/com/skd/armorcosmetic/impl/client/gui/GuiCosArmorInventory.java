@@ -38,19 +38,10 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
 
     @Override
     protected void init() {
-        super.init();
-        try {
-            java.lang.reflect.Field field = AbstractRecipeBookScreen.class.getDeclaredField("recipeBookComponent");
-            field.setAccessible(true);
-            Object comp = field.get(this);
-            if (comp != null) {
-                java.lang.reflect.Method setVisible = comp.getClass().getMethod("setVisible", boolean.class);
-                setVisible.invoke(comp, false);
-                java.lang.reflect.Method setOpen = comp.getClass().getMethod("setOpen", boolean.class);
-                setOpen.invoke(comp, false);
-            }
-        } catch (Exception ignored) {
+        if (this.minecraft != null && this.minecraft.player != null) {
+            this.minecraft.player.getRecipeBook().setOpen(false);
         }
+        super.init();
         if (recipeBookDisabled) {
             for (var child : this.children()) {
                 if (child instanceof ImageButton btn) {
@@ -106,7 +97,6 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
     @Override
     protected void extractLabels(GuiGraphicsExtractor graphics, int mouseX, int mouseY) {
         graphics.text(this.font, this.title, this.titleLabelX, this.titleLabelY, 4210752, false);
-        graphics.text(this.font, Component.translatable("cos.gui.cosmeticslots"), leftPos + 106, topPos + 52, 0x000000, false);
     }
 
     @Override

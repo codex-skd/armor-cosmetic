@@ -2,7 +2,6 @@
   "cos.key.opencosarmorinventory": "Открыть инвентарь косметической брони",
   "cos.gui.buttoncos": "Косметическая броня",
   "cos.gui.buttonnormal": "Обычная",
-  "cos.gui.cosmeticslots": "Косметика",
   "cos.command.clearcosarmor.success.single": "Удалено %s предметов из косметической брони игрока %s",
   "cos.command.clearcosarmor.success.multiple": "Удалено %s предметов из косметической брони %s игроков",
   "armor_cosmetic.configuration.title": "Настройки ArmorCosmetic",
