@@ -18,10 +18,11 @@ public class ModObjects {
         try {
             Class<?> clientClass = Class.forName("com.skd.armorcosmetic.impl.client.InventoryManagerClient");
             manager = clientClass.getDeclaredConstructor().newInstance();
-        } catch (Exception e) {
+        } catch (Throwable e) {
             manager = new com.skd.armorcosmetic.impl.InventoryManager();
         }
         invMan = manager;
+        logger.debug("CosmeticArmor inventory manager initialized");
     }
 
     public static MenuType<ContainerCosArmor> getTypeContainerCosArmor() {
