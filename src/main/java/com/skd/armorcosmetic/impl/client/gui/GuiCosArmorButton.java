@@ -10,7 +10,7 @@ import net.minecraft.resources.Identifier;
 
 public class GuiCosArmorButton extends Button implements IShiftingWidget, ICreativeInvWidget {
 
-    private static final Identifier ARMOR_SLOT_SPRITE = Identifier.ofVanilla("container/slot/armor");
+    private static final Identifier ARMOR_SLOT_SPRITE = Identifier.withDefaultNamespace("container/slot/armor");
     private final BiConsumer<GuiCosArmorButton, Boolean> onCreativeTabChanged;
     private final boolean showSprite;
 

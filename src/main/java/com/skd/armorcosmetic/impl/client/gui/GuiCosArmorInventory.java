@@ -38,9 +38,6 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
 
     @Override
     protected void init() {
-        if (this.minecraft != null && this.minecraft.player != null) {
-            this.minecraft.player.getRecipeBook().setOpen(false);
-        }
         super.init();
         if (recipeBookDisabled) {
             for (var child : this.children()) {
