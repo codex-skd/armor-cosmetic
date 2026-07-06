@@ -1,5 +1,24 @@
 # ArmorCosmetic - Changelog
 
+## [0.1.12-beta] - 2026-07-06
+
+### Added
+- "Cosmetic" label above armor slots in cosmetic inventory
+- Configurable position, spacing, and size for per-slot skin armor toggles
+- Configurable icon sizes inside buttons (0 = auto-fit)
+- Configurable button width and height for all buttons
+- Button icons for cosmetic armor, normal inventory, and toggle states
+- Full translations in 11 languages (en, es, de, fr, ja, pt, ru, zh, ko, tr, cs)
+- Equipment type filtering per cosmetic armor slot
+
+### Fixed
+- Cosmetic armor no longer replaces or deletes real equipped armor
+- Armor rendering now works correctly on player model
+- Per-slot skin armor toggles persist and sync to server
+- Dark background overlay renders properly in cosmetic inventory
+- Toggle button moved away from crafting label
+- Recipe book disable config no longer crashes the game
+
 ## [0.1.1-beta] - 2026-07-06
 
 ### Added
