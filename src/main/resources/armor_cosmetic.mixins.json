@@ -1,5 +1,5 @@
 {
-  "required": true,
+  "required": false,
   "package": "com.skd.armorcosmetic.mixins",
   "compatibilityLevel": "JAVA_16",
   "client": [
