@@ -1,7 +1,10 @@
 package com.skd.armorcosmetic.impl.client.gui;
 
 import com.skd.armorcosmetic.ArmorCosmetic;
+import com.skd.armorcosmetic.impl.ModConfigs;
 import com.skd.armorcosmetic.impl.inventory.ContainerCosArmor;
+import com.skd.armorcosmetic.impl.inventory.InventoryCosArmor;
+import com.skd.armorcosmetic.impl.network.payload.PayloadSetSkinArmor;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.navigation.ScreenPosition;
 import net.minecraft.client.gui.screens.inventory.AbstractRecipeBookScreen;
@@ -12,12 +15,11 @@ import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.player.Inventory;
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 
 public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosArmor> {
 
     public static final Identifier TEXTURE = ArmorCosmetic.id("textures/gui/cosarmorinventory.png");
-    private static final Identifier ICON_TOGGLE_ON = ArmorCosmetic.id("textures/gui/icon_toggle_on.png");
-    private static final Identifier ICON_TOGGLE_OFF = ArmorCosmetic.id("textures/gui/icon_toggle_off.png");
 
     private final EffectsInInventory effects;
     public float oldMouseX;
@@ -26,7 +28,7 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
     private boolean buttonClicked;
 
     public GuiCosArmorInventory(ContainerCosArmor menu, Inventory playerInventory, Component title) {
-        super(menu, new CraftingRecipeBookComponent(menu), playerInventory, title);
+        super(menu, ModConfigs.CosArmorDisableRecipeBook.get() ? null : new CraftingRecipeBookComponent(menu), playerInventory, title);
         this.effects = new EffectsInInventory(this);
         this.titleLabelX = 97;
     }
@@ -34,24 +36,36 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
     @Override
     protected void init() {
         super.init();
-        if (menu instanceof ContainerCosArmor) {
+        if (menu instanceof ContainerCosArmor container) {
+            InventoryCosArmor cosInv = getCosInventory(container);
             for (int i = 0; i < 4; i++) {
                 int slot = i;
+                boolean isSkin = cosInv != null && cosInv.isSkinArmor(i);
                 addRenderableWidget(new GuiCosArmorToggleButton(
-                        leftPos + com.skd.armorcosmetic.impl.ModConfigs.SkinArmorToggle_Left.get() + i * com.skd.armorcosmetic.impl.ModConfigs.SkinArmorToggle_Spacing.get(),
-                        topPos + com.skd.armorcosmetic.impl.ModConfigs.SkinArmorToggle_Top.get(),
-                        com.skd.armorcosmetic.impl.ModConfigs.SkinArmorToggle_Width.get(),
-                        com.skd.armorcosmetic.impl.ModConfigs.SkinArmorToggle_Height.get(),
+                        leftPos + ModConfigs.SkinArmorToggle_Left.get() + i * ModConfigs.SkinArmorToggle_Spacing.get(),
+                        topPos + ModConfigs.SkinArmorToggle_Top.get(),
+                        ModConfigs.SkinArmorToggle_Width.get(),
+                        ModConfigs.SkinArmorToggle_Height.get(),
                         Component.empty(),
-                        menu.getSlot(49 - slot).getItem().isEmpty() ? 0 : 1,
-                        ICON_TOGGLE_ON, ICON_TOGGLE_OFF,
+                        isSkin ? 1 : 0,
+                        null, null,
                         btn -> {
                             if (btn instanceof GuiCosArmorToggleButton toggleBtn) {
                                 toggleBtn.state = toggleBtn.state == 1 ? 0 : 1;
+                                ClientPacketDistributor.sendToServer(new PayloadSetSkinArmor(slot, toggleBtn.state == 1));
                             }
                         }));
             }
         }
+    }
+
+    private InventoryCosArmor getCosInventory(ContainerCosArmor container) {
+        for (int i = 49; i >= 46; i--) {
+            if (container.getSlot(i).container instanceof InventoryCosArmor inv) {
+                return inv;
+            }
+        }
+        return null;
     }
 
     @Override
@@ -67,6 +81,7 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
     @Override
     protected void extractLabels(GuiGraphicsExtractor graphics, int mouseX, int mouseY) {
         graphics.text(this.font, this.title, this.titleLabelX, this.titleLabelY, 4210752, false);
+        graphics.text(this.font, Component.translatable("cos.gui.cosmeticslots"), leftPos + 98, topPos + 6, 4210752, false);
     }
 
     @Override
