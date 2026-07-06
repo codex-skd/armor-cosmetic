@@ -6,6 +6,7 @@ version="${mod_version}"
 displayName="${mod_name}"
 credits="zlainsama - original author; dmillerw - original author; azanor - some code learned from baubles"
 authors="skd"
+logoFile="logo.png"
 displayTest="MATCH_VERSION"
 description='''This mod allows you to wear two sets of armor, one for display, one for function. You can also hide armor for your skin. For PVP, you can stop the mod from functioning on your client side.'''
 
