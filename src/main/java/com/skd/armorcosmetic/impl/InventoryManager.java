@@ -89,6 +89,14 @@ public class InventoryManager {
                 .toPath().resolve(uuid.toString() + ".cosarmor").toFile();
     }
 
+    private static boolean getConfigBool(net.neoforged.neoforge.common.ModConfigSpec.BooleanValue config) {
+        try {
+            return config.get();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
     private void handlePlayerDrops(LivingDropsEvent event) {
         if (!(event.getEntity() instanceof Player)) return;
         if (!event.getEntity().isEffectiveAi()) return;
@@ -174,7 +182,7 @@ public class InventoryManager {
                         .then(Commands.argument("targets", EntityArgument.players())
                                 .executes(ctx -> clearCosArmorForTargets(ctx))));
 
-        if (!ModConfigs.CosArmorDisableCosHatCommand.get()) {
+        if (!getConfigBool(ModConfigs.CosArmorDisableCosHatCommand)) {
             event.getDispatcher().register(
                     Commands.literal("coshat")
                             .requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
