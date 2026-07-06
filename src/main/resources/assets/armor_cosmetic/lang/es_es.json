@@ -1,0 +1,7 @@
+{
+  "cos.key.opencosarmorinventory": "Abrir Inventario de Armadura Cosmética",
+  "cos.gui.buttoncos": "Armadura Cosmética",
+  "cos.gui.buttonnormal": "Normal",
+  "cos.command.clearcosarmor.success.single": "Eliminados %s objetos del inventario de armadura cosmética del jugador %s",
+  "cos.command.clearcosarmor.success.multiple": "Eliminados %s objetos del inventario de armadura cosmética de %s jugadores"
+}

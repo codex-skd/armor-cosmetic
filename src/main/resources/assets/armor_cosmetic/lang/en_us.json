@@ -1,13 +1,15 @@
 {
-  "itemGroup.armor_cosmetic": "Example Mod Tab",
-  "block.armor_cosmetic.example_block": "Example Block",
-  "item.armor_cosmetic.example_item": "Example Item",
-
+  "cos.key.opencosarmorinventory": "Open Cosmetic Armor Inventory",
+  "cos.gui.buttoncos": "Cosmetic Armor",
+  "cos.gui.buttonnormal": "Normal",
+  "cos.command.clearcosarmor.success.single": "Removed %s items in cosmetic armor inventory from player %s",
+  "cos.command.clearcosarmor.success.multiple": "Removed %s items in cosmetic armor inventory from %s players",
   "armor_cosmetic.configuration.title": "ArmorCosmetic Configs",
   "armor_cosmetic.configuration.section.armor_cosmetic.common.toml": "ArmorCosmetic Configs",
   "armor_cosmetic.configuration.section.armor_cosmetic.common.toml.title": "ArmorCosmetic Configs",
-  "armor_cosmetic.configuration.items": "Item List",
-  "armor_cosmetic.configuration.logDirtBlock": "Log Dirt Block",
-  "armor_cosmetic.configuration.magicNumberIntroduction": "Magic Number Text",
-  "armor_cosmetic.configuration.magicNumber": "Magic Number"
+  "armor_cosmetic.configuration.CosArmorGuiButton_Hidden": "Hide cosmetic armor button",
+  "armor_cosmetic.configuration.CosArmorToggleButton_Hidden": "Hide toggle button",
+  "armor_cosmetic.configuration.CosArmorKeepThroughDeath": "Keep cosmetic armor through death",
+  "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Disable recipe book in cosmetic inventory",
+  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Disable /coshat command"
 }
