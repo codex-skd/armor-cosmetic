@@ -36,10 +36,10 @@ public class ModConfigs {
                 .define("CosArmorToggleButton_Hidden", false);
         CosArmorToggleButton_Left = BUILDER
                 .comment("Left offset for the toggle button")
-                .defineInRange("CosArmorToggleButton_Left", 127, -1000, 1000);
+                .defineInRange("CosArmorToggleButton_Left", 152, -1000, 1000);
         CosArmorToggleButton_Top = BUILDER
                 .comment("Top offset for the toggle button")
-                .defineInRange("CosArmorToggleButton_Top", 7, -1000, 1000);
+                .defineInRange("CosArmorToggleButton_Top", 17, -1000, 1000);
         CosArmorCreativeGuiButton_Hidden = BUILDER
                 .comment("Hide the cosmetic armor button on the creative inventory screen")
                 .define("CosArmorCreativeGuiButton_Hidden", false);

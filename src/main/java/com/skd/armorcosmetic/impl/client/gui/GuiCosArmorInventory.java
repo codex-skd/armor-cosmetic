@@ -36,8 +36,8 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
             for (int i = 0; i < 4; i++) {
                 int slot = i;
                 addRenderableWidget(new GuiCosArmorToggleButton(
-                        leftPos + 76 + i * 18, topPos + 62,
-                        5, 5,
+                        leftPos + 76 + i * 18, topPos + 44,
+                        8, 8,
                         Component.empty(),
                         menu.getSlot(49 - slot).getItem().isEmpty() ? 0 : 1,
                         btn -> {

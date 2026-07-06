@@ -41,10 +41,8 @@ public enum PlayerRenderHandler {
 
         for (EquipmentSlot slot : SLOTS) {
             PlayerInventoryHelper.getPlayerEquipmentSlotIndex(slot).ifPresent(slotIndex -> {
-                restores.add(() -> {
-                    ItemStack item = playerInventory.getItem(slotIndex);
-                    playerInventory.setItem(slotIndex, item);
-                });
+                ItemStack original = playerInventory.getItem(slotIndex).copy();
+                restores.add(() -> playerInventory.setItem(slotIndex, original));
             });
         }
 
@@ -59,7 +57,7 @@ public enum PlayerRenderHandler {
                     playerInventory.setItem(slotIndex, ItemStack.EMPTY);
                 });
             } else {
-                ItemStack stack = cosInventory.getStackInSlot(i);
+                ItemStack stack = cosInventory.getStackInSlot(i).copy();
                 if (!stack.isEmpty()) {
                     PlayerInventoryHelper.getPlayerEquipmentSlotIndex(SLOTS[i]).ifPresent(slotIndex -> {
                         playerInventory.setItem(slotIndex, stack);
