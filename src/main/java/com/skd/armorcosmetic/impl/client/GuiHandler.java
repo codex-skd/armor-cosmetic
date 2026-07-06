@@ -69,7 +69,7 @@ public enum GuiHandler {
                 event.addListener(new GuiCosArmorButton(btnX, btnY,
                         ModConfigs.CosArmorGuiButton_Width.get(),
                         ModConfigs.CosArmorGuiButton_Height.get(),
-                        label, true, btn -> {
+                        label, btn -> {
                     if (isCosInventory) {
                         InventoryScreen newScreen = new InventoryScreen(containerScreen.getMinecraft().player);
                         InventoryScreenAccess.setXMouse(newScreen, ((GuiCosArmorInventory) containerScreen).oldMouseX);
@@ -106,7 +106,7 @@ public enum GuiHandler {
                 event.addListener(new GuiCosArmorButton(btnX, btnY,
                         ModConfigs.CosArmorCreativeGuiButton_Width.get(),
                         ModConfigs.CosArmorCreativeGuiButton_Height.get(),
-                        label, true, btn -> {
+                        label, btn -> {
                     ClientPacketDistributor.sendToServer(new PayloadOpenCosArmorInventory());
                 }, (button, isInventoryOpen) -> {
                     button.visible = isInventoryOpen;

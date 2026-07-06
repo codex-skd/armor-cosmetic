@@ -27,8 +27,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Spacing": "Горизонтальный интервал переключателей",
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Ширина отдельных переключателей",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Высота отдельных переключателей",
-  "armor_cosmetic.configuration.GuiButton_IconSize": "Размер иконки основной кнопки (0=авто)",
-  "armor_cosmetic.configuration.ToggleButton_IconSize": "Размер иконки кнопки переключения (0=авто)",
   "armor_cosmetic.configuration.CosArmorKeepThroughDeath": "Сохранять косметическую броню при смерти",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Отключить книгу рецептов",
   "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Отключить команду /coshat"

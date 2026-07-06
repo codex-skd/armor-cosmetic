@@ -4,20 +4,15 @@ import java.util.function.BiConsumer;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
 
 public class GuiCosArmorButton extends Button implements IShiftingWidget, ICreativeInvWidget {
 
-    private static final Identifier ARMOR_SLOT_SPRITE = Identifier.withDefaultNamespace("container/slot/armor");
     private final BiConsumer<GuiCosArmorButton, Boolean> onCreativeTabChanged;
-    private final boolean showSprite;
 
-    public GuiCosArmorButton(int x, int y, int width, int height, Component message, boolean showSprite,
+    public GuiCosArmorButton(int x, int y, int width, int height, Component message,
             OnPress onPress, BiConsumer<GuiCosArmorButton, Boolean> onCreativeTabChanged) {
         super(x, y, width, height, message, onPress, DEFAULT_NARRATION);
-        this.showSprite = showSprite;
         this.onCreativeTabChanged = onCreativeTabChanged;
     }
 
@@ -26,9 +21,7 @@ public class GuiCosArmorButton extends Button implements IShiftingWidget, ICreat
         int bgColor = isHoveredOrFocused() ? 0xFFFFFFFF : 0xFF8B8B8B;
         graphics.fill(getX(), getY(), getX() + width, getY() + height, 0xFF000000);
         graphics.fill(getX() + 1, getY() + 1, getX() + width - 1, getY() + height - 1, bgColor);
-        if (showSprite && width >= 16 && height >= 16) {
-            graphics.blitSprite(RenderPipelines.GUI_TEXTURED, ARMOR_SLOT_SPRITE, getX() + (width - 16) / 2, getY() + (height - 16) / 2, 16, 16);
-        } else {
+        if (width >= 14) {
             graphics.centeredText(
                     net.minecraft.client.Minecraft.getInstance().font,
                     getMessage(),

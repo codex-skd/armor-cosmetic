@@ -27,8 +27,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Spacing": "Espacement horizontal des toggles",
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Largeur des toggles individuels",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Hauteur des toggles individuels",
-  "armor_cosmetic.configuration.GuiButton_IconSize": "Taille icône bouton principal (0=auto)",
-  "armor_cosmetic.configuration.ToggleButton_IconSize": "Taille icône bouton bascule (0=auto)",
   "armor_cosmetic.configuration.CosArmorKeepThroughDeath": "Garder l'armure cosmétique à la mort",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Désactiver le livre de recettes dans l'inventaire cosmétique",
   "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Désactiver la commande /coshat"

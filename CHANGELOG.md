@@ -1,5 +1,16 @@
 # ArmorCosmetic - Changelog
 
+## [1.0.1] - 2026-07-06
+
+### Changed
+- Updated default config values for better out-of-box experience
+- Toggle button hidden by default, creative button hidden by default
+- Recipe book and /coshat command disabled by default
+- Skin armor toggle buttons repositioned and resized
+- Cosmetic armor button now 10x10 (compact, like original mod)
+- Removed unused icon size configuration options
+- Buttons render text labels only (no sprites/icons)
+
 ## [1.0.0] - 2026-07-06
 
 ### First Stable Release

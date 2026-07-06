@@ -27,8 +27,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Spacing": "Skin armor toggle horizontal spacing",
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Skin armor toggle width",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Skin armor toggle height",
-  "armor_cosmetic.configuration.GuiButton_IconSize": "Main button icon size (0=auto)",
-  "armor_cosmetic.configuration.ToggleButton_IconSize": "Toggle button icon size (0=auto)",
   "armor_cosmetic.configuration.CosArmorKeepThroughDeath": "Keep cosmetic armor through death",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Disable recipe book in cosmetic inventory",
   "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Disable /coshat command"

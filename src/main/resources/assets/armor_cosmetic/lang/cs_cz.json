@@ -27,8 +27,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Spacing": "Horizontální rozestup přepínačů",
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Šířka jednotlivých přepínačů",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Výška jednotlivých přepínačů",
-  "armor_cosmetic.configuration.GuiButton_IconSize": "Velikost ikony hlavního tlačítka (0=auto)",
-  "armor_cosmetic.configuration.ToggleButton_IconSize": "Velikost ikony přepínacího tlačítka (0=auto)",
   "armor_cosmetic.configuration.CosArmorKeepThroughDeath": "Ponechat kosmetickou zbroj po smrti",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Vypnout knihu receptů v kosmetickém inventáři",
   "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Vypnout příkaz /coshat"
