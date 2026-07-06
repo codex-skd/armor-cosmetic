@@ -1,9 +1,7 @@
 package com.skd.armorcosmetic.impl.client.gui;
 
-import com.skd.armorcosmetic.impl.ModConfigs;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 
@@ -23,20 +21,24 @@ public class GuiCosArmorToggleButton extends Button implements IShiftingWidget {
 
     @Override
     protected void extractContents(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
-        int bgColor = state == 1 ? 0xFF55FF55 : 0xFF808080;
-        if (isHoveredOrFocused()) {
-            bgColor = state == 1 ? 0xFF33DD33 : 0xFFAAAAAA;
+        int bgColor;
+        String text;
+        if (state == 1) {
+            bgColor = isHoveredOrFocused() ? 0xFF33DD33 : 0xFF55FF55;
+            text = "S";
+        } else {
+            bgColor = isHoveredOrFocused() ? 0xFFAAAAAA : 0xFF808080;
+            text = "A";
         }
         graphics.fill(getX(), getY(), getX() + width, getY() + height, 0xFF000000);
         graphics.fill(getX() + 1, getY() + 1, getX() + width - 1, getY() + height - 1, bgColor);
-        Identifier icon = state == 1 ? iconOn : iconOff;
-        if (icon != null) {
-            int iconSize = ModConfigs.ToggleButton_IconSize.get();
-            int iw = iconSize > 0 ? iconSize : width - 2;
-            int ih = iconSize > 0 ? iconSize : height - 2;
-            int ix = getX() + (width - iw) / 2;
-            int iy = getY() + (height - ih) / 2;
-            graphics.blit(RenderPipelines.GUI_TEXTURED, icon, ix, iy, 0, 0, iw, ih, 16, 16);
+        if (width >= 10 && height >= 8) {
+            graphics.centeredText(
+                    net.minecraft.client.Minecraft.getInstance().font,
+                    text,
+                    getX() + width / 2,
+                    getY() + (height - 8) / 2,
+                    0xFFFFFF);
         }
     }
 
