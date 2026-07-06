@@ -2,6 +2,7 @@ package com.skd.armorcosmetic.impl.client;
 
 import java.util.Set;
 
+import com.skd.armorcosmetic.ArmorCosmetic;
 import com.skd.armorcosmetic.impl.ModConfigs;
 import com.skd.armorcosmetic.impl.ModObjects;
 import com.skd.armorcosmetic.impl.client.gui.GuiCosArmorButton;
@@ -10,11 +11,11 @@ import com.skd.armorcosmetic.impl.client.gui.GuiCosArmorToggleButton;
 import com.skd.armorcosmetic.impl.client.gui.IShiftingWidget;
 import com.skd.armorcosmetic.impl.network.payload.PayloadOpenCosArmorInventory;
 import com.skd.armorcosmetic.impl.network.payload.PayloadOpenNormalInventory;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.event.ScreenEvent;
 import net.neoforged.neoforge.client.network.ClientPacketDistributor;
@@ -23,7 +24,10 @@ import net.neoforged.neoforge.common.NeoForge;
 public enum GuiHandler {
     INSTANCE;
 
-    public static final Set<Integer> ButtonIds = Set.of(76, 77);
+    private static final Identifier ICON_COSMETIC = ArmorCosmetic.id("textures/gui/icon_cosmetic.png");
+    private static final Identifier ICON_NORMAL = ArmorCosmetic.id("textures/gui/icon_normal.png");
+    private static final Identifier ICON_TOGGLE_ON = ArmorCosmetic.id("textures/gui/icon_toggle_on.png");
+    private static final Identifier ICON_TOGGLE_OFF = ArmorCosmetic.id("textures/gui/icon_toggle_off.png");
     private int lastLeft;
     private boolean lastInventoryOpen;
 
@@ -69,11 +73,12 @@ public enum GuiHandler {
                 int btnY = containerScreen.getGuiTop() + ModConfigs.CosArmorGuiButton_Top.get();
                 boolean isCosInventory = event.getScreen() instanceof GuiCosArmorInventory;
                 Component label = Component.translatable(isCosInventory ? "cos.gui.buttonnormal" : "cos.gui.buttoncos");
+                Identifier icon = isCosInventory ? ICON_NORMAL : ICON_COSMETIC;
 
                 event.addListener(new GuiCosArmorButton(btnX, btnY,
                         ModConfigs.CosArmorGuiButton_Width.get(),
                         ModConfigs.CosArmorGuiButton_Height.get(),
-                        label, btn -> {
+                        label, icon, btn -> {
                     if (isCosInventory) {
                         InventoryScreen newScreen = new InventoryScreen(containerScreen.getMinecraft().player);
                         InventoryScreenAccess.setXMouse(newScreen, ((GuiCosArmorInventory) containerScreen).oldMouseX);
@@ -94,6 +99,7 @@ public enum GuiHandler {
                         ModConfigs.CosArmorToggleButton_Height.get(),
                         Component.empty(),
                         PlayerRenderHandler.Disabled ? 1 : 0,
+                        ICON_TOGGLE_ON, ICON_TOGGLE_OFF,
                         btn -> {
                             PlayerRenderHandler.Disabled = !PlayerRenderHandler.Disabled;
                             ((GuiCosArmorToggleButton) btn).state = PlayerRenderHandler.Disabled ? 1 : 0;
@@ -110,7 +116,7 @@ public enum GuiHandler {
                 event.addListener(new GuiCosArmorButton(btnX, btnY,
                         ModConfigs.CosArmorCreativeGuiButton_Width.get(),
                         ModConfigs.CosArmorCreativeGuiButton_Height.get(),
-                        label, btn -> {
+                        label, ICON_COSMETIC, btn -> {
                     ClientPacketDistributor.sendToServer(new PayloadOpenCosArmorInventory());
                 }, (button, isInventoryOpen) -> {
                     button.visible = isInventoryOpen;

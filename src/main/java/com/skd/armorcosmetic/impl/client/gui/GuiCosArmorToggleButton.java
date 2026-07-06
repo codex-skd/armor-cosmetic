@@ -1,30 +1,37 @@
 package com.skd.armorcosmetic.impl.client.gui;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
 
 public class GuiCosArmorToggleButton extends Button implements IShiftingWidget {
 
     public int state;
+    private final Identifier iconOn;
+    private final Identifier iconOff;
 
-    public GuiCosArmorToggleButton(int x, int y, int width, int height, Component message, int state, OnPress onPress) {
+    public GuiCosArmorToggleButton(int x, int y, int width, int height, Component message, int state,
+            Identifier iconOn, Identifier iconOff, OnPress onPress) {
         super(x, y, width, height, message, onPress, DEFAULT_NARRATION);
         this.state = state;
+        this.iconOn = iconOn;
+        this.iconOff = iconOff;
     }
 
     @Override
     protected void extractContents(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
-        int color = state == 1 ? 0xFF00FF00 : 0xFF808080;
+        int bgColor = state == 1 ? 0xFF55FF55 : 0xFF808080;
         if (isHoveredOrFocused()) {
-            color = state == 1 ? 0xFF00DD00 : 0xFFAAAAAA;
+            bgColor = state == 1 ? 0xFF33DD33 : 0xFFAAAAAA;
         }
         graphics.fill(getX(), getY(), getX() + width, getY() + height, 0xFF000000);
-        graphics.fill(getX() + 1, getY() + 1, getX() + width - 1, getY() + height - 1, color);
-        String text = state == 1 ? "V" : "X";
-        Minecraft mc = Minecraft.getInstance();
-        graphics.centeredText(mc.font, text, getX() + width / 2, getY() + (height - 8) / 2, 0xFFFFFF);
+        graphics.fill(getX() + 1, getY() + 1, getX() + width - 1, getY() + height - 1, bgColor);
+        Identifier icon = state == 1 ? iconOn : iconOff;
+        if (icon != null) {
+            graphics.blit(RenderPipelines.GUI_TEXTURED, icon, getX() + 1, getY() + 1, 0, 0, width - 2, height - 2, 16, 16);
+        }
     }
 
     @Override

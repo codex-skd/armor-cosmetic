@@ -16,6 +16,8 @@ import net.minecraft.world.entity.player.Inventory;
 public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosArmor> {
 
     public static final Identifier TEXTURE = ArmorCosmetic.id("textures/gui/cosarmorinventory.png");
+    private static final Identifier ICON_TOGGLE_ON = ArmorCosmetic.id("textures/gui/icon_toggle_on.png");
+    private static final Identifier ICON_TOGGLE_OFF = ArmorCosmetic.id("textures/gui/icon_toggle_off.png");
 
     private final EffectsInInventory effects;
     public float oldMouseX;
@@ -40,6 +42,7 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
                         8, 8,
                         Component.empty(),
                         menu.getSlot(49 - slot).getItem().isEmpty() ? 0 : 1,
+                        ICON_TOGGLE_ON, ICON_TOGGLE_OFF,
                         btn -> {
                             if (btn instanceof GuiCosArmorToggleButton toggleBtn) {
                                 toggleBtn.state = toggleBtn.state == 1 ? 0 : 1;
