@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class MixinPlayerRenderer {
 
     @Inject(method = "extractRenderState(Lnet/minecraft/world/entity/Avatar;Lnet/minecraft/client/renderer/entity/state/AvatarRenderState;F)V",
-            at = @At("TAIL"))
+            at = @At("HEAD"))
     private void CosArmor_onExtractRenderState(Avatar avatar, AvatarRenderState renderState, float partialTick, CallbackInfo ci) {
         if (avatar instanceof AbstractClientPlayer player) {
             PlayerRenderHandler.INSTANCE.onExtractPlayerRenderState(player, renderState, partialTick);

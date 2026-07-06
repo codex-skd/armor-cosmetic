@@ -42,6 +42,11 @@ public class ContainerCosArmor extends AbstractCraftingMenu {
             EquipmentSlot slotType = SLOT_IDS[i];
             addSlot(new Slot(playerInventory, 39 - i, 8, 8 + i * 18) {
                 @Override
+                public boolean mayPlace(ItemStack stack) {
+                    return stack.isEmpty() || player.getEquipmentSlotForItem(stack) == slotType;
+                }
+
+                @Override
                 public void setByPlayer(ItemStack oldStack, ItemStack newStack) {
                     ContainerCosArmor.this.player.onEquipItem(slotType, newStack, oldStack);
                     super.setByPlayer(oldStack, newStack);
@@ -71,6 +76,11 @@ public class ContainerCosArmor extends AbstractCraftingMenu {
         for (int i = 0; i < 4; i++) {
             EquipmentSlot slotType = SLOT_IDS[i];
             addSlot(new Slot(cosInventory, 3 - i, 98 + i * 18, 62) {
+                @Override
+                public boolean mayPlace(ItemStack stack) {
+                    return stack.isEmpty() || player.getEquipmentSlotForItem(stack) == slotType;
+                }
+
                 @Override
                 public void setByPlayer(ItemStack oldStack, ItemStack newStack) {
                     ContainerCosArmor.this.player.onEquipItem(slotType, newStack, oldStack);
