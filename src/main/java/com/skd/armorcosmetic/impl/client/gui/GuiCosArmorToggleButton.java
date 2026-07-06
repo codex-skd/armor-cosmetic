@@ -1,5 +1,6 @@
 package com.skd.armorcosmetic.impl.client.gui;
 
+import com.skd.armorcosmetic.impl.ModConfigs;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.renderer.RenderPipelines;
@@ -30,7 +31,12 @@ public class GuiCosArmorToggleButton extends Button implements IShiftingWidget {
         graphics.fill(getX() + 1, getY() + 1, getX() + width - 1, getY() + height - 1, bgColor);
         Identifier icon = state == 1 ? iconOn : iconOff;
         if (icon != null) {
-            graphics.blit(RenderPipelines.GUI_TEXTURED, icon, getX() + 1, getY() + 1, 0, 0, width - 2, height - 2, 16, 16);
+            int iconSize = ModConfigs.ToggleButton_IconSize.get();
+            int iw = iconSize > 0 ? iconSize : width - 2;
+            int ih = iconSize > 0 ? iconSize : height - 2;
+            int ix = getX() + (width - iw) / 2;
+            int iy = getY() + (height - ih) / 2;
+            graphics.blit(RenderPipelines.GUI_TEXTURED, icon, ix, iy, 0, 0, iw, ih, 16, 16);
         }
     }
 

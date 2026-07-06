@@ -24,6 +24,13 @@ public class ModConfigs {
     public static ModConfigSpec.BooleanValue CosArmorKeepThroughDeath;
     public static ModConfigSpec.BooleanValue CosArmorDisableRecipeBook;
     public static ModConfigSpec.BooleanValue CosArmorDisableCosHatCommand;
+    public static ModConfigSpec.IntValue SkinArmorToggle_Left;
+    public static ModConfigSpec.IntValue SkinArmorToggle_Top;
+    public static ModConfigSpec.IntValue SkinArmorToggle_Spacing;
+    public static ModConfigSpec.IntValue SkinArmorToggle_Width;
+    public static ModConfigSpec.IntValue SkinArmorToggle_Height;
+    public static ModConfigSpec.IntValue GuiButton_IconSize;
+    public static ModConfigSpec.IntValue ToggleButton_IconSize;
 
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
@@ -82,6 +89,27 @@ public class ModConfigs {
         CosArmorDisableCosHatCommand = BUILDER
                 .comment("Disable the /coshat command")
                 .define("CosArmorDisableCosHatCommand", false);
+        SkinArmorToggle_Left = BUILDER
+                .comment("Left offset for skin armor toggle buttons (per slot)")
+                .defineInRange("SkinArmorToggle_Left", 76, -1000, 1000);
+        SkinArmorToggle_Top = BUILDER
+                .comment("Top offset for skin armor toggle buttons (per slot)")
+                .defineInRange("SkinArmorToggle_Top", 44, -1000, 1000);
+        SkinArmorToggle_Spacing = BUILDER
+                .comment("Horizontal spacing between skin armor toggle buttons")
+                .defineInRange("SkinArmorToggle_Spacing", 18, 0, 100);
+        SkinArmorToggle_Width = BUILDER
+                .comment("Width of skin armor toggle buttons")
+                .defineInRange("SkinArmorToggle_Width", 8, 4, 40);
+        SkinArmorToggle_Height = BUILDER
+                .comment("Height of skin armor toggle buttons")
+                .defineInRange("SkinArmorToggle_Height", 8, 4, 40);
+        GuiButton_IconSize = BUILDER
+                .comment("Icon size inside the main cosmetic/normal buttons (0 = auto-fit)")
+                .defineInRange("GuiButton_IconSize", 0, 0, 64);
+        ToggleButton_IconSize = BUILDER
+                .comment("Icon size inside the toggle button (0 = auto-fit)")
+                .defineInRange("ToggleButton_IconSize", 0, 0, 64);
     }
 
     public static final ModConfigSpec SPEC = BUILDER.build();

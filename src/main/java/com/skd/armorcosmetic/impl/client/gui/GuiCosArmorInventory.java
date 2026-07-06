@@ -38,8 +38,10 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
             for (int i = 0; i < 4; i++) {
                 int slot = i;
                 addRenderableWidget(new GuiCosArmorToggleButton(
-                        leftPos + 76 + i * 18, topPos + 44,
-                        8, 8,
+                        leftPos + com.skd.armorcosmetic.impl.ModConfigs.SkinArmorToggle_Left.get() + i * com.skd.armorcosmetic.impl.ModConfigs.SkinArmorToggle_Spacing.get(),
+                        topPos + com.skd.armorcosmetic.impl.ModConfigs.SkinArmorToggle_Top.get(),
+                        com.skd.armorcosmetic.impl.ModConfigs.SkinArmorToggle_Width.get(),
+                        com.skd.armorcosmetic.impl.ModConfigs.SkinArmorToggle_Height.get(),
                         Component.empty(),
                         menu.getSlot(49 - slot).getItem().isEmpty() ? 0 : 1,
                         ICON_TOGGLE_ON, ICON_TOGGLE_OFF,
@@ -90,6 +92,7 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
     public void extractBackground(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
         int x = leftPos;
         int y = topPos;
+        graphics.fill(0, 0, width, height, 0xC0101010);
         graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, x, y, 0.0F, 0.0F, imageWidth, imageHeight, 256, 256);
         effects.extractRenderState(graphics, mouseX, mouseY);
     }
