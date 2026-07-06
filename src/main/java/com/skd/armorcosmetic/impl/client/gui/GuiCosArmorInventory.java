@@ -2,11 +2,11 @@ package com.skd.armorcosmetic.impl.client.gui;
 
 import com.skd.armorcosmetic.ArmorCosmetic;
 import com.skd.armorcosmetic.impl.ModConfigs;
-import com.skd.armorcosmetic.impl.ModObjects;
 import com.skd.armorcosmetic.impl.inventory.ContainerCosArmor;
 import com.skd.armorcosmetic.impl.inventory.InventoryCosArmor;
 import com.skd.armorcosmetic.impl.network.payload.PayloadSetSkinArmor;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.navigation.ScreenPosition;
 import net.minecraft.client.gui.screens.inventory.AbstractRecipeBookScreen;
 import net.minecraft.client.gui.screens.inventory.EffectsInInventory;
@@ -48,6 +48,13 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
                 setVisible.invoke(comp, false);
             }
         } catch (Exception ignored) {
+        }
+        if (recipeBookDisabled) {
+            for (var child : this.children()) {
+                if (child instanceof ImageButton btn) {
+                    btn.visible = false;
+                }
+            }
         }
         if (menu instanceof ContainerCosArmor container) {
             InventoryCosArmor cosInv = getCosInventory(container);
@@ -98,7 +105,7 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
     @Override
     protected void extractLabels(GuiGraphicsExtractor graphics, int mouseX, int mouseY) {
         graphics.text(this.font, this.title, this.titleLabelX, this.titleLabelY, 4210752, false);
-        graphics.text(this.font, Component.translatable("cos.gui.cosmeticslots"), leftPos + 104, topPos + 46, 4210752, false);
+        graphics.text(this.font, Component.translatable("cos.gui.cosmeticslots"), leftPos + 106, topPos + 52, 0x404040, false);
     }
 
     @Override

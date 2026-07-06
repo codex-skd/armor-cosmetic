@@ -1,5 +1,12 @@
 # ArmorCosmetic - Changelog
 
+## [0.1.15-beta] - 2026-07-06
+
+### Fixed
+- Skin armor toggle no longer hides real equipped armor - skin mode now leaves real armor visible
+- Recipe book button and component now properly hidden when config is enabled
+- "Cosmetic" label repositioned and now visible above cosmetic armor slots
+
 ## [0.1.14-beta] - 2026-07-06
 
 ### Added

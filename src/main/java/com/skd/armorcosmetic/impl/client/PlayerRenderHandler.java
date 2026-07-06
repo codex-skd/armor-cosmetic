@@ -53,16 +53,13 @@ public enum PlayerRenderHandler {
 
         for (int i = 0; i < SLOTS.length; i++) {
             if (cosInventory.isSkinArmor(i)) {
+                continue;
+            }
+            ItemStack stack = cosInventory.getStackInSlot(i).copy();
+            if (!stack.isEmpty()) {
                 PlayerInventoryHelper.getPlayerEquipmentSlotIndex(SLOTS[i]).ifPresent(slotIndex -> {
-                    playerInventory.setItem(slotIndex, ItemStack.EMPTY);
+                    playerInventory.setItem(slotIndex, stack);
                 });
-            } else {
-                ItemStack stack = cosInventory.getStackInSlot(i).copy();
-                if (!stack.isEmpty()) {
-                    PlayerInventoryHelper.getPlayerEquipmentSlotIndex(SLOTS[i]).ifPresent(slotIndex -> {
-                        playerInventory.setItem(slotIndex, stack);
-                    });
-                }
             }
         }
     }
