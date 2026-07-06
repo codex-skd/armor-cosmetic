@@ -1,0 +1,13 @@
+{
+  "itemGroup.armor_cosmetic": "Example Mod Tab",
+  "block.armor_cosmetic.example_block": "Example Block",
+  "item.armor_cosmetic.example_item": "Example Item",
+
+  "armor_cosmetic.configuration.title": "ArmorCosmetic Configs",
+  "armor_cosmetic.configuration.section.armor_cosmetic.common.toml": "ArmorCosmetic Configs",
+  "armor_cosmetic.configuration.section.armor_cosmetic.common.toml.title": "ArmorCosmetic Configs",
+  "armor_cosmetic.configuration.items": "Item List",
+  "armor_cosmetic.configuration.logDirtBlock": "Log Dirt Block",
+  "armor_cosmetic.configuration.magicNumberIntroduction": "Magic Number Text",
+  "armor_cosmetic.configuration.magicNumber": "Magic Number"
+}
