@@ -15,9 +15,6 @@ public class ModPayloads {
     public static void setupPayloads(PayloadRegistrar registrar) {
         registrar.playToClient(PayloadSyncCosArmor.TYPE, PayloadSyncCosArmor.STREAM_CODEC, (payload, context) -> {
             context.enqueueWork(() -> {
-                if (context.player().getUUID().equals(payload.uuid())) {
-                    return;
-                }
                 InventoryCosArmor inventory = ModObjects.invMan instanceof com.skd.armorcosmetic.impl.InventoryManager
                         ? ((com.skd.armorcosmetic.impl.InventoryManager) ModObjects.invMan).getCosArmorInventoryClient(payload.uuid())
                         : null;
@@ -30,9 +27,6 @@ public class ModPayloads {
 
         registrar.playToClient(PayloadSyncHiddenFlags.TYPE, PayloadSyncHiddenFlags.STREAM_CODEC, (payload, context) -> {
             context.enqueueWork(() -> {
-                if (context.player().getUUID().equals(payload.uuid())) {
-                    return;
-                }
                 InventoryCosArmor inventory = ModObjects.invMan instanceof com.skd.armorcosmetic.impl.InventoryManager
                         ? ((com.skd.armorcosmetic.impl.InventoryManager) ModObjects.invMan).getCosArmorInventoryClient(payload.uuid())
                         : null;
@@ -63,7 +57,10 @@ public class ModPayloads {
             context.enqueueWork(() -> {
                 if (context.player() instanceof ServerPlayer serverPlayer) {
                     InventoryCosArmor inventory = (InventoryCosArmor) ((com.skd.armorcosmetic.impl.InventoryManager) ModObjects.invMan).getCosArmorInventory(serverPlayer.getUUID());
-                    inventory.setSkinArmor(payload.slot(), payload.isSkinArmor());
+                    int slot = payload.slot();
+                    if (slot >= 0 && slot < inventory.getSlots()) {
+                        inventory.setSkinArmor(slot, payload.isSkinArmor());
+                    }
                 }
             });
         });

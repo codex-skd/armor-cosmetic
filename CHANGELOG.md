@@ -1,5 +1,20 @@
 # ArmorCosmetic - Changelog
 
+## [0.1.14-beta] - 2026-07-06
+
+### Added
+- "Cosmetic" label above armor slots in cosmetic inventory
+- Per-slot skin armor toggles with configurable position, size, and spacing
+- Full translations in 11 languages
+
+### Fixed
+- Per-slot skin armor toggles now correctly sync to server and persist
+- Toggle buttons display in correct order (Head→Chest→Legs→Feet left to right)
+- Recipe book hidden when opening cosmetic inventory
+- Server-side bounds checking prevents crashes from malformed packets
+- Dark background overlay renders in cosmetic inventory
+- Buttons show text labels (S=skin, A=armor) instead of broken icons
+
 ## [0.1.12-beta] - 2026-07-06
 
 ### Added

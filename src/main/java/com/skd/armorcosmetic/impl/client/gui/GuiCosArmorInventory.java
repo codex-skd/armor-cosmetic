@@ -11,6 +11,7 @@ import net.minecraft.client.gui.navigation.ScreenPosition;
 import net.minecraft.client.gui.screens.inventory.AbstractRecipeBookScreen;
 import net.minecraft.client.gui.screens.inventory.EffectsInInventory;
 import net.minecraft.client.gui.screens.recipebook.CraftingRecipeBookComponent;
+import net.minecraft.client.gui.screens.recipebook.RecipeBookComponent;
 import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
@@ -39,12 +40,21 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
     @Override
     protected void init() {
         super.init();
+        try {
+            java.lang.reflect.Field field = AbstractRecipeBookScreen.class.getDeclaredField("recipeBookComponent");
+            field.setAccessible(true);
+            RecipeBookComponent comp = (RecipeBookComponent) field.get(this);
+            if (comp != null) {
+                comp.setVisible(false);
+            }
+        } catch (Exception ignored) {
+        }
         if (menu instanceof ContainerCosArmor container) {
             InventoryCosArmor cosInv = getCosInventory(container);
             if (cosInv != null) {
                 for (int i = 0; i < 4; i++) {
-                    int slot = i;
-                    boolean isSkin = cosInv.isSkinArmor(i);
+                    int invSlot = 3 - i;
+                    boolean isSkin = cosInv.isSkinArmor(invSlot);
                     addRenderableWidget(new GuiCosArmorToggleButton(
                             leftPos + ModConfigs.SkinArmorToggle_Left.get() + i * ModConfigs.SkinArmorToggle_Spacing.get(),
                             topPos + ModConfigs.SkinArmorToggle_Top.get(),
@@ -53,13 +63,13 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
                             Component.empty(),
                             isSkin ? 1 : 0,
                             null, null,
-                            btn -> {
-                                if (btn instanceof GuiCosArmorToggleButton toggleBtn) {
-                                    toggleBtn.state = toggleBtn.state == 1 ? 0 : 1;
-                                    cosInv.setSkinArmor(slot, toggleBtn.state == 1);
-                                    ClientPacketDistributor.sendToServer(new PayloadSetSkinArmor(slot, toggleBtn.state == 1));
-                                }
-                            }));
+                        btn -> {
+                            if (btn instanceof GuiCosArmorToggleButton toggleBtn) {
+                                toggleBtn.state = toggleBtn.state == 1 ? 0 : 1;
+                                cosInv.setSkinArmor(invSlot, toggleBtn.state == 1);
+                                ClientPacketDistributor.sendToServer(new PayloadSetSkinArmor(invSlot, toggleBtn.state == 1));
+                            }
+                        }));
                 }
             }
         }
