@@ -9,12 +9,18 @@ public class ModConfigs {
     public static ModConfigSpec.BooleanValue CosArmorGuiButton_Hidden;
     public static ModConfigSpec.IntValue CosArmorGuiButton_Left;
     public static ModConfigSpec.IntValue CosArmorGuiButton_Top;
+    public static ModConfigSpec.IntValue CosArmorGuiButton_Width;
+    public static ModConfigSpec.IntValue CosArmorGuiButton_Height;
     public static ModConfigSpec.BooleanValue CosArmorToggleButton_Hidden;
     public static ModConfigSpec.IntValue CosArmorToggleButton_Left;
     public static ModConfigSpec.IntValue CosArmorToggleButton_Top;
+    public static ModConfigSpec.IntValue CosArmorToggleButton_Width;
+    public static ModConfigSpec.IntValue CosArmorToggleButton_Height;
     public static ModConfigSpec.BooleanValue CosArmorCreativeGuiButton_Hidden;
     public static ModConfigSpec.IntValue CosArmorCreativeGuiButton_Left;
     public static ModConfigSpec.IntValue CosArmorCreativeGuiButton_Top;
+    public static ModConfigSpec.IntValue CosArmorCreativeGuiButton_Width;
+    public static ModConfigSpec.IntValue CosArmorCreativeGuiButton_Height;
     public static ModConfigSpec.BooleanValue CosArmorKeepThroughDeath;
     public static ModConfigSpec.BooleanValue CosArmorDisableRecipeBook;
     public static ModConfigSpec.BooleanValue CosArmorDisableCosHatCommand;
@@ -26,11 +32,17 @@ public class ModConfigs {
                 .comment("Hide the cosmetic armor button on the normal inventory screen")
                 .define("CosArmorGuiButton_Hidden", false);
         CosArmorGuiButton_Left = BUILDER
-                .comment("Left offset for the cosmetic armor button on the normal inventory screen")
+                .comment("Left offset for the cosmetic armor button")
                 .defineInRange("CosArmorGuiButton_Left", 76, -1000, 1000);
         CosArmorGuiButton_Top = BUILDER
-                .comment("Top offset for the cosmetic armor button on the normal inventory screen")
+                .comment("Top offset for the cosmetic armor button")
                 .defineInRange("CosArmorGuiButton_Top", 7, -1000, 1000);
+        CosArmorGuiButton_Width = BUILDER
+                .comment("Width of the cosmetic armor button")
+                .defineInRange("CosArmorGuiButton_Width", 60, 10, 200);
+        CosArmorGuiButton_Height = BUILDER
+                .comment("Height of the cosmetic armor button")
+                .defineInRange("CosArmorGuiButton_Height", 12, 8, 40);
         CosArmorToggleButton_Hidden = BUILDER
                 .comment("Hide the toggle button")
                 .define("CosArmorToggleButton_Hidden", false);
@@ -40,6 +52,12 @@ public class ModConfigs {
         CosArmorToggleButton_Top = BUILDER
                 .comment("Top offset for the toggle button")
                 .defineInRange("CosArmorToggleButton_Top", 17, -1000, 1000);
+        CosArmorToggleButton_Width = BUILDER
+                .comment("Width of the toggle button")
+                .defineInRange("CosArmorToggleButton_Width", 10, 6, 60);
+        CosArmorToggleButton_Height = BUILDER
+                .comment("Height of the toggle button")
+                .defineInRange("CosArmorToggleButton_Height", 10, 6, 40);
         CosArmorCreativeGuiButton_Hidden = BUILDER
                 .comment("Hide the cosmetic armor button on the creative inventory screen")
                 .define("CosArmorCreativeGuiButton_Hidden", false);
@@ -49,6 +67,12 @@ public class ModConfigs {
         CosArmorCreativeGuiButton_Top = BUILDER
                 .comment("Top offset for the cosmetic armor button on the creative inventory screen")
                 .defineInRange("CosArmorCreativeGuiButton_Top", 7, -1000, 1000);
+        CosArmorCreativeGuiButton_Width = BUILDER
+                .comment("Width of the creative inventory button")
+                .defineInRange("CosArmorCreativeGuiButton_Width", 60, 10, 200);
+        CosArmorCreativeGuiButton_Height = BUILDER
+                .comment("Height of the creative inventory button")
+                .defineInRange("CosArmorCreativeGuiButton_Height", 12, 8, 40);
         CosArmorKeepThroughDeath = BUILDER
                 .comment("Keep cosmetic armor through death")
                 .define("CosArmorKeepThroughDeath", false);

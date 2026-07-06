@@ -70,7 +70,10 @@ public enum GuiHandler {
                 boolean isCosInventory = event.getScreen() instanceof GuiCosArmorInventory;
                 Component label = Component.translatable(isCosInventory ? "cos.gui.buttonnormal" : "cos.gui.buttoncos");
 
-                event.addListener(new GuiCosArmorButton(btnX, btnY, 60, 12, label, btn -> {
+                event.addListener(new GuiCosArmorButton(btnX, btnY,
+                        ModConfigs.CosArmorGuiButton_Width.get(),
+                        ModConfigs.CosArmorGuiButton_Height.get(),
+                        label, btn -> {
                     if (isCosInventory) {
                         InventoryScreen newScreen = new InventoryScreen(containerScreen.getMinecraft().player);
                         InventoryScreenAccess.setXMouse(newScreen, ((GuiCosArmorInventory) containerScreen).oldMouseX);
@@ -86,7 +89,9 @@ public enum GuiHandler {
             if (!ModConfigs.CosArmorToggleButton_Hidden.get()) {
                 int btnX = containerScreen.getGuiLeft() + ModConfigs.CosArmorToggleButton_Left.get();
                 int btnY = containerScreen.getGuiTop() + ModConfigs.CosArmorToggleButton_Top.get();
-                event.addListener(new GuiCosArmorToggleButton(btnX, btnY, 10, 10,
+                event.addListener(new GuiCosArmorToggleButton(btnX, btnY,
+                        ModConfigs.CosArmorToggleButton_Width.get(),
+                        ModConfigs.CosArmorToggleButton_Height.get(),
                         Component.empty(),
                         PlayerRenderHandler.Disabled ? 1 : 0,
                         btn -> {
@@ -102,7 +107,10 @@ public enum GuiHandler {
                 int btnY = containerScreen.getGuiTop() + ModConfigs.CosArmorCreativeGuiButton_Top.get();
                 Component label = Component.translatable("cos.gui.buttoncos");
 
-                event.addListener(new GuiCosArmorButton(btnX, btnY, 60, 12, label, btn -> {
+                event.addListener(new GuiCosArmorButton(btnX, btnY,
+                        ModConfigs.CosArmorCreativeGuiButton_Width.get(),
+                        ModConfigs.CosArmorCreativeGuiButton_Height.get(),
+                        label, btn -> {
                     ClientPacketDistributor.sendToServer(new PayloadOpenCosArmorInventory());
                 }, (button, isInventoryOpen) -> {
                     button.visible = isInventoryOpen;
