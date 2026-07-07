@@ -26,8 +26,13 @@ public class GuiCosArmorButton extends Button implements IShiftingWidget, ICreat
         int bgColor = isHoveredOrFocused() ? 0xFFFFFFFF : 0xFF8B8B8B;
         graphics.fill(getX(), getY(), getX() + width, getY() + height, 0xFF000000);
         graphics.fill(getX() + 1, getY() + 1, getX() + width - 1, getY() + height - 1, bgColor);
-        if (showIcon && width >= 16 && height >= 16) {
-            graphics.blit(RenderPipelines.GUI_TEXTURED, ICON_CHESTPLATE, getX() + (width - 16) / 2, getY() + (height - 16) / 2, 0, 0, 16, 16, 16, 16);
+        if (showIcon && width >= 8 && height >= 8) {
+            int iconSize = Math.min(width - 4, height - 4);
+            if (iconSize > 0) {
+                graphics.blit(RenderPipelines.GUI_TEXTURED, ICON_CHESTPLATE,
+                        getX() + (width - iconSize) / 2, getY() + (height - iconSize) / 2,
+                        0, 0, iconSize, iconSize, 16, 16);
+            }
         } else if (width >= 14) {
             graphics.centeredText(
                     net.minecraft.client.Minecraft.getInstance().font,

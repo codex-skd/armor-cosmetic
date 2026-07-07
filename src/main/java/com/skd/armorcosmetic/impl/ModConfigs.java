@@ -44,10 +44,10 @@ public class ModConfigs {
                 .defineInRange("CosArmorGuiButton_Top", 7, -1000, 1000);
         CosArmorGuiButton_Width = BUILDER
                 .comment("Width of the cosmetic armor button")
-                .defineInRange("CosArmorGuiButton_Width", 16, 10, 200);
+                .defineInRange("CosArmorGuiButton_Width", 10, 10, 200);
         CosArmorGuiButton_Height = BUILDER
                 .comment("Height of the cosmetic armor button")
-                .defineInRange("CosArmorGuiButton_Height", 16, 8, 40);
+                .defineInRange("CosArmorGuiButton_Height", 10, 8, 40);
         CosArmorToggleButton_Hidden = BUILDER
                 .comment("Hide the toggle button")
                 .define("CosArmorToggleButton_Hidden", true);
