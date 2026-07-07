@@ -5,6 +5,7 @@ import java.util.function.BiConsumer;
 import com.skd.armorcosmetic.ArmorCosmetic;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
@@ -16,10 +17,13 @@ public class GuiCosArmorButton extends Button implements IShiftingWidget, ICreat
     private final boolean showIcon;
 
     public GuiCosArmorButton(int x, int y, int width, int height, Component message, boolean showIcon,
-            OnPress onPress, BiConsumer<GuiCosArmorButton, Boolean> onCreativeTabChanged) {
+            Component tooltip, OnPress onPress, BiConsumer<GuiCosArmorButton, Boolean> onCreativeTabChanged) {
         super(x, y, width, height, message, onPress, DEFAULT_NARRATION);
         this.showIcon = showIcon;
         this.onCreativeTabChanged = onCreativeTabChanged;
+        if (tooltip != null) {
+            setTooltip(Tooltip.create(tooltip));
+        }
     }
 
     @Override

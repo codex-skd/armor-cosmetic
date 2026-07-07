@@ -65,11 +65,12 @@ public enum GuiHandler {
                 int btnY = containerScreen.getGuiTop() + ModConfigs.CosArmorGuiButton_Top.get();
                 boolean isCosInventory = event.getScreen() instanceof GuiCosArmorInventory;
                 Component label = Component.translatable(isCosInventory ? "cos.gui.buttonnormal" : "cos.gui.buttoncos");
+                Component tooltip = Component.translatable(isCosInventory ? "cos.gui.tooltip.buttonnormal" : "cos.gui.tooltip.buttoncos");
 
                 event.addListener(new GuiCosArmorButton(btnX, btnY,
                         ModConfigs.CosArmorGuiButton_Width.get(),
                         ModConfigs.CosArmorGuiButton_Height.get(),
-                        label, true, btn -> {
+                        label, true, tooltip, btn -> {
                     if (isCosInventory) {
                         InventoryScreen newScreen = new InventoryScreen(containerScreen.getMinecraft().player);
                         InventoryScreenAccess.setXMouse(newScreen, ((GuiCosArmorInventory) containerScreen).oldMouseX);
@@ -102,11 +103,12 @@ public enum GuiHandler {
                 int btnX = ModConfigs.CosArmorCreativeGuiButton_Left.get();
                 int btnY = containerScreen.getGuiTop() + ModConfigs.CosArmorCreativeGuiButton_Top.get();
                 Component label = Component.translatable("cos.gui.buttoncos");
+                Component tooltip = Component.translatable("cos.gui.tooltip.buttoncos");
 
                 event.addListener(new GuiCosArmorButton(btnX, btnY,
                         ModConfigs.CosArmorCreativeGuiButton_Width.get(),
                         ModConfigs.CosArmorCreativeGuiButton_Height.get(),
-                        label, true, btn -> {
+                        label, true, tooltip, btn -> {
                     ClientPacketDistributor.sendToServer(new PayloadOpenCosArmorInventory());
                 }, (button, isInventoryOpen) -> {
                     button.visible = isInventoryOpen;
