@@ -59,6 +59,8 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
                             ModConfigs.SkinArmorToggle_Height.get(),
                             Component.empty(),
                             isSkin ? 1 : 0,
+                            Component.translatable("cos.gui.tooltip.skin.on"),
+                            Component.translatable("cos.gui.tooltip.skin.off"),
                         btn -> {
                             if (btn instanceof GuiCosArmorToggleButton toggleBtn) {
                                 toggleBtn.state = toggleBtn.state == 1 ? 0 : 1;

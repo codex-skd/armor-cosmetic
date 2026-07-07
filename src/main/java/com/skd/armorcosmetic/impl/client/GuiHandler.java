@@ -91,6 +91,8 @@ public enum GuiHandler {
                         ModConfigs.CosArmorToggleButton_Height.get(),
                         Component.empty(),
                         PlayerRenderHandler.Disabled ? 1 : 0,
+                        Component.translatable("cos.gui.tooltip.toggle.on"),
+                        Component.translatable("cos.gui.tooltip.toggle.off"),
                         btn -> {
                             PlayerRenderHandler.Disabled = !PlayerRenderHandler.Disabled;
                             ((GuiCosArmorToggleButton) btn).state = PlayerRenderHandler.Disabled ? 1 : 0;
