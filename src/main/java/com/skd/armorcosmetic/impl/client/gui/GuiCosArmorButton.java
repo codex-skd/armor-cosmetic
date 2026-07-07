@@ -1,6 +1,7 @@
 package com.skd.armorcosmetic.impl.client.gui;
 
 import com.skd.armorcosmetic.ArmorCosmetic;
+import java.util.function.BiConsumer;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.renderer.RenderPipelines;
