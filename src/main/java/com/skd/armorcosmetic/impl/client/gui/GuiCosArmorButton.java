@@ -1,7 +1,6 @@
 package com.skd.armorcosmetic.impl.client.gui;
 
-import java.util.function.BiConsumer;
-
+import com.skd.armorcosmetic.ArmorCosmetic;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.renderer.RenderPipelines;
@@ -10,7 +9,7 @@ import net.minecraft.resources.Identifier;
 
 public class GuiCosArmorButton extends Button implements IShiftingWidget, ICreativeInvWidget {
 
-    private static final Identifier IRON_CHESTPLATE = Identifier.withDefaultNamespace("textures/item/iron_chestplate.png");
+    private static final Identifier ICON_CHESTPLATE = ArmorCosmetic.id("textures/gui/icon_chestplate.png");
     private final BiConsumer<GuiCosArmorButton, Boolean> onCreativeTabChanged;
     private final boolean showIcon;
 
@@ -27,7 +26,7 @@ public class GuiCosArmorButton extends Button implements IShiftingWidget, ICreat
         graphics.fill(getX(), getY(), getX() + width, getY() + height, 0xFF000000);
         graphics.fill(getX() + 1, getY() + 1, getX() + width - 1, getY() + height - 1, bgColor);
         if (showIcon && width >= 16 && height >= 16) {
-            graphics.blit(RenderPipelines.GUI_TEXTURED, IRON_CHESTPLATE, getX() + (width - 16) / 2, getY() + (height - 16) / 2, 0, 0, 16, 16, 16, 16);
+            graphics.blit(RenderPipelines.GUI_TEXTURED, ICON_CHESTPLATE, getX() + (width - 16) / 2, getY() + (height - 16) / 2, 0, 0, 16, 16, 16, 16);
         } else if (width >= 14) {
             graphics.centeredText(
                     net.minecraft.client.Minecraft.getInstance().font,
