@@ -21,7 +21,6 @@ public class ModConfigs {
     public static ModConfigSpec.IntValue CosArmorCreativeGuiButton_Top;
     public static ModConfigSpec.IntValue CosArmorCreativeGuiButton_Width;
     public static ModConfigSpec.IntValue CosArmorCreativeGuiButton_Height;
-    public static ModConfigSpec.BooleanValue CosArmorKeepThroughDeath;
     public static ModConfigSpec.BooleanValue CosArmorDisableRecipeBook;
     public static ModConfigSpec.BooleanValue CosArmorDisableCosHatCommand;
     public static ModConfigSpec.IntValue SkinArmorToggle_Left;
@@ -81,6 +80,9 @@ public class ModConfigs {
         CosArmorDisableRecipeBook = BUILDER
                 .comment("Disable the recipe book button on the cosmetic armor inventory screen")
                 .define("CosArmorDisableRecipeBook", true);
+        CosArmorDisableCosHatCommand = BUILDER
+                .comment("Disable the /coshat command")
+                .define("CosArmorDisableCosHatCommand", true);
         SkinArmorToggle_Left = BUILDER
                 .comment("Left offset for skin armor toggle buttons (per slot)")
                 .defineInRange("SkinArmorToggle_Left", 98, -1000, 1000);
@@ -100,24 +102,7 @@ public class ModConfigs {
 
     public static final ModConfigSpec SPEC = BUILDER.build();
 
-    private static final ModConfigSpec.Builder COMMON_BUILDER = new ModConfigSpec.Builder();
-    public static final ModConfigSpec COMMON_SPEC;
-
-    static {
-        COMMON_BUILDER.comment("Server-side configuration (synced)")
-                .push("server");
-        CosArmorKeepThroughDeath = COMMON_BUILDER
-                .comment("Keep cosmetic armor through death")
-                .define("CosArmorKeepThroughDeath", false);
-        CosArmorDisableCosHatCommand = COMMON_BUILDER
-                .comment("Disable the /coshat command")
-                .define("CosArmorDisableCosHatCommand", true);
-        COMMON_BUILDER.pop();
-        COMMON_SPEC = COMMON_BUILDER.build();
-    }
-
     public static void registerConfigs(ModContainer container) {
         container.registerConfig(ModConfig.Type.CLIENT, SPEC);
-        container.registerConfig(ModConfig.Type.COMMON, COMMON_SPEC);
     }
 }

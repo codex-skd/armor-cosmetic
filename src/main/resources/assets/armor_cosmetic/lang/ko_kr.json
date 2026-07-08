@@ -33,7 +33,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Spacing": "개별 토글 가로 간격",
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "개별 토글 너비",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "개별 토글 높이",
-  "armor_cosmetic.configuration.CosArmorKeepThroughDeath": "사망 시 화장 갑옷 유지",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "화장 인벤토리에서 레시피 북 비활성화",
   "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "/coshat 명령어 비활성화"
 }

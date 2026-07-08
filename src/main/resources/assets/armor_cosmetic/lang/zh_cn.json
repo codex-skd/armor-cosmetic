@@ -33,7 +33,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Spacing": "单独切换按钮 水平间距",
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "单独切换按钮 宽度",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "单独切换按钮 高度",
-  "armor_cosmetic.configuration.CosArmorKeepThroughDeath": "死亡时保留装饰盔甲",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "禁用装饰背包的配方书",
   "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "禁用/coshat命令"
 }

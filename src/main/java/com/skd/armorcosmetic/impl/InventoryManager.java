@@ -89,20 +89,11 @@ public class InventoryManager {
                 .toPath().resolve(uuid.toString() + ".cosarmor").toFile();
     }
 
-    private static boolean getConfigBool(net.neoforged.neoforge.common.ModConfigSpec.BooleanValue config) {
-        try {
-            return config.get();
-        } catch (Exception e) {
-            return false;
-        }
-    }
-
     private void handlePlayerDrops(LivingDropsEvent event) {
         if (!(event.getEntity() instanceof Player)) return;
         if (!event.getEntity().isEffectiveAi()) return;
         if (event.getEntity().level() instanceof net.minecraft.server.level.ServerLevel serverLevel
                 && serverLevel.getGameRules().get(GameRules.KEEP_INVENTORY)) return;
-        if (getConfigBool(ModConfigs.CosArmorKeepThroughDeath)) return;
 
         InventoryCosArmor inventory = getCosArmorInventory(event.getEntity().getUUID());
         CosArmorDeathDrops deathEvent = new CosArmorDeathDrops((Player) event.getEntity(), inventory);
@@ -182,7 +173,13 @@ public class InventoryManager {
                         .then(Commands.argument("targets", EntityArgument.players())
                                 .executes(ctx -> clearCosArmorForTargets(ctx))));
 
-        if (!getConfigBool(ModConfigs.CosArmorDisableCosHatCommand)) {
+        boolean disableCosHat;
+        try {
+            disableCosHat = ModConfigs.CosArmorDisableCosHatCommand.get();
+        } catch (Exception e) {
+            disableCosHat = true;
+        }
+        if (!disableCosHat) {
             event.getDispatcher().register(
                     Commands.literal("coshat")
                             .requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))

@@ -33,7 +33,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Spacing": "Espaçamento horizontal dos toggles",
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Largura dos toggles individuais",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Altura dos toggles individuais",
-  "armor_cosmetic.configuration.CosArmorKeepThroughDeath": "Manter armadura cosmética ao morrer",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Desativar livro de receitas no inventário cosmético",
   "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Desativar comando /coshat"
 }
