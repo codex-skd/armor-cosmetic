@@ -52,15 +52,17 @@ public enum PlayerRenderHandler {
                 .getCosArmorInventoryClient(player.getUUID());
 
         for (int i = 0; i < SLOTS.length; i++) {
-            if (cosInventory.isSkinArmor(i)) {
-                continue;
-            }
-            ItemStack stack = cosInventory.getStackInSlot(i).copy();
-            if (!stack.isEmpty()) {
-                PlayerInventoryHelper.getPlayerEquipmentSlotIndex(SLOTS[i]).ifPresent(slotIndex -> {
-                    playerInventory.setItem(slotIndex, stack);
-                });
-            }
+            final int slot = i;
+            PlayerInventoryHelper.getPlayerEquipmentSlotIndex(SLOTS[slot]).ifPresent(slotIndex -> {
+                if (cosInventory.isSkinArmor(slot)) {
+                    playerInventory.setItem(slotIndex, ItemStack.EMPTY);
+                } else {
+                    ItemStack stack = cosInventory.getStackInSlot(slot).copy();
+                    if (!stack.isEmpty()) {
+                        playerInventory.setItem(slotIndex, stack);
+                    }
+                }
+            });
         }
     }
 

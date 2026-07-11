@@ -1,9 +1,9 @@
 {
   "cos.key.opencosarmorinventory": "화장 갑옷 인벤토리 열기",
   "cos.gui.buttoncos": "화장 갑옷",
-  "cos.gui.buttonnormal": "일반",
+  "cos.gui.buttonnormal": "Close",
   "cos.gui.tooltip.buttoncos": "화장 갑옷 인벤토리 열기",
-  "cos.gui.tooltip.buttonnormal": "일반 인벤토리로 돌아가기",
+  "cos.gui.tooltip.buttonnormal": "Close Cosmetic Inventory",
   "cos.gui.tooltip.toggle.on": "화장 갑옷 표시: 켜짐 (클릭하여 끄기)",
   "cos.gui.tooltip.toggle.off": "화장 갑옷 표시: 꺼짐 (클릭하여 켜기)",
   "cos.gui.tooltip.skin.on": "스킨 표시 중 (클릭하여 갑옷 표시)",

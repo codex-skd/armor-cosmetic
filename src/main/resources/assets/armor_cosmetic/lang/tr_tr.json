@@ -1,9 +1,9 @@
 {
   "cos.key.opencosarmorinventory": "Kozmetik Zırh Envanterini Aç",
   "cos.gui.buttoncos": "Kozmetik Zırh",
-  "cos.gui.buttonnormal": "Normal",
+  "cos.gui.buttonnormal": "Close",
   "cos.gui.tooltip.buttoncos": "Kozmetik Zırh Envanterini Aç",
-  "cos.gui.tooltip.buttonnormal": "Normal Envantere Dön",
+  "cos.gui.tooltip.buttonnormal": "Close Cosmetic Inventory",
   "cos.gui.tooltip.toggle.on": "Kozmetik zırh: AÇIK (kapatmak için tıkla)",
   "cos.gui.tooltip.toggle.off": "Kozmetik zırh: KAPALI (açmak için tıkla)",
   "cos.gui.tooltip.skin.on": "Görünüm gösteriliyor (zırh için tıkla)",

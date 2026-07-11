@@ -1,9 +1,9 @@
 {
   "cos.key.opencosarmorinventory": "Open Cosmetic Armor Inventory",
   "cos.gui.buttoncos": "Cosmetic Armor",
-  "cos.gui.buttonnormal": "Normal",
+  "cos.gui.buttonnormal": "Close",
   "cos.gui.tooltip.buttoncos": "Open Cosmetic Armor Inventory",
-  "cos.gui.tooltip.buttonnormal": "Return to Normal Inventory",
+  "cos.gui.tooltip.buttonnormal": "Close Cosmetic Inventory",
   "cos.gui.tooltip.toggle.on": "Cosmetic armor rendering: ON (click to disable)",
   "cos.gui.tooltip.toggle.off": "Cosmetic armor rendering: OFF (click to enable)",
   "cos.gui.tooltip.skin.on": "Showing skin (click to show armor)",

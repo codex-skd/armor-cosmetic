@@ -1,9 +1,9 @@
 {
   "cos.key.opencosarmorinventory": "Открыть инвентарь косметической брони",
   "cos.gui.buttoncos": "Косметическая броня",
-  "cos.gui.buttonnormal": "Обычная",
+  "cos.gui.buttonnormal": "Close",
   "cos.gui.tooltip.buttoncos": "Открыть инвентарь косметической брони",
-  "cos.gui.tooltip.buttonnormal": "Вернуться в обычный инвентарь",
+  "cos.gui.tooltip.buttonnormal": "Close Cosmetic Inventory",
   "cos.gui.tooltip.toggle.on": "Косметическая броня: ВКЛ (нажмите для отключения)",
   "cos.gui.tooltip.toggle.off": "Косметическая броня: ВЫКЛ (нажмите для включения)",
   "cos.gui.tooltip.skin.on": "Показывать скин (нажмите для брони)",

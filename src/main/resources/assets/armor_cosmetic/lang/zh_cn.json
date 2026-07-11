@@ -1,9 +1,9 @@
 {
   "cos.key.opencosarmorinventory": "打开装饰盔甲背包",
   "cos.gui.buttoncos": "装饰盔甲",
-  "cos.gui.buttonnormal": "普通",
+  "cos.gui.buttonnormal": "Close",
   "cos.gui.tooltip.buttoncos": "打开装饰盔甲背包",
-  "cos.gui.tooltip.buttonnormal": "返回普通背包",
+  "cos.gui.tooltip.buttonnormal": "Close Cosmetic Inventory",
   "cos.gui.tooltip.toggle.on": "装饰盔甲渲染: 开 (点击关闭)",
   "cos.gui.tooltip.toggle.off": "装饰盔甲渲染: 关 (点击开启)",
   "cos.gui.tooltip.skin.on": "显示皮肤 (点击显示盔甲)",

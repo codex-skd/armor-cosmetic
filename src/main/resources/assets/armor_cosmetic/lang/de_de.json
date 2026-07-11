@@ -1,9 +1,9 @@
 {
   "cos.key.opencosarmorinventory": "Kosmetik-Rüstungsinventar öffnen",
   "cos.gui.buttoncos": "Kosmetik-Rüstung",
-  "cos.gui.buttonnormal": "Normal",
+  "cos.gui.buttonnormal": "Close",
   "cos.gui.tooltip.buttoncos": "Kosmetik-Rüstungsinventar öffnen",
-  "cos.gui.tooltip.buttonnormal": "Zurück zum normalen Inventar",
+  "cos.gui.tooltip.buttonnormal": "Close Cosmetic Inventory",
   "cos.gui.tooltip.toggle.on": "Kosmetik-Rüstung: AN (klicken zum Deaktivieren)",
   "cos.gui.tooltip.toggle.off": "Kosmetik-Rüstung: AUS (klicken zum Aktivieren)",
   "cos.gui.tooltip.skin.on": "Zeigt Haut (klicken für Rüstung)",

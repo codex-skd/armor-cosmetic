@@ -1,9 +1,9 @@
 {
   "cos.key.opencosarmorinventory": "コスメ防具インベントリを開く",
   "cos.gui.buttoncos": "コスメ防具",
-  "cos.gui.buttonnormal": "通常",
+  "cos.gui.buttonnormal": "Close",
   "cos.gui.tooltip.buttoncos": "コスメ防具インベントリを開く",
-  "cos.gui.tooltip.buttonnormal": "通常インベントリに戻る",
+  "cos.gui.tooltip.buttonnormal": "Close Cosmetic Inventory",
   "cos.gui.tooltip.toggle.on": "コスメ防具表示: オン (クリックで無効)",
   "cos.gui.tooltip.toggle.off": "コスメ防具表示: オフ (クリックで有効)",
   "cos.gui.tooltip.skin.on": "スキン表示中 (クリックで防具表示)",

@@ -1,9 +1,9 @@
 {
   "cos.key.opencosarmorinventory": "Otevřít inventář kosmetické zbroje",
   "cos.gui.buttoncos": "Kosmetická zbroj",
-  "cos.gui.buttonnormal": "Normální",
+  "cos.gui.buttonnormal": "Close",
   "cos.gui.tooltip.buttoncos": "Otevřít inventář kosmetické zbroje",
-  "cos.gui.tooltip.buttonnormal": "Zpět na normální inventář",
+  "cos.gui.tooltip.buttonnormal": "Close Cosmetic Inventory",
   "cos.gui.tooltip.toggle.on": "Kosmetická zbroj: ZAPNUTO (klikni pro vypnutí)",
   "cos.gui.tooltip.toggle.off": "Kosmetická zbroj: VYPNUTO (klikni pro zapnutí)",
   "cos.gui.tooltip.skin.on": "Zobrazuje skin (klikni pro zbroj)",

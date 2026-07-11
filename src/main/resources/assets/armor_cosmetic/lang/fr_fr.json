@@ -1,9 +1,9 @@
 {
   "cos.key.opencosarmorinventory": "Ouvrir l'inventaire d'armure cosmétique",
   "cos.gui.buttoncos": "Armure cosmétique",
-  "cos.gui.buttonnormal": "Normal",
+  "cos.gui.buttonnormal": "Close",
   "cos.gui.tooltip.buttoncos": "Ouvrir l'inventaire d'armure cosmétique",
-  "cos.gui.tooltip.buttonnormal": "Retour à l'inventaire normal",
+  "cos.gui.tooltip.buttonnormal": "Close Cosmetic Inventory",
   "cos.gui.tooltip.toggle.on": "Rendu cosmétique : ON (clic pour désactiver)",
   "cos.gui.tooltip.toggle.off": "Rendu cosmétique : OFF (clic pour activer)",
   "cos.gui.tooltip.skin.on": "Affiche la peau (clic pour armure)",

@@ -72,11 +72,8 @@ public enum GuiHandler {
                         ModConfigs.CosArmorGuiButton_Height.get(),
                         label, true, tooltip, btn -> {
                     if (isCosInventory) {
-                        InventoryScreen newScreen = new InventoryScreen(containerScreen.getMinecraft().player);
-                        InventoryScreenAccess.setXMouse(newScreen, ((GuiCosArmorInventory) containerScreen).oldMouseX);
-                        InventoryScreenAccess.setYMouse(newScreen, ((GuiCosArmorInventory) containerScreen).oldMouseY);
-                        containerScreen.getMinecraft().setScreen(newScreen);
                         ClientPacketDistributor.sendToServer(new PayloadOpenNormalInventory());
+                        containerScreen.getMinecraft().setScreen(new InventoryScreen(containerScreen.getMinecraft().player));
                     } else {
                         ClientPacketDistributor.sendToServer(new PayloadOpenCosArmorInventory());
                     }

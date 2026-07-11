@@ -18,7 +18,6 @@ import com.skd.armorcosmetic.impl.network.payload.PayloadSyncHiddenFlags;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.arguments.EntityArgument;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtIo;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
@@ -90,39 +89,47 @@ public class InventoryManager {
     }
 
     private void handlePlayerDrops(LivingDropsEvent event) {
-        if (!(event.getEntity() instanceof Player)) return;
-        if (!event.getEntity().isEffectiveAi()) return;
-        if (event.getEntity().level() instanceof net.minecraft.server.level.ServerLevel serverLevel
-                && serverLevel.getGameRules().get(GameRules.KEEP_INVENTORY)) return;
+        try {
+            if (!(event.getEntity() instanceof Player player)) return;
+            if (!player.isEffectiveAi()) return;
+            if (player.level() instanceof net.minecraft.server.level.ServerLevel serverLevel
+                    && serverLevel.getGameRules().get(GameRules.KEEP_INVENTORY)) return;
 
-        InventoryCosArmor inventory = getCosArmorInventory(event.getEntity().getUUID());
-        CosArmorDeathDrops deathEvent = new CosArmorDeathDrops((Player) event.getEntity(), inventory);
-        NeoForge.EVENT_BUS.post(deathEvent);
-        if (deathEvent.isCanceled()) return;
-
-        for (int i = 0; i < inventory.getSlots(); i++) {
-            ItemStack stack = inventory.getStackInSlot(i).copy();
-            if (stack.isEmpty()) continue;
-
-            float f1 = RANDOM.nextFloat() * 0.75F + 0.125F;
-            float f2 = RANDOM.nextFloat() * 0.75F;
-            float f3 = RANDOM.nextFloat() * 0.75F + 0.125F;
-
-            while (!stack.isEmpty()) {
-                ItemEntity itemEntity = new ItemEntity(
-                        event.getEntity().level(),
-                        event.getEntity().getX() + f1,
-                        event.getEntity().getY() + f2,
-                        event.getEntity().getZ() + f3,
-                        stack.split(RANDOM.nextInt(21) + 10));
-                itemEntity.setDeltaMovement(
-                        RANDOM.nextGaussian() * 0.05,
-                        RANDOM.nextGaussian() * 0.05 + 0.2,
-                        RANDOM.nextGaussian() * 0.05);
-                event.getDrops().add(itemEntity);
+            if (player instanceof ServerPlayer serverPlayer && serverPlayer.containerMenu instanceof ContainerCosArmor) {
+                serverPlayer.doCloseContainer();
             }
 
-            inventory.setStackInSlot(i, ItemStack.EMPTY);
+            InventoryCosArmor inventory = getCosArmorInventory(player.getUUID());
+            CosArmorDeathDrops deathEvent = new CosArmorDeathDrops(player, inventory);
+            NeoForge.EVENT_BUS.post(deathEvent);
+            if (deathEvent.isCanceled()) return;
+
+            for (int i = 0; i < inventory.getSlots(); i++) {
+                ItemStack stack = inventory.getStackInSlot(i).copy();
+                if (stack.isEmpty()) continue;
+
+                float f1 = RANDOM.nextFloat() * 0.75F + 0.125F;
+                float f2 = RANDOM.nextFloat() * 0.75F;
+                float f3 = RANDOM.nextFloat() * 0.75F + 0.125F;
+
+                while (!stack.isEmpty()) {
+                    ItemEntity itemEntity = new ItemEntity(
+                            player.level(),
+                            player.getX() + f1,
+                            player.getY() + f2,
+                            player.getZ() + f3,
+                            stack.split(RANDOM.nextInt(21) + 10));
+                    itemEntity.setDeltaMovement(
+                            RANDOM.nextGaussian() * 0.05,
+                            RANDOM.nextGaussian() * 0.05 + 0.2,
+                            RANDOM.nextGaussian() * 0.05);
+                    event.getDrops().add(itemEntity);
+                }
+
+                inventory.setStackInSlot(i, ItemStack.EMPTY);
+            }
+        } catch (Exception e) {
+            ModObjects.logger.error("Error handling CosmeticArmor player drops", e);
         }
     }
 
@@ -298,7 +305,7 @@ public class InventoryManager {
         NeoForge.EVENT_BUS.addListener(this::handlePlayerLoggedIn);
         NeoForge.EVENT_BUS.addListener(this::handlePlayerLoggedOut);
         NeoForge.EVENT_BUS.addListener(this::handleSaveToFile);
-        NeoForge.EVENT_BUS.addListener(this::handlePlayerDrops);
+        NeoForge.EVENT_BUS.addListener(net.neoforged.bus.api.EventPriority.HIGH, this::handlePlayerDrops);
         NeoForge.EVENT_BUS.addListener(this::handleRegisterCommands);
         NeoForge.EVENT_BUS.addListener(this::handleServerStopping);
     }
