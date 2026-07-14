@@ -2,37 +2,37 @@
 
 ## [1.0.18] - 2026-07-11
 
-### Fix
-- Per-slot toggles (S/A) now hide the **real armor** instead of the cosmetic armor.
-  - Toggle ON (green/S) = hides real armor → shows skin (or cosmetic if equipped).
-  - Toggle OFF (gray/A) = normal behavior (real armor visible, cosmetic on top).
-  - Now you can wear functional armor underneath while displaying only your skin or cosmetic armor.
+### Arreglos
+- Los toggles individuales (S/A) ahora ocultan la **armadura real** en lugar de la cosmética.
+  - Toggle ON (verde/S) = oculta la armadura real → se ve la piel (o cosmética si equipada).
+  - Toggle OFF (gris/A) = comportamiento normal (armadura real visible, cosmética encima).
+  - Ahora puedes llevar armadura funcional puesta mientras muestras solo tu skin o armadura cosmética.
 
 ## [1.0.17] - 2026-07-10
 
-### Fixes
-- Updated all 11 language files: "Back to Normal" button now reads "Close" / "Cerrar".
-- Tooltip updated: "Close Cosmetic Inventory" / "Cerrar inventario cosmético".
+### Arreglos
+- Actualizados los 11 archivos de idioma: el botón "Back to Normal" ahora pone "Close" / "Cerrar".
+- Tooltip actualizado: "Close Cosmetic Inventory" / "Cerrar inventario cosmético".
 
 ## [1.0.16] - 2026-07-10
 
-### Fixes
-- Added `META-INF/mods.toml` alongside `neoforge.mods.toml` so CurseForge detects the mod as NeoForge.
-- Fixed `pack.mcmeta` (had unexpanded template variable).
-- Updated English and Spanish translations for button/tooltip.
+### Arreglos
+- Añadido `META-INF/mods.toml` junto a `neoforge.mods.toml` para que CurseForge detecte el mod como NeoForge.
+- Corregido `pack.mcmeta` (tenía una variable de template sin expandir).
+- Actualizadas las traducciones al inglés y español del botón/tooltip.
 
 ## [1.0.15] - 2026-07-10
 
-### Fixes
-- **Inventory lock**: Closing the cosmetic inventory now properly returns to normal inventory control.
-- **Real armor lost on death**: Fixed. Real armor now drops correctly instead of being discarded.
-- **Corail Tombstone compatibility**: Cosmetic armor items are now captured by tombstone on death.
-- **Crash (NullPointerException) on death**: Container is properly closed via `doCloseContainer()`.
+### Arreglos
+- **Bloqueo del inventario**: al cerrar el inventario cosmético ahora vuelve correctamente al control normal del inventario.
+- **Armadura real perdida al morir**: corregido. La armadura real ahora se suelta correctamente en lugar de desaparecer.
+- **Compatibilidad con Corail Tombstone**: los objetos cosméticos ahora son capturados por la tumba al morir.
+- **Crash (NullPointerException) al morir**: el contenedor se cierra correctamente mediante `doCloseContainer()`.
 
 ## [1.0.11] - 2026-07-09
 
-### Changed
-- Removed `keepThroughDeath` config option. Cosmetic armor always drops on death.
+### Cambios
+- Eliminada la opción de configuración `keepThroughDeath`. La armadura cosmética siempre se suelta al morir.
 
 ## [1.0.10] - 2026-07-09
 
