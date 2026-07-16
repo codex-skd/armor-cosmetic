@@ -23,6 +23,7 @@
 ├── docs/
 │   ├── WORKFLOW.md                    # Este documento
 │   └── curseforge/                    # Documentación para publicación en CurseForge
+│       ├── project_vars.md             # Variables del proyecto (ID, token, versiones)
 │       ├── project_description.md      # Descripción del proyecto
 │       └── versions/                   # Release notes por versión
 │           ├── 0.0.0-beta.1.md
@@ -35,40 +36,11 @@
 
 | Archivo | Propósito |
 |---------|-----------|
-| `docs/curseforge/README.md` | Documentación de publicación: project ID, API token, endpoints, flujo completo |
+| `docs/curseforge/project_vars.md` | Variables específicas del proyecto (project ID, token, versiones) |
 | `docs/curseforge/project_description.md` | Descripción completa del proyecto (qué hace, características, requisitos) |
 | `docs/curseforge/versions/<version>.md` | Release notes de cada versión que se sube a CurseForge. Solo se agrega cuando se va a publicar esa versión |
 
-### Variables de proyecto
-
-Cada proyecto tiene variables específicas que se documentan en `docs/curseforge/README.md`:
-
-| Variable | Descripción | Ejemplo |
-|----------|-------------|---------|
-| `curseforge_project_id` | ID numérico del proyecto en CurseForge | `1600093` |
-| `curseforge_upload_token` | Token de API para subir archivos (compartido entre proyectos) | — |
-| `mod_id` | Identificador único del mod | `armor_cosmetic` |
-| `minecraft_version` | Versión de Minecraft | `26.1.2` |
-| `framework` | Framework del mod | `neoforge` |
-| `java_version` | Versión de Java necesaria | `25` |
-| `environment` | Entorno compatible (client + server) | `Client`, `Server` |
-
-### Publicación en CurseForge
-
-**Regla importante**: antes de subir cualquier versión a CurseForge, **preguntar siempre al usuario** si desea subirla. No subir automáticamente.
-
-#### Parámetros del upload
-
-Al subir un JAR, se deben enviar estos metadatos:
-
-| Parámetro | Valor | Notas |
-|-----------|-------|-------|
-| `displayName` | `Armor Cosmetic (1.0.19)` | Nombre del mod + versión entre paréntesis, NO el nombre del archivo |
-| `changelog` | Contenido de `docs/curseforge/versions/<version>.md` | En formato Markdown |
-| `changelogType` | `markdown` | Obligatorio para que se vea bien formateado |
-| `releaseType` | `release` o `beta` | Según el tipo de versión |
-| `gameVersionNames` | `["Client", "Server", "26.1.2", "NeoForge"]` | Minecraft + entorno + modloader |
-| `java_version` | `25` | Versión de Java requerida |
+Las variables de cada proyecto (project ID, API token, versiones de Minecraft/NeoForge/Java) se documentan en `docs/curseforge/project_vars.md`. No duplicar aquí.
 
 ### Formato de descripciones CurseForge
 

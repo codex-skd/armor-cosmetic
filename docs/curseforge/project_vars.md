@@ -1,22 +1,30 @@
-# CurseForge — Publicación
+# CurseForge — Variables del proyecto
 
-## Variables del proyecto
+## Proyecto
 
-| Variable | Valor | Ámbito |
-|----------|-------|--------|
-| `curseforge_project_id` | `1600093` | Por proyecto |
-| `curseforge_upload_token` | (token personal) | Por cuenta (compartido entre proyectos) |
-| `mod_id` | `armor_cosmetic` | Por proyecto |
-| `minecraft_version` | `26.1.2` | Por proyecto |
-| `framework` | `neoforge` | Por proyecto |
-| `java_version` | `25` | Por proyecto |
-| `environment` | `Client`, `Server` | Por proyecto |
+| Variable | Valor |
+|----------|-------|
+| `curseforge_project_id` | `1600093` |
+| `mod_id` | `armor_cosmetic` |
+
+## Cuenta (compartido entre proyectos)
+
+| Variable | Valor |
+|----------|-------|
+| `curseforge_upload_token` | `ee776b0a-ee95-4850-b554-06be02a8657f` |
+
+## Versión actual
+
+| Variable | Valor |
+|----------|-------|
+| `minecraft_version` | `26.1.2` |
+| `framework` | `neoforge` |
+| `java_version` | `25` |
+| `environment` | `Client`, `Server` |
 
 ## API Token
 
-El token se genera en https://authors-old.curseforge.com/account/api-tokens
-
-**Una sola cuenta, un solo token** — el mismo token sirve para todos los proyectos del autor.
+Generar/regenerar en https://authors-old.curseforge.com/account/api-tokens
 
 Autenticación: cabecera `X-Api-Token` o query param `token`.
 
@@ -37,7 +45,7 @@ POST https://minecraft.curseforge.com/api/projects/{curseforge_project_id}/uploa
 ```
 
 Multipart form-data con campos:
-- `metadata` — JSON con changelog, gameVersions, releaseType...
+- `metadata` — JSON con displayName, changelog, gameVersionNames, releaseType...
 - `file` — el JAR
 
 ## Actualizar metadatos de archivo
@@ -60,6 +68,7 @@ Las release notes se suben como `changelog` en el campo `metadata` al hacer uplo
 2. `./gradlew clean build`
 3. Crear release notes en `docs/curseforge/versions/<version>.md`
 4. Actualizar `CHANGELOG.md`
-5. Commit + tag (`<mc-version>-<framework>-<version>`)
-6. Subir JAR a CurseForge vía API
-7. Actualizar descripción en web si cambia
+5. Commit + tag (`<mc-version>-neoforge-<version>`)
+6. Preguntar al usuario si desea subir a CurseForge
+7. Subir JAR a CurseForge vía API
+8. Actualizar descripción en web si cambia
