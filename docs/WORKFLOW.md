@@ -38,6 +38,46 @@
 | `docs/curseforge/project_description.md` | Descripción completa del proyecto (qué hace, características, requisitos) |
 | `docs/curseforge/versions/<version>.md` | Release notes de cada versión que se sube a CurseForge. Solo se agrega cuando se va a publicar esa versión |
 
+### Formato de descripciones CurseForge
+
+CurseForge admite **Markdown** en las descripciones y release notes. Usamos Markdown porque:
+
+- Se versiona junto al código en el repositorio
+- Es portátil (funciona en GitHub, GitLab, etc.)
+- Permite estructurar el contenido con encabezados, listas, tablas, código, negritas, etc.
+
+Para que las descripciones sean visualmente atractivas, usamos estos elementos Markdown:
+
+| Elemento | Cómo usarlo |
+|----------|-------------|
+| **Encabezados** | `## Título`, `### Subtítulo` — estructura jerárquica |
+| **Negrita** | `**texto**` — resaltar características clave |
+| **Listas** | `- item` — enumerar funcionalidades |
+| **Iconos/emoji** | `✅`, `🎨`, `🛠️`, `⚡`, `🔧` — añadir impacto visual |
+| **Código** | `` `comando` `` — resaltar comandos o archivos |
+| **Separadores** | `---` — dividir secciones visualmente |
+| **Citas** | `> texto` — destacar notas importantes |
+| **Enlaces** | `[texto](url)` — referencias externas |
+
+Ejemplo de estructura para release notes:
+
+```markdown
+## v1.0.0 — Título descriptivo
+
+### 🐛 Correcciones
+- **Problema grave**: descripción de la corrección.
+- **Otro arreglo**: descripción.
+
+### ✨ Novedades
+- **Nueva funcionalidad**: descripción.
+
+### 🛠️ Cambios técnicos
+- `clase/método` — descripción del cambio interno.
+
+### 📝 Notas
+> Nota importante para jugadores o administradores de servidores.
+```
+
 ---
 
 ## Ramas
@@ -89,9 +129,7 @@ El JAR generado sigue el formato `<mod_id>-<minecraft_version>-<framework>-<mod_
 
 | Ejemplo | Significado |
 |---------|-------------|
-| `teleport_animation-1.21.1-neoforge-0.0.0-beta.2.jar` | NeoForge 1.21.1, beta 2 |
-| `teleport_animation-1.21.1-neoforge-1.0.0.jar` | NeoForge 1.21.1, release 1.0.0 |
-| `teleport_animation-26.1.2-neoforge-0.0.0-beta.14.jar` | NeoForge 26.1.2, beta 14 |
+| `player_animation_core-26.1.2-neoforge-0.0.0-beta.21.jar` | NeoForge 26.1.2, beta 21 |
 
 El framework puede ser `neoforge`, `forge` o `fabric` según corresponda. Se configura en `build.gradle`:
 
@@ -154,7 +192,7 @@ Cada vez que se sube una versión a CurseForge se debe crear un tag en GitLab.
 
 | Estado | Formato | Ejemplo |
 |--------|---------|---------|
-| Beta | `<mc-version>-neoforge-beta.X` | `26.1.2-neoforge-beta.15` |
+| Beta | `<mc-version>-neoforge-beta.X` | `26.1.2-neoforge-beta.21` |
 | Release | `<mc-version>-neoforge-X.Y.Z` | `26.1.2-neoforge-1.0.0` |
 
 El prefijo `<mc-version>-neoforge` se adapta según la versión de Minecraft y el framework de la rama actual.
@@ -163,8 +201,8 @@ El prefijo `<mc-version>-neoforge` se adapta según la versión de Minecraft y e
 
 ```bash
 # Beta
-git tag -a 26.1.2-neoforge-beta.15 -m "v0.0.0-beta.15: Updated WORKFLOW.md"
-git push origin 26.1.2-neoforge-beta.15
+git tag -a 26.1.2-neoforge-beta.21 -m "v0.0.0-beta.21: Update WORKFLOW.md"
+git push origin 26.1.2-neoforge-beta.21
 
 # Release estable
 git tag -a 26.1.2-neoforge-1.0.0 -m "v1.0.0: First stable release"
@@ -214,8 +252,8 @@ git add -A
 git commit -m "chore: bump version to 0.0.0-beta.3"
 
 # 6. Tag para CurseForge
-git tag -a curseforge-beta.3 -m "v0.0.0-beta.3: Bugfix release"
-git push origin curseforge-beta.3
+git tag -a 26.1.2-neoforge-beta.3 -m "v0.0.0-beta.3: Bugfix release"
+git push origin 26.1.2-neoforge-beta.3
 
 # 7. Subir JAR a CurseForge manualmente
 #    El JAR está en build/libs/<mod_id>-<minecraft_version>-<framework>-<version>.jar
@@ -226,8 +264,8 @@ git push origin curseforge-beta.3
 ```bash
 # gradle.properties → mod_version=1.0.0
 git commit -m "chore: bump version to 1.0.0"
-git tag -a curseforge-1.0.0 -m "v1.0.0: First stable release"
-git push origin curseforge-1.0.0
+git tag -a 26.1.2-neoforge-1.0.0 -m "v1.0.0: First stable release"
+git push origin 26.1.2-neoforge-1.0.0
 ```
 
 ---
@@ -244,8 +282,8 @@ git push origin curseforge-1.0.0
 
 | Ámbito | Idioma |
 |--------|--------|
-| Código fuente, logs, nombres técnicos | **Inglés** (en-US) — estándar de programación |
-| Commits, documentación interna, GitLab (README, CHANGELOG) | **Castellano** (es-ES) |
+| Código fuente, logs, nombres técnicos, commits | **Inglés** (en-US) — estándar de programación |
+| Documentación interna, GitLab (README, CHANGELOG) | **Castellano** (es-ES) |
 | CurseForge (descripción del proyecto, release notes) | **Inglés** (en-US) — plataforma global |
 
-El código y los logs siguen el estándar internacional de programación en inglés. La documentación interna y el repositorio se mantienen en castellano por ser el idioma del equipo. CurseForge se publica en inglés para llegar a la mayor audiencia posible.
+El código, los logs y los commits siguen el estándar internacional de programación en inglés. La documentación interna y el repositorio se mantienen en castellano por ser el idioma del equipo. CurseForge se publica en inglés para llegar a la mayor audiencia posible.
