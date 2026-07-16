@@ -4,7 +4,7 @@
 
 | Variable | Valor |
 |----------|-------|
-| `curseforge_project_id` | `1608291` |
+| `curseforge_project_id` | `1602505` |
 | `mod_id` | `armor_cosmetic` |
 | `display_name` | `Armor Cosmetic` (separado, no junto) |
 
@@ -105,7 +105,7 @@ body += jar_data + b"\r\n"
 body += f"--{boundary}--\r\n".encode()
 
 req = urllib.request.Request(
-    f"https://minecraft.curseforge.com/api/projects/1608291/upload-file",
+    f"https://minecraft.curseforge.com/api/projects/1602505/upload-file",
     data=body,
     headers={
         "X-Api-Token": "ee776b0a-ee95-4850-b554-06be02a8657f",
@@ -121,14 +121,14 @@ print(resp.read().decode())
 ## Verificar con GET
 
 ```bash
-curl -s "https://api.curseforge.com/v1/mods/1608291/files/<FILE_ID>" \
+curl -s "https://api.curseforge.com/v1/mods/1602505/files/<FILE_ID>" \
   -H "x-api-key: $2a$10$yGwryAfmRkS9ZJsJUDf5YOKZpOIsmHB8Fji2D8JVCKBSZEKYlwmaO"
 ```
 
 ## Changelog
 
 ```bash
-curl -s "https://api.curseforge.com/v1/mods/1608291/files/<FILE_ID>/changelog" \
+curl -s "https://api.curseforge.com/v1/mods/1602505/files/<FILE_ID>/changelog" \
   -H "x-api-key: $2a$10$yGwryAfmRkS9ZJsJUDf5YOKZpOIsmHB8Fji2D8JVCKBSZEKYlwmaO"
 ```
 
