@@ -1,5 +1,13 @@
 # ArmorCosmetic - Changelog
 
+## [1.0.19] - 2026-07-14
+
+### Cambios
+- Reestructurada rama `main` (solo commit inicial) → desarrollo en `minecraft/<mc-version>/neoforge-<neo-version>/production`.
+- Formato de tags actualizado a `<mc-version>-neoforge-<version>` (ej: `26.1.2-neoforge-1.0.18`).
+- JAR renombrado a `<mod_id>-<minecraft_version>-<framework>-<mod_version>.jar`.
+- WORKFLOW.md actualizado con ramas, convención de JAR y política de idiomas.
+
 ## [1.0.18] - 2026-07-11
 
 ### Arreglos
