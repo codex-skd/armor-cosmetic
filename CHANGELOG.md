@@ -1,5 +1,10 @@
 # ArmorCosmetic - Changelog
 
+## [1.0.21] - 2026-07-16
+
+### Arreglos
+- Reintento de subida a CurseForge con changelog en markdown correctamente formateado.
+
 ## [1.0.20] - 2026-07-16
 
 ### Arreglos
