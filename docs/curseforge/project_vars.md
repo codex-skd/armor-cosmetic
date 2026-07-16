@@ -4,7 +4,7 @@
 
 | Variable | Valor |
 |----------|-------|
-| `curseforge_project_id` | `1602505` |
+| `curseforge_project_id` | `1600093` |
 | `mod_id` | `armor_cosmetic` |
 | `display_name` | `Armor Cosmetic` (separado, no junto) |
 
