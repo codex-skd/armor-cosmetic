@@ -1,5 +1,11 @@
 # ArmorCosmetic - Changelog
 
+## [1.0.20] - 2026-07-16
+
+### Arreglos
+- **Armadura real perdida al morir con Tombstone**: ahora la armadura real se añade a `LivingDropsEvent` junto a la cosmética. Tombstone captura ambas en la tumba.
+- Al morir, la armadura real se vacía del jugador y se mete en `event.getDrops()`, garantizando que Tombstone la capture.
+
 ## [1.0.19] - 2026-07-14
 
 ### Cambios
