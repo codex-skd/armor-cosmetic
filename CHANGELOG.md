@@ -1,4 +1,4 @@
-# ArmorCosmetic - Changelog
+# Armor Cosmetic - Changelog
 
 ## [1.0.21] - 2026-07-16
 
