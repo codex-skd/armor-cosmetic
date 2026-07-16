@@ -70,7 +70,7 @@
 <h2>🙏 Credits</h2>
 
 <p>Original mod: <strong>CosmeticArmorReworked</strong> by <em>zlainsama</em> and <em>dmillerw</em>.<br>
-Ported to NeoForge by <strong>skd</strong>.</p>
+Ported to NeoForge by <strong>Stalking Dragons</strong>.</p>
 
 <br>
 <br>

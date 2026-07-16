@@ -84,7 +84,7 @@
 
 ### First Stable Release
 - Initial release of ArmorCosmetic for NeoForge 26.1.2.76 (Minecraft 26.1.2)
-- Replica of CosmeticArmorReworked by zlainsama, ported by skd
+- Replica of CosmeticArmorReworked by zlainsama, ported by Stalking Dragons
 
 ### Features
 - Dual armor system: wear one set for stats, another for display
@@ -107,5 +107,5 @@
 
 ### Credits
 - Original mod: CosmeticArmorReworked by zlainsama, dmillerw
-- Ported to NeoForge 26.1.2.76 by skd
+- Ported to NeoForge 26.1.2.76 by Stalking Dragons
 - Inspired by baubles (azanor)
