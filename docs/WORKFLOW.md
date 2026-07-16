@@ -328,6 +328,7 @@ git push origin 26.1.2-neoforge-1.0.0
 
 - **Un commit por cambio lógico**: no acumular múltiples cambios en un solo commit
 - **Commit y push después de cada cambio funcional**: no esperar a tener todo terminado
+- **Cualquier cambio en documentación debe committearse y pushearse inmediatamente**: los archivos de `docs/` deben reflejar siempre el estado actual del proyecto
 - **Versionar antes de subir a CurseForge**: el tag debe apuntar al commit exacto del JAR que se sube
 - **CHANGELOG.md siempre actualizado**: reflejar todos los cambios de cada versión
 - **Siempre hacer `clean build` antes de generar el JAR final**: la caché de Gradle puede dejar artefactos obsoletos o corruptos que no se detectan en compilaciones incrementales; `clean` fuerza una compilación desde cero
