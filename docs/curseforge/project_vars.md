@@ -6,12 +6,17 @@
 |----------|-------|
 | `curseforge_project_id` | `1600093` |
 | `mod_id` | `armor_cosmetic` |
+| `display_name` | `Armor Cosmetic` (separado, no junto) |
 
-## Cuenta (compartido entre proyectos)
+## Tokens
 
-| Variable | Valor |
-|----------|-------|
-| `curseforge_upload_token` | `ee776b0a-ee95-4850-b554-06be02a8657f` |
+| API | Token | Uso |
+|-----|-------|-----|
+| Upload | `ee776b0a-ee95-4850-b554-06be02a8657f` | Subir archivos JAR |
+| Core (GET) | `$2a$10$yGwryAfmRkS9ZJsJUDf5YOKZpOIsmHB8Fji2D8JVCKBSZEKYlwmaO` | Consultar datos del mod |
+
+Autenticación Upload: cabecera `X-Api-Token`
+Autenticación Core: cabecera `x-api-key`
 
 ## Versión actual
 
@@ -22,53 +27,122 @@
 | `java_version` | `25` |
 | `environment` | `Client`, `Server` |
 
-## API Token
+## Rama
 
-Generar/regenerar en https://authors-old.curseforge.com/account/api-tokens
+```
+minecraft/26.1.2/neoforge-26.1.2.78/production
+```
 
-Autenticación: cabecera `X-Api-Token` o query param `token`.
+## Tag
+
+Formato: `<mc-version>-<framework>-<version>`
+Ejemplo: `26.1.2-neoforge-1.0.21`
 
 ## Parámetros del upload
 
 | Campo | Valor | Notas |
 |-------|-------|-------|
-| `displayName` | `Armor Cosmetic (1.0.19)` | Nombre visible, NO el nombre del archivo |
-| `changelog` | Contenido del release notes | Siempre en formato Markdown |
-| `changelogType` | `markdown` | Obligatorio para formato correcto |
-| `releaseType` | `release` o `beta` | Según el tipo |
-| `gameVersionNames` | `["Client", "Server", "26.1.2", "NeoForge"]` | Minecraft + entorno + modloader |
+| `displayName` | `Armor Cosmetic (1.0.21)` | Nombre visible: `display_name (version)` |
+| `changelog` | HTML (no Markdown) | Ver estructura abajo |
+| `changelogType` | `html` | Obligatorio para que se vea bien |
+| `releaseType` | `release` o `beta` | Según el tipo de versión |
+| `gameVersionNames` | `["Client", "Server", "26.1.2", "NeoForge"]` | Entorno + MC + modloader |
 
-## Subir archivo (JAR)
+## Estructura del changelog (HTML)
 
+```html
+<h2>v1.0.21 - Titulo descriptivo</h2>
+
+<h3>Fix</h3>
+<ul>
+<li><strong>Problema</strong>: descripcion con <code>codigo</code>.</li>
+<li><strong>Otro</strong>: descripcion.</li>
+</ul>
+
+<h3>Technical Changes</h3>
+<ul>
+<li><code>Clase/metodo()</code> — descripcion.</li>
+</ul>
+
+<h3>Notes</h3>
+<blockquote>Nota importante para servidores.</blockquote>
+
+<hr>
+
+<p><strong>JAR</strong>: <code>armor_cosmetic-26.1.2-neoforge-1.0.21.jar</code></p>
 ```
-POST https://minecraft.curseforge.com/api/projects/{curseforge_project_id}/upload-file
+
+## Subir archivo (JAR) con Python
+
+```python
+import json, uuid, urllib.request
+
+boundary = uuid.uuid4().hex
+version = "1.0.21"
+
+metadata = {
+    "displayName": f"Armor Cosmetic ({version})",
+    "changelog": "<h2>v1.0.21 - Titulo</h2>",
+    "changelogType": "html",
+    "gameVersionNames": ["Client", "Server", "26.1.2", "NeoForge"],
+    "releaseType": "release"
+}
+
+with open(f"build/libs/armor_cosmetic-26.1.2-neoforge-{version}.jar", "rb") as f:
+    jar_data = f.read()
+
+meta_bytes = json.dumps(metadata, ensure_ascii=False).encode("utf-8")
+
+body = b""
+body += f"--{boundary}\r\n".encode()
+body += b'Content-Disposition: form-data; name="metadata"\r\n'
+body += b"Content-Type: application/json\r\n\r\n"
+body += meta_bytes + b"\r\n"
+body += f"--{boundary}\r\n".encode()
+body += b'Content-Disposition: form-data; name="file"; filename="armor_cosmetic-26.1.2-neoforge-{version}.jar"\r\n'
+body += b"Content-Type: application/java-archive\r\n\r\n"
+body += jar_data + b"\r\n"
+body += f"--{boundary}--\r\n".encode()
+
+req = urllib.request.Request(
+    f"https://minecraft.curseforge.com/api/projects/1600093/upload-file",
+    data=body,
+    headers={
+        "X-Api-Token": "ee776b0a-ee95-4850-b554-06be02a8657f",
+        "Content-Type": f"multipart/form-data; boundary={boundary}"
+    },
+    method="POST"
+)
+
+resp = urllib.request.urlopen(req)
+print(resp.read().decode())
 ```
 
-Multipart form-data con campos:
-- `metadata` — JSON con displayName, changelog, gameVersionNames, releaseType...
-- `file` — el JAR
+## Verificar con GET
 
-## Actualizar metadatos de archivo
-
-```
-POST https://minecraft.curseforge.com/api/projects/{curseforge_project_id}/update-file
+```bash
+curl -s "https://api.curseforge.com/v1/mods/1600093/files/<FILE_ID>" \
+  -H "x-api-key: $2a$10$yGwryAfmRkS9ZJsJUDf5YOKZpOIsmHB8Fji2D8JVCKBSZEKYlwmaO"
 ```
 
-## Descripción del proyecto
+## Changelog
 
-No hay endpoint API para actualizar la descripción. Se edita manualmente desde la web de CurseForge pegando el contenido de `project_description.md`.
+```bash
+curl -s "https://api.curseforge.com/v1/mods/1600093/files/<FILE_ID>/changelog" \
+  -H "x-api-key: $2a$10$yGwryAfmRkS9ZJsJUDf5YOKZpOIsmHB8Fji2D8JVCKBSZEKYlwmaO"
+```
 
-## Release notes
+## Descripcion del proyecto
 
-Las release notes se suben como `changelog` en el campo `metadata` al hacer upload del JAR. Se almacenan en `docs/curseforge/versions/<version>.md`.
+No hay endpoint API para actualizar la descripcion. Se edita manualmente desde la web de CurseForge pegando el HTML de `docs/curseforge/project_description.md`.
 
-## Flujo
+## Flujo completo
 
-1. Incrementar versión en `gradle.properties`
-2. `./gradlew clean build`
-3. Crear release notes en `docs/curseforge/versions/<version>.md`
-4. Actualizar `CHANGELOG.md`
-5. Commit + tag (`<mc-version>-neoforge-<version>`)
-6. Preguntar al usuario si desea subir a CurseForge
-7. Subir JAR a CurseForge vía API
-8. Actualizar descripción en web si cambia
+1. `./gradlew clean build`
+2. Actualizar `docs/curseforge/versions/<version>.md` con HTML
+3. Actualizar `CHANGELOG.md`
+4. `git commit -m "fix: descripcion\n\nvX.Y.Z"` + `git push`
+5. `git tag -a 26.1.2-neoforge-<version> -m "vX.Y.Z: descripcion"` + `git push origin <tag>`
+6. Subir JAR a CurseForge con Python
+7. Verificar con GET que el changelog se vea bien
+8. Liberar manualmente desde la web si es necesario
