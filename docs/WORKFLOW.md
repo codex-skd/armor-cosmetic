@@ -94,24 +94,43 @@ Footer:    Créditos
 - **Logo en el footer**: Centrado, con enlace a la web y eslogan
 - **Sin carácter retroactivo**: Solo aplicamos el formato a nuevas versiones; las existentes no se modifican
 
-#### Ejemplo de estructura para release notes (Markdown con emojis)
+#### Formato del changelog
 
-```markdown
-## v1.0.0 — Título descriptivo
+El changelog se envía en formato **HTML**, no Markdown. Aunque CurseForge acepta ambos, el HTML se renderiza correctamente en el editor WYSIWYG sin escapes ni caracteres rotos.
 
-### 🐛 Correcciones
-- **Problema grave**: descripción de la corrección.
-- **Otro arreglo**: descripción.
+| Campo | Valor |
+|-------|-------|
+| `changelogType` | `html` |
+| `changelog` | Código HTML con `<h2>`, `<h3>`, `<ul>/<li>`, `<p>`, `<strong>`, `<code>`, `<blockquote>` |
 
-### ✨ Novedades
-- **Nueva funcionalidad**: descripción.
+#### Ejemplo de estructura HTML para release notes
 
-### 🛠️ Cambios técnicos
-- `clase/método` — descripción del cambio interno.
+```html
+<h2>v1.0.21 - Tombstone Compatibility: Real Armor Captured</h2>
 
-### 📝 Notas
-> Nota importante para jugadores o administradores de servidores.
+<h3>Fix</h3>
+<ul>
+<li><strong>Real armor lost on death with Tombstone</strong>: The player&#8217;s real armor is now added to <code>LivingDropsEvent</code> alongside cosmetic armor.</li>
+</ul>
+
+<h3>Technical Changes</h3>
+<ul>
+<li><code>InventoryManager.handlePlayerDrops()</code> now iterates the player&#8217;s armor slots...</li>
+</ul>
 ```
+
+#### Elementos HTML permitidos
+
+| Elemento | Uso |
+|----------|-----|
+| `<h2>` | Título principal de la versión |
+| `<h3>` | Subsecciones (Fix, Technical Changes, Notes) |
+| `<ul><li>` | Listas de puntos |
+| `<strong>` | Negritas para resaltar |
+| `<code>` | Código o nombres técnicos |
+| `<blockquote>` | Notas importantes para servidores |
+| `<hr>` | Separador |
+| `<p>` | Párrafos |
 
 ---
 
