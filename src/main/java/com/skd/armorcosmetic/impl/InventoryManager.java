@@ -13,6 +13,7 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.skd.armorcosmetic.api.event.CosArmorDeathDrops;
 import com.skd.armorcosmetic.impl.inventory.ContainerCosArmor;
 import com.skd.armorcosmetic.impl.inventory.InventoryCosArmor;
+import com.skd.armorcosmetic.impl.client.PlayerInventoryHelper;
 import com.skd.armorcosmetic.impl.network.payload.PayloadSyncCosArmor;
 import com.skd.armorcosmetic.impl.network.payload.PayloadSyncHiddenFlags;
 import net.minecraft.commands.CommandSourceStack;
@@ -22,6 +23,7 @@ import net.minecraft.nbt.NbtIo;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -127,6 +129,15 @@ public class InventoryManager {
                 }
 
                 inventory.setStackInSlot(i, ItemStack.EMPTY);
+            }
+
+            for (EquipmentSlot slot : new EquipmentSlot[]{EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET}) {
+                PlayerInventoryHelper.getPlayerEquipmentSlotIndex(slot).ifPresent(slotIndex -> {
+                    ItemStack stack = player.getInventory().getItem(slotIndex).copy();
+                    if (stack.isEmpty()) return;
+                    player.getInventory().setItem(slotIndex, ItemStack.EMPTY);
+                    event.getDrops().add(new ItemEntity(player.level(), player.getX(), player.getY(), player.getZ(), stack));
+                });
             }
         } catch (Exception e) {
             ModObjects.logger.error("Error handling CosmeticArmor player drops", e);

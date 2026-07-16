@@ -2,18 +2,33 @@
 
 ## Variables del proyecto
 
-| Variable | Valor |
-|----------|-------|
-| `curseforge_project_id` | `1600093` |
-| `mod_id` | `armor_cosmetic` |
-| `minecraft_version` | `26.1.2` |
-| `framework` | `neoforge` |
+| Variable | Valor | Ámbito |
+|----------|-------|--------|
+| `curseforge_project_id` | `1600093` | Por proyecto |
+| `curseforge_upload_token` | (token personal) | Por cuenta (compartido entre proyectos) |
+| `mod_id` | `armor_cosmetic` | Por proyecto |
+| `minecraft_version` | `26.1.2` | Por proyecto |
+| `framework` | `neoforge` | Por proyecto |
+| `java_version` | `25` | Por proyecto |
+| `environment` | `Client`, `Server` | Por proyecto |
 
 ## API Token
 
-Generar en https://authors-old.curseforge.com/account/api-tokens
+El token se genera en https://authors-old.curseforge.com/account/api-tokens
+
+**Una sola cuenta, un solo token** — el mismo token sirve para todos los proyectos del autor.
 
 Autenticación: cabecera `X-Api-Token` o query param `token`.
+
+## Parámetros del upload
+
+| Campo | Valor | Notas |
+|-------|-------|-------|
+| `displayName` | `Armor Cosmetic (1.0.19)` | Nombre visible, NO el nombre del archivo |
+| `changelog` | Contenido del release notes | Siempre en formato Markdown |
+| `changelogType` | `markdown` | Obligatorio para formato correcto |
+| `releaseType` | `release` o `beta` | Según el tipo |
+| `gameVersionNames` | `["Client", "Server", "26.1.2", "NeoForge"]` | Minecraft + entorno + modloader |
 
 ## Subir archivo (JAR)
 

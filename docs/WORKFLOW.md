@@ -46,9 +46,29 @@ Cada proyecto tiene variables específicas que se documentan en `docs/curseforge
 | Variable | Descripción | Ejemplo |
 |----------|-------------|---------|
 | `curseforge_project_id` | ID numérico del proyecto en CurseForge | `1600093` |
+| `curseforge_upload_token` | Token de API para subir archivos (compartido entre proyectos) | — |
 | `mod_id` | Identificador único del mod | `armor_cosmetic` |
 | `minecraft_version` | Versión de Minecraft | `26.1.2` |
 | `framework` | Framework del mod | `neoforge` |
+| `java_version` | Versión de Java necesaria | `25` |
+| `environment` | Entorno compatible (client + server) | `Client`, `Server` |
+
+### Publicación en CurseForge
+
+**Regla importante**: antes de subir cualquier versión a CurseForge, **preguntar siempre al usuario** si desea subirla. No subir automáticamente.
+
+#### Parámetros del upload
+
+Al subir un JAR, se deben enviar estos metadatos:
+
+| Parámetro | Valor | Notas |
+|-----------|-------|-------|
+| `displayName` | `Armor Cosmetic (1.0.19)` | Nombre del mod + versión entre paréntesis, NO el nombre del archivo |
+| `changelog` | Contenido de `docs/curseforge/versions/<version>.md` | En formato Markdown |
+| `changelogType` | `markdown` | Obligatorio para que se vea bien formateado |
+| `releaseType` | `release` o `beta` | Según el tipo de versión |
+| `gameVersionNames` | `["Client", "Server", "26.1.2", "NeoForge"]` | Minecraft + entorno + modloader |
+| `java_version` | `25` | Versión de Java requerida |
 
 ### Formato de descripciones CurseForge
 
