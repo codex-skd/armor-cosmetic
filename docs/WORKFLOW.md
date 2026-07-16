@@ -40,26 +40,57 @@
 
 ### Formato de descripciones CurseForge
 
-CurseForge admite **Markdown** en las descripciones y release notes. Usamos Markdown porque:
+CurseForge admite **Markdown y HTML** en las descripciones y release notes. Usamos ambos porque:
 
 - Se versiona junto al código en el repositorio
 - Es portátil (funciona en GitHub, GitLab, etc.)
-- Permite estructurar el contenido con encabezados, listas, tablas, código, negritas, etc.
+- El HTML permite control preciso sobre espaciado, alineación y estructura visual
+- El Markdown es más limpio para listas, tablas y código
 
-Para que las descripciones sean visualmente atractivas, usamos estos elementos Markdown:
+Usamos HTML para la **descripción general del proyecto** (`project_description.md`), donde el control visual es más importante. Para las **release notes** (`versions/<version>.md`) usamos Markdown con emojis, que es más ligero y rápido de escribir.
 
-| Elemento | Cómo usarlo |
-|----------|-------------|
-| **Encabezados** | `## Título`, `### Subtítulo` — estructura jerárquica |
-| **Negrita** | `**texto**` — resaltar características clave |
-| **Listas** | `- item` — enumerar funcionalidades |
-| **Iconos/emoji** | `✅`, `🎨`, `🛠️`, `⚡`, `🔧` — añadir impacto visual |
-| **Código** | `` `comando` `` — resaltar comandos o archivos |
-| **Separadores** | `---` — dividir secciones visualmente |
-| **Citas** | `> texto` — destacar notas importantes |
-| **Enlaces** | `[texto](url)` — referencias externas |
+#### Estructura de la descripción general
 
-Ejemplo de estructura para release notes:
+```
+Header:    Título principal (h1 centrado) + tagline
+           Separador
+Cuerpo:    Overview en párrafos (h2)
+           Features con h3 + párrafo descriptivo cada una
+           Tabla de requisitos
+           Lista de uso
+           Separador
+Footer:    Créditos
+           Logo centrado + enlace web + eslogan
+```
+
+#### Elementos HTML disponibles
+
+| Elemento | Uso |
+|----------|-----|
+| `<h1 align="center">` | Título principal centrado |
+| `<h2>` | Secciones del cuerpo |
+| `<h3>` | Subsecciones (cada feature) |
+| `<p>` | Párrafos con espaciado natural |
+| `<br>` | Saltos de línea para separar bloques |
+| `<hr>` | Separadores visuales entre secciones |
+| `<table>` | Datos estructurados (requisitos) |
+| `<ol>` / `<ul>` | Listas ordenadas y sin orden |
+| `<img>` | Logos e imágenes |
+| `<a>` | Enlaces externos |
+| `<code>` | Comandos y rutas técnicas |
+| `<blockquote>` | Notas destacadas |
+| `<strong>` / `<em>` | Negritas y cursivas |
+| `<p align="center">` | Bloques centrados (footer) |
+
+#### Buenas prácticas
+
+- **Respetar la estructura**: Header → Cuerpo → Footer, con separadores visuales
+- **Interlineado**: Usar `<br>` entre bloques, no acumular párrafos seguidos
+- **Títulos diferenciados**: h1 muy visible (centrado), h2 para secciones, h3 para cada feature
+- **Logo en el footer**: Centrado, con enlace a la web y eslogan
+- **Sin carácter retroactivo**: Solo aplicamos el formato a nuevas versiones; las existentes no se modifican
+
+#### Ejemplo de estructura para release notes (Markdown con emojis)
 
 ```markdown
 ## v1.0.0 — Título descriptivo
