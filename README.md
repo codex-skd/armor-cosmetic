@@ -1,25 +1,27 @@
+# Armor Cosmetic
 
-Installation information
-=======
+Un mod para NeoForge (MC 26.1.2) que te permite llevar dos conjuntos de armadura: uno para la protección y otro para la estética.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## Características
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+- **Sistema de armadura dual**: Lleva una armadura para las estadísticas y otra solo para mostrarla.
+- **GUI de inventario cosmético**: Ábrelo desde tu inventario normal con un solo botón.
+- **Alternar por ranura**: Cada ranura cosmética tiene un botón S/A que oculta la armadura real de esa ranura.
+- **Alternar global**: Desactiva toda la renderización cosmética de un solo clic.
+- **Compatible con Corail Tombstone**: Los objetos cosméticos son capturados por la tumba al morir.
+- **11 idiomas**: Inglés, español, alemán, francés, japonés, portugués, ruso, chino, coreano, turco, checo.
+- **Totalmente configurable**: Posiciones, tamaños y visibilidad de los botones configurables.
+- **Comandos**: `/clearcosarmor` y `/coshat`.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+## Requisitos
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+- NeoForge 26.1.2.76+
+- Minecraft 26.1.2
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## Compilar
+
+```bash
+gradlew build
+```
+
+El JAR se generará en `build/libs/armor_cosmetic-26.1.2-neoforge-<versión>.jar`.
