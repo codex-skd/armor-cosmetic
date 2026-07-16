@@ -31,12 +31,24 @@
 └── README.md
 ```
 
-### Archivos obligatorios de CurseForge
+### Archivos de CurseForge
 
 | Archivo | Propósito |
 |---------|-----------|
+| `docs/curseforge/README.md` | Documentación de publicación: project ID, API token, endpoints, flujo completo |
 | `docs/curseforge/project_description.md` | Descripción completa del proyecto (qué hace, características, requisitos) |
 | `docs/curseforge/versions/<version>.md` | Release notes de cada versión que se sube a CurseForge. Solo se agrega cuando se va a publicar esa versión |
+
+### Variables de proyecto
+
+Cada proyecto tiene variables específicas que se documentan en `docs/curseforge/README.md`:
+
+| Variable | Descripción | Ejemplo |
+|----------|-------------|---------|
+| `curseforge_project_id` | ID numérico del proyecto en CurseForge | `1600093` |
+| `mod_id` | Identificador único del mod | `armor_cosmetic` |
+| `minecraft_version` | Versión de Minecraft | `26.1.2` |
+| `framework` | Framework del mod | `neoforge` |
 
 ### Formato de descripciones CurseForge
 
