@@ -1,4 +1,7 @@
-# Flujo de trabajo — Mods Minecraft (NeoForge)
+# Flujo de trabajo — ArmorCosmetic (NeoForge)
+
+> Este archivo pertenece al proyecto **ArmorCosmetic**. Cada proyecto tiene su propio `WORKFLOW.md`.
+> No es un archivo central ni template compartido. Los cambios aquí solo afectan a este proyecto.
 
 ## Estructura del proyecto
 
