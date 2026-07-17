@@ -54,7 +54,7 @@ CurseForge admite **Markdown y HTML** en las descripciones y release notes. Usam
 - El HTML permite control preciso sobre espaciado, alineación y estructura visual
 - El Markdown es más limpio para listas, tablas y código
 
-Usamos HTML tanto para la **descripción general del proyecto** (`project_description.md`) como para las **release notes** (`versions/<version>.md`). El HTML se renderiza correctamente en el editor WYSIWYG de CurseForge sin escapes ni caracteres rotos. Para release notes rápidas se usa una estructura ligera de `<h2>`, `<h3>`, `<ul>/<li>`, `<strong>` y `<code>`.
+Usamos HTML tanto para la **descripción general del proyecto** (`project_description.md`) como para las **release notes** (`versions/<version>.md`), ya que el contenido de estos archivos se sube directamente a CurseForge, que renderiza HTML correctamente.
 
 #### Estructura de la descripción general
 
