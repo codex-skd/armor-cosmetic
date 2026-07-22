@@ -1,6 +1,6 @@
 # Flujo de trabajo — Armor Cosmetic (NeoForge)
 
-> **Versión del workflow**: 1.0.0 (codex-docs)
+> **Versión del workflow**: 1.1.0 (codex-docs)
 > Este archivo pertenece al proyecto **Armor Cosmetic**. Cada proyecto tiene su propio `WORKFLOW_<MOD_ID>_<MC-VERSION>.md`.
 > No es un archivo central ni template compartido. Los cambios aquí solo afectan a este proyecto.
 > Para actualizar este workflow, revisar la última versión en `codex-docs/WORKFLOW_GENERIC.md`.
@@ -88,6 +88,8 @@ armor_cosmetic/
 | `docs/curseforge/versions/<version>.md` | Release notes de cada versión que se sube a CurseForge. Solo se agrega cuando se va a publicar esa versión |
 
 Las variables de cada proyecto (project ID, API token, versiones de Minecraft/NeoForge/Java) se documentan en `docs/curseforge/project_vars.md`. No duplicar aquí.
+
+> El API token de CurseForge es el mismo para todos los mods (token de cuenta, no de proyecto). Se copia en cada `project_vars.md` individualmente.
 
 ### Formato de descripciones CurseForge
 
@@ -375,6 +377,59 @@ Cada vez que se hace push a una rama `production`, GitLab CI ejecuta automática
 
 Antes de que el CI/CD funcione, la rama `main` hermana debe existir al menos una vez en el remoto. Ver [Inicialización única de cada rama `*/main`](#inicialización-única-de-cada-rama-main).
 
+### .gitlab-ci.yml
+
+Crear en la raíz del proyecto:
+
+```yaml
+image: alpine:latest
+
+variables:
+  GIT_DEPTH: 0
+
+stages:
+  - publish
+
+publish-public:
+  stage: publish
+  only:
+    - /^minecraft\/.*\/.*\/production$/
+  except:
+    - main
+  script:
+    - apk add --no-cache git
+    - git config user.email "ci@mods-minecraft.dev"
+    - git config user.name "Mods Minecraft CI"
+
+    # Derivar la rama main: minecraft/X/N/production → minecraft/X/N/main
+    - MAIN_BRANCH=$(echo "$CI_COMMIT_BRANCH" | sed 's|/production$|/main|')
+    - echo "Publishing to $MAIN_BRANCH"
+
+    # Obtener la rama main actual (si no existe, crear como huérfana)
+    - git fetch origin "$MAIN_BRANCH" 2>/dev/null || true
+    - git checkout "$MAIN_BRANCH" || git checkout --orphan "$MAIN_BRANCH"
+
+    # Limpiar y copiar solo archivos públicos desde production
+    - git rm -rf --ignore-unmatch --quiet . 2>/dev/null || true
+    - git checkout "$CI_COMMIT_SHA" -- src/ build.gradle settings.gradle gradle.properties gradlew gradlew.bat .gitignore README.md CHANGELOG.md libs/
+
+    # Sanitizar secrets en gradle.properties
+    - sed -i 's/^mod_version=.*/mod_version=0.0.0/' gradle.properties
+    - sed -i 's/^mod_group_id=.*/mod_group_id=com\.skd\.placeholder/' gradle.properties
+    # Nota: el API token de CurseForge está en docs/curseforge/project_vars.md,
+    # no en gradle.properties. No se sanitiza aquí porque GitLab es privado.
+
+    # Commit y push (force push a la rama main hermana)
+    - git add -A
+    - |
+      if ! git diff --cached --quiet; then
+        git commit -m "chore: sync public code from ${CI_COMMIT_SHORT_SHA}"
+        git push --force "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:"$MAIN_BRANCH"
+      else
+        echo "No changes to publish"
+      fi
+```
+
 ### Archivos que pasan a GitHub
 
 | Archivo/Carpeta | GitLab production | GitLab */main → GitHub |
@@ -465,6 +520,13 @@ git push origin 26.1.2-neoforge-1.0.22
 # 8. PREGUNTAR: "¿Subir JAR a CurseForge ahora?"
 #    Solo subir si el usuario confirma.
 #    El JAR está en build/libs/armor_cosmetic-26.1.2-neoforge-<version>.jar
+
+# 9. Subir a CurseForge usando el script compartido
+#    powershell -File ../codex-docs/scripts/curseforge-upload.ps1
+#
+#    Este script lee project_vars.md (project_id, api_token) y gradle.properties
+#    (mod_id, mod_name, mod_version) y sube el JAR automáticamente.
+#    Es el mismo script para todos los mods, vive en codex-docs.
 ```
 
 ### 5. Release estable
@@ -541,4 +603,5 @@ El código, los logs y los commits siguen el estándar internacional de programa
 
 | Versión | Fecha | Cambios |
 |---|---|---|
+| 1.1.0 | 2026-07-22 | CI: eliminado `mod_curseforge_token` de sanitización (nunca en gradle.properties). Añadido paso de subida con script compartido. Añadida nota sobre API token. Cabecera actualizada a v1.1.0 |
 | 1.0.0 | 2026-07-22 | Versión inicial: adaptado de WORKFLOW_GENERIC.md v1.0.0 para Armor Cosmetic 26.1.2 |
