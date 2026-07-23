@@ -22,7 +22,11 @@ publish-public:
     - echo "Publishing to $MAIN_BRANCH"
 
     # Obtener la rama main hermana. Si no existe, falla — el agente debe crearla manualmente.
-    - git fetch origin "$MAIN_BRANCH" 2>/dev/null || (echo "ERROR: $MAIN_BRANCH no existe. Créala desde production primero." && exit 1)
+    - |
+      if ! git fetch origin "$MAIN_BRANCH" 2>/dev/null; then
+        echo "ERROR: $MAIN_BRANCH no existe. Créala desde production primero."
+        exit 1
+      fi
     - git checkout "$MAIN_BRANCH"
 
     # Limpiar y copiar solo archivos públicos desde production
