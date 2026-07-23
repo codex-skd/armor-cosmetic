@@ -1,6 +1,6 @@
 # Flujo de trabajo — Armor Cosmetic (NeoForge)
 
-> **Versión del workflow**: 1.1.0 (codex-docs)
+> **Versión del workflow**: 1.2.2 (codex-docs)
 > Este archivo pertenece al proyecto **Armor Cosmetic**. Cada proyecto tiene su propio `WORKFLOW_<MOD_ID>_<MC-VERSION>.md`.
 > No es un archivo central ni template compartido. Los cambios aquí solo afectan a este proyecto.
 > Para actualizar este workflow, revisar la última versión en `codex-docs/WORKFLOW_GENERIC.md`.
@@ -192,7 +192,7 @@ El changelog se envía en formato **HTML**, no Markdown. Aunque CurseForge acept
 | Rama | Propósito |
 |---|---|
 | `main` | Vacía. Solo contiene un commit inicial. No se usa para desarrollo |
-| `minecraft/<mc-version>/neoforge-<neo-version>/production` | Rama de trabajo para una versión específica de Minecraft/NeoForge. Contiene todo el proyecto (incluyendo docs/, lib_ext/, graphify-out/) |
+| `minecraft/<mc-version>/neoforge-<neo-version>/production` | Rama de trabajo. Contiene todo el proyecto: código, docs/, lib_ext/, graphify-out/, tokens reales |
 | `minecraft/<mc-version>/neoforge-<neo-version>/main` | Rama pública para mirror a GitHub. Solo contiene código fuente compilable. Se actualiza automáticamente vía CI/CD desde su hermana production |
 
 ### Ejemplos
@@ -225,28 +225,39 @@ Cada versión de Minecraft/NeoForge tiene su propio par `production` ↔ `main`.
 
 ### Inicialización única de cada rama `*/main`
 
-Al crear una nueva rama `production` para una versión, su hermana `main` debe existir en el remoto al menos una vez antes de que el CI funcione:
+Cada vez que se crea una rama `production` para una nueva versión, la agente (sesión) debe crear su hermana `main` inmediatamente después. Sin este paso, el CI/CD fallará.
+
+**Responsabilidades:**
+
+| Rol | Acción |
+|---|---|
+| **Agente (sesión)** | Crear la rama `*/main` desde `*/production` y pushearla |
+| **Operador (desarrollador)** | Proteger la rama en GitLab **y** configurar el mirror a GitHub |
+
+**1. La agente crea la rama `*/main`** (al crear `production`):
 
 ```bash
-# Crear la rama main desde production (solo la primera vez)
+# Ejemplo: para minecraft/26.1.2/neoforge-26.1.2.78/production
 git checkout minecraft/26.1.2/neoforge-26.1.2.78/production
 git checkout -b minecraft/26.1.2/neoforge-26.1.2.78/main
 git push origin minecraft/26.1.2/neoforge-26.1.2.78/main
 git checkout minecraft/26.1.2/neoforge-26.1.2.78/production
 ```
 
-Esto solo se hace **una vez por versión**. A partir de ahí el CI/CD se encarga de mantenerla actualizada con force push.
+Esto solo se hace **una vez por versión**. A partir de ahí el CI/CD mantiene `*/main` actualizada con force push automático.
 
-Configuración del mirror en GitLab:
-1. **Settings → Repository → Mirroring repositories**
-2. Añadir `https://<token>@github.com/tuusuario/armor-cosmetic.git`
-3. Dirección: **Push**
-4. Marcar **"Only mirror protected branches"**
-5. Proteger las ramas con el patrón `minecraft/*/neoforge-*/main`
-6. Desmarcar **"Keep divergent refs"** para permitir force push desde CI
+**2. El operador protege la rama y configura el mirror** (desde la UI de GitLab, una sola vez por repo):
 
-> ⚠️ Las ramas `*/main` nunca se tocan manualmente. Solo el CI/CD escribe en ellas con force push.
-> La primera vez que el CI se ejecute, creará la rama automáticamente (orphan). Tras el primer push, el desarrollador debe protegerla y permitir force push desde GitLab.
+1. **Settings → Repository → Protected branches**
+   - Branch: `minecraft/*/neoforge-*/main`
+   - Allow force push: ✅ (necesario para CI)
+2. **Settings → Repository → Mirroring repositories**
+   - Git repository URL: `https://<token>@github.com/codex-skd/armor-cosmetic.git`
+   - Mirror direction: **Push**
+   - Only mirror protected branches: ✅
+   - Keep divergent refs: ❌ (desmarcado)
+
+> ⚠️  Las ramas `*/main` nunca se tocan manualmente después de creadas. Solo el CI/CD escribe en ellas con force push.
 
 ---
 
@@ -373,6 +384,18 @@ Cada vez que se hace push a una rama `production`, GitLab CI ejecuta automática
 5. Commitea con force push a la rama `*/main` hermana
 6. El mirror de GitLab replica esa rama a GitHub automáticamente
 
+### Variables de CI/CD (grupo GitLab)
+
+Estas variables se configuran en **Settings → CI/CD → Variables** a nivel de grupo `stalking-dragons/minecraft`. Así todos los proyectos del grupo tienen acceso automático sin repetirlas:
+
+| Variable | Propósito |
+|---|---|
+| `GITLAB_PUSH_TOKEN` | Token de GitLab con permisos de API y push. Usado por el CI para hacer force push a `*/main` |
+| `GH_USERNAME` | Usuario de GitHub (`santiagolosadaborrajo`) |
+| `GH_TOKEN` | Token de GitHub con permisos de push a repos. Usado para autenticar el mirror |
+
+> Los tokens personales del desarrollador se almacenan localmente en `codex-docs/secrets.md` (excluido vía `.gitignore`). No se suben al repositorio.
+
 ### Requisito previo
 
 Antes de que el CI/CD funcione, la rama `main` hermana debe existir al menos una vez en el remoto. Ver [Inicialización única de cada rama `*/main`](#inicialización-única-de-cada-rama-main).
@@ -411,11 +434,17 @@ publish-public:
 
     # Limpiar y copiar solo archivos públicos desde production
     - git rm -rf --ignore-unmatch --quiet . 2>/dev/null || true
-    - git checkout "$CI_COMMIT_SHA" -- src/ build.gradle settings.gradle gradle.properties gradlew gradlew.bat .gitignore README.md CHANGELOG.md libs/
+
+    # Archivos obligatorios (deben existir en todos los mods)
+    - git checkout "$CI_COMMIT_SHA" -- src/ build.gradle settings.gradle gradle.properties gradlew gradlew.bat .gitignore README.md CHANGELOG.md
+
+    # Archivos opcionales (pueden no existir en algunos mods)
+    - git checkout "$CI_COMMIT_SHA" -- libs/ 2>/dev/null || true
 
     # Sanitizar secrets en gradle.properties
     - sed -i 's/^mod_version=.*/mod_version=0.0.0/' gradle.properties
     - sed -i 's/^mod_group_id=.*/mod_group_id=com\.skd\.placeholder/' gradle.properties
+    - sed -i 's/^mod_curseforge_project_id=.*/mod_curseforge_project_id=/' gradle.properties
     # Nota: el API token de CurseForge está en docs/curseforge/project_vars.md,
     # no en gradle.properties. No se sanitiza aquí porque GitLab es privado.
 
@@ -603,5 +632,8 @@ El código, los logs y los commits siguen el estándar internacional de programa
 
 | Versión | Fecha | Cambios |
 |---|---|---|
+| 1.2.2 | 2026-07-23 | CI: `libs/` separado como opcional en checkout para no fallar si el mod no lo tiene |
+| 1.2.1 | 2026-07-21 | Limpieza de tabla de ramas (eliminadas filas duplicadas) |
+| 1.2.0 | 2026-07-21 | Separación clara de roles: agente crea `*/main`, operador protege + mirror. Sección reescrita con tabla de responsabilidades |
 | 1.1.0 | 2026-07-22 | CI: eliminado `mod_curseforge_token` de sanitización (nunca en gradle.properties). Añadido paso de subida con script compartido. Añadida nota sobre API token. Cabecera actualizada a v1.1.0 |
 | 1.0.0 | 2026-07-22 | Versión inicial: adaptado de WORKFLOW_GENERIC.md v1.0.0 para Armor Cosmetic 26.1.2 |
