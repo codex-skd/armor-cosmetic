@@ -1,12 +1,14 @@
 # Armor Cosmetic - Changelog
 
-## [1.0.22] - 2026-07-22
+## [1.0.23] - 2026-07-23
 
 ### Cambios
-- **Auditoría de proyecto**: eliminado `TEMPLATE_LICENSE.txt`, movidos templates a `src/main/resources/templates/`, añadido `temp/` al `.gitignore`.
-- **WORKFLOW actualizado**: renombrado a `WORKFLOW_ARMOR_COSMETIC_26-1-2.md` siguiendo el formato del genérico v1.0.0.
-- **Logo**: renombrado a `armor_cosmetic.png` según convención `<mod_id>.png`.
-- **build.gradle**: actualizada ruta de templates a `src/main/resources/templates/`.
+- **Auditoría de proyecto**: eliminado `TEMPLATE_LICENSE.txt`, movidos templates a `src/main/resources/templates/`, creado `temp/`, renombrado logo a `armor_cosmetic.png`.
+- **WORKFLOW actualizado**: alineado con genérico v1.4.0 (organización workspace, CI/CD, ramas, roles).
+- **CI/CD**: creado `.gitlab-ci.yml` para mirror automático a GitHub.
+- **Corrección display name**: `mod_name=Armor Cosmetic` (con espacio).
+
+## [1.0.22] - 2026-07-22
 
 ## [1.0.21] - 2026-07-16
 
