@@ -2,10 +2,11 @@
 
 ## [0.0.0-beta.1] - 2026-07-27
 
-### Cambios
-- **Port a 26.2**: Adaptado el mod a Minecraft 26.2 / NeoForge 26.2.0.32-beta.
-- **Actualizado esqueleto**: Usado template 26.2-26.2.0.32-beta como base del proyecto.
-- **Templates**: Movidos a `src/main/templates/` siguiendo la nueva convención del template.
+### Changes
+- **Port to 26.2**: Adapted mod to Minecraft 26.2 / NeoForge 26.2.0.32-beta.
+- **Updated skeleton**: Template 26.2-26.2.0.32-beta used as project base.
+- **Templates**: Moved to `src/main/templates/` following new template convention.
+- **API fixes**: `setScreen` → `setScreenAndShow`, `screen` → `gui.screen()`.
 
 ## [1.0.22] - 2026-07-22
 

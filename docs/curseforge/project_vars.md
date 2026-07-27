@@ -53,9 +53,9 @@ Ejemplo: `26.2-neoforge-0.0.0-beta.1`
 ```html
 <h2>v0.0.0-beta.1 - Port to Minecraft 26.2</h2>
 
-<h3>Cambios</h3>
+<h3>Changes</h3>
 <ul>
-<li><strong>Port a 26.2</strong>: Adaptado a Minecraft 26.2 / NeoForge 26.2.0.32-beta.</li>
+<li><strong>Port to 26.2</strong>: Adapted to Minecraft 26.2 / NeoForge 26.2.0.32-beta.</li>
 <li><strong>API fixes</strong>: <code>setScreenAndShow</code>, <code>gui.screen()</code>.</li>
 </ul>
 
