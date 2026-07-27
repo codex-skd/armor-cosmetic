@@ -71,7 +71,7 @@ info_tab/
 - La rama default del repo es `minecraft/<mc-version>/neoforge-<neo-version>/production`
 - El nombre del workflow sigue el patrón `WORKFLOW_<MOD_ID>_<MC-VERSION>.md` (ej: `WORKFLOW_ARMOR_COSMETIC_26-1-2.md`)
 
-> **Nota para armor_cosmetic**: Actualmente está en estructura plana (`armor_cosmetic/`). Si se añade soporte para otra versión de Minecraft, debe migrarse a `<mod_id>/<mc-version>/`.
+> **Nota**: Este proyecto ya sigue la estructura `<mod_id>/<mc-version>/` con `armor_cosmetic/26.1.2/` como repo raíz.
 
 ## Tipografía
 
@@ -84,42 +84,38 @@ info_tab/
 ## Estructura del proyecto
 
 ```
-armor_cosmetic/
-├── build.gradle                        # Build con net.neoforged.moddev
-├── gradle.properties                   # mod_id, mod_version, mod_group_id...
-├── settings.gradle
-├── src/
-│   ├── main/
-│   │   ├── java/com/skd/armorcosmetic/ # Código fuente del mod
-│   │   ├── resources/
-│   │   │   ├── assets/armor_cosmetic/  # Texturas, shaders, lang, modelos...
-│   │   │   │   └── icon.png           # Logo del mod (referenciado en neoforge.mods.toml)
-│   │   │   ├── templates/
-│   │   │   │   └── META-INF/
-│   │   │   │       └── neoforge.mods.toml  # Template con placeholders ${...}
-│   │   │   ├── META-INF/
-│   │   │   │   └── accesstransformer.cfg
-│   │   │   ├── armor_cosmetic.mixins.json
-│   │   │   └── armor_cosmetic.png      # Logo del mod
-│   ├── main/java/...                   # Código fuente
-├── libs/                               # Dependencias reales del mod (JARs necesarios para compilar). Versionado.
-├── lib_ext/                            # Librerías externas para análisis de la sesión. NO versionado (.gitignore).
-├── temp/                               # Archivos temporales: investigaciones, prototipos, JARs extraídos, pruebas. NO versionado (.gitignore).
-├── docs/
-│   ├── WORKFLOW_ARMOR_COSMETIC_26-1-2.md  # Este documento
-│   └── curseforge/                    # Documentación para publicación en CurseForge
-│       ├── project_vars.md             # Variables del proyecto (ID, token, versiones)
-│       ├── project_description.md      # Descripción del proyecto
-│       └── versions/                   # Release notes por versión
-│           ├── 1.0.20.md
-│           └── ...
-├── CHANGELOG.md
-├── README.md
-├── graphify-out/                       # Knowledge Graph (generado por Graphify). Versionado en GitLab, NO va a GitHub (excluido por CI).
-│   ├── graph.html
-│   ├── GRAPH_REPORT.md
-│   └── graph.json
-└── .gitlab-ci.yml                      # CI/CD: publica código limpio a main para mirror a GitHub
+armor_cosmetic/              # Mod parent (organizational, no .git)
+└── 26.1.2/                  # Project repo (repo root with .git)
+    ├── build.gradle                        # Build con net.neoforged.moddev
+    ├── gradle.properties                   # mod_id, mod_version, mod_group_id...
+    ├── settings.gradle
+    ├── src/
+    │   ├── main/
+    │   │   ├── java/com/skd/armorcosmetic/ # Código fuente del mod
+    │   │   ├── resources/
+    │   │   │   ├── assets/armor_cosmetic/  # Texturas, shaders, lang, modelos...
+    │   │   │   │   └── icon.png           # Logo del mod (referenciado en neoforge.mods.toml)
+    │   │   │   ├── templates/
+    │   │   │   │   └── META-INF/
+    │   │   │   │       └── neoforge.mods.toml  # Template con placeholders ${...}
+    │   │   │   ├── META-INF/
+    │   │   │   │   └── accesstransformer.cfg
+    │   │   │   ├── armor_cosmetic.mixins.json
+    │   │   │   └── armor_cosmetic.png      # Logo del mod
+    │   ├── main/java/...                   # Código fuente
+    ├── libs/                               # Dependencias reales del mod (JARs). Versionado.
+    ├── lib_ext/                            # Librerías externas para análisis. NO versionado.
+    ├── temp/                               # Archivos temporales. NO versionado.
+    ├── docs/
+    │   ├── WORKFLOW_ARMOR_COSMETIC_26-1-2.md  # Este documento
+    │   └── curseforge/                    # Documentación para publicación en CurseForge
+    │       ├── project_vars.md             # Variables del proyecto (ID, token, versiones)
+    │       ├── project_description.md      # Descripción del proyecto
+    │       └── versions/                   # Release notes por versión
+    ├── CHANGELOG.md
+    ├── README.md
+    ├── graphify-out/                       # Knowledge Graph. Versionado en GitLab.
+    └── .gitlab-ci.yml                      # CI/CD: mirror a GitHub
 ```
 
 ### Archivos de CurseForge
