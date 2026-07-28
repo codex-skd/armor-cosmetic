@@ -1,5 +1,10 @@
 # Armor Cosmetic - Changelog
 
+## [1.0.1] - 2026-07-27
+
+### Fix
+- **Config screen not showing**: Moved `IConfigScreenFactory` registration from `ArmorCosmeticClient` to main `ArmorCosmetic` constructor. In NeoForge 26.2, `@Mod` with `dist = Dist.CLIENT` may not load, hiding the config button.
+
 ## [1.0.0] - 2026-07-27
 
 ### Changes
