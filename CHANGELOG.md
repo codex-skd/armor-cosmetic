@@ -1,5 +1,11 @@
 # Armor Cosmetic - Changelog
 
+## [1.0.0] - 2026-07-27
+
+### Changes
+- **First stable release for MC 26.2**: Promoted from beta to stable.
+- **Translations**: Fixed UTF-8 encoding corruption in Spanish (es_es.json).
+
 ## [0.0.0-beta.1] - 2026-07-27
 
 ### Changes
