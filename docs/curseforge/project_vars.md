@@ -42,11 +42,24 @@ Ejemplo: `26.2-neoforge-0.0.0-beta.1`
 
 | Campo | Valor | Notas |
 |-------|-------|-------|
-| `displayName` | `Armor Cosmetic (0.0.0-beta.1)` | Nombre visible: `display_name (version)` |
+| `displayName` | `Armor Cosmetic (1.0.2)` | Nombre visible: `display_name (version)` |
 | `changelog` | HTML (no Markdown) | Ver estructura abajo |
 | `changelogType` | `html` | Obligatorio para que se vea bien |
 | `releaseType` | `release` o `beta` | Según el tipo de versión |
-| `gameVersionNames` | `["Client", "Server", "26.2", "NeoForge"]` | Entorno + MC + modloader |
+| `gameVersions` | `[9638, 9639, 10150, 16498]` | **IDs numéricos**, no nombres (la API devuelve 400 "Expected Integer but got String" si se envían strings como `"Client"`). Ver tabla de IDs abajo |
+
+### IDs de `gameVersions` para 26.2
+
+Obtenidos de `sortableGameVersions` de un archivo ya subido (`GET /v1/mods/1600093/files/<id>` con el token Core):
+
+| Nombre | ID | gameVersionTypeId |
+|--------|-----|--------|
+| `Client` | `9638` | 75208 |
+| `Server` | `9639` | 75208 |
+| `NeoForge` | `10150` | 68441 |
+| `26.2` | `16498` | 86297 |
+
+> Ojo: `GET https://minecraft.curseforge.com/api/game/versions` (con `X-Api-Token`) devuelve **varias entradas duplicadas** con el mismo nombre `26.2` pero distinto `id`/`gameVersionTypeID` (p. ej. `16498`, `16500`). Solo una es la correcta (la que ya usan los archivos existentes) — verificarlo siempre contra un archivo ya publicado antes de asumir un ID.
 
 ## Estructura del changelog (HTML)
 
@@ -64,50 +77,41 @@ Ejemplo: `26.2-neoforge-0.0.0-beta.1`
 <p><strong>JAR</strong>: <code>armor_cosmetic-26.2-neoforge-0.0.0-beta.1.jar</code></p>
 ```
 
-## Subir archivo (JAR) con Python
+## Subir archivo (JAR)
 
-```python
-import json, uuid, urllib.request
+**No usar `urllib.request` de Python** — el body multipart hecho a mano (concatenando bytes de texto UTF-8 con los bytes crudos del JAR) provoca un `500 An unhandled exception occurred` del lado de CurseForge por razones no diagnosticadas (probado en esta sesión, ver `codex-docs/scripts/curseforge-upload.ps1` para el motivo original de por qué se abandonó el enfoque manual en PowerShell). Usar PowerShell con `System.Net.Http.MultipartFormDataContent`, que sí funciona:
 
-boundary = uuid.uuid4().hex
-version = "0.0.0-beta.1"
+```powershell
+Add-Type -AssemblyName System.Net.Http
 
-metadata = {
-    "displayName": f"Armor Cosmetic ({version})",
-    "changelog": "<h2>v0.0.0-beta.1 - Port to Minecraft 26.2</h2>",
-    "changelogType": "html",
-    "gameVersionNames": ["Client", "Server", "26.2", "NeoForge"],
-    "releaseType": "beta"
+$version = "1.0.2"
+$changelog = [System.IO.File]::ReadAllText((Resolve-Path "docs/curseforge/versions/$version.md"))
+
+$metadata = @{
+    displayName   = "Armor Cosmetic ($version)"
+    gameVersions  = @(9638, 9639, 10150, 16498)   # Client, Server, NeoForge, 26.2 — IDs, no nombres
+    releaseType   = "release"
+    changelogType = "html"
+    changelog     = $changelog
 }
+$metadataJson = $metadata | ConvertTo-Json -Compress
 
-with open(f"build/libs/armor_cosmetic-26.2-neoforge-{version}.jar", "rb") as f:
-    jar_data = f.read()
+$fileItem = Get-Item -Path (Resolve-Path "build/libs/armor_cosmetic-26.2-neoforge-$version.jar")
+$fileBytes = [System.IO.File]::ReadAllBytes($fileItem.FullName)
 
-meta_bytes = json.dumps(metadata, ensure_ascii=False).encode("utf-8")
+$httpClient = New-Object System.Net.Http.HttpClient
+$httpClient.DefaultRequestHeaders.Add('X-Api-Token', 'ee776b0a-ee95-4850-b554-06be02a8657f')
 
-body = b""
-body += f"--{boundary}\r\n".encode()
-body += b'Content-Disposition: form-data; name="metadata"\r\n'
-body += b"Content-Type: application/json\r\n\r\n"
-body += meta_bytes + b"\r\n"
-body += f"--{boundary}\r\n".encode()
-body += f'Content-Disposition: form-data; name="file"; filename="armor_cosmetic-26.2-neoforge-{version}.jar"\r\n'.encode()
-body += b"Content-Type: application/java-archive\r\n\r\n"
-body += jar_data + b"\r\n"
-body += f"--{boundary}--\r\n".encode()
+$multipart = New-Object System.Net.Http.MultipartFormDataContent
+$multipart.Add((New-Object System.Net.Http.StringContent($metadataJson, [System.Text.Encoding]::UTF8, "application/json")), "metadata")
 
-req = urllib.request.Request(
-    f"https://minecraft.curseforge.com/api/projects/1600093/upload-file",
-    data=body,
-    headers={
-        "X-Api-Token": "ee776b0a-ee95-4850-b554-06be02a8657f",
-        "Content-Type": f"multipart/form-data; boundary={boundary}"
-    },
-    method="POST"
-)
+$fileContent = New-Object System.Net.Http.ByteArrayContent(,$fileBytes)
+$fileContent.Headers.ContentType = [System.Net.Http.Headers.MediaTypeHeaderValue]::Parse("application/java-archive")
+$multipart.Add($fileContent, "file", $fileItem.Name)
 
-resp = urllib.request.urlopen(req)
-print(resp.read().decode())
+$response = $httpClient.PostAsync("https://minecraft.curseforge.com/api/projects/1600093/upload-file", $multipart).GetAwaiter().GetResult()
+Write-Host $response.Content.ReadAsStringAsync().GetAwaiter().GetResult()
+$httpClient.Dispose(); $multipart.Dispose()
 ```
 
 ## Verificar con GET
