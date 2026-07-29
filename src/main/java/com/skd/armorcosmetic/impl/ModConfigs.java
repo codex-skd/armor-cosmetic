@@ -43,10 +43,10 @@ public class ModConfigs {
                 .defineInRange("CosArmorGuiButton_Top", 7, -1000, 1000);
         CosArmorGuiButton_Width = BUILDER
                 .comment("Width of the cosmetic armor button")
-                .defineInRange("CosArmorGuiButton_Width", 10, 10, 200);
+                .defineInRange("CosArmorGuiButton_Width", 20, 10, 200);
         CosArmorGuiButton_Height = BUILDER
                 .comment("Height of the cosmetic armor button")
-                .defineInRange("CosArmorGuiButton_Height", 10, 8, 40);
+                .defineInRange("CosArmorGuiButton_Height", 20, 8, 40);
         CosArmorToggleButton_Hidden = BUILDER
                 .comment("Hide the toggle button")
                 .define("CosArmorToggleButton_Hidden", true);
@@ -64,7 +64,7 @@ public class ModConfigs {
                 .defineInRange("CosArmorToggleButton_Height", 10, 6, 40);
         CosArmorCreativeGuiButton_Hidden = BUILDER
                 .comment("Hide the cosmetic armor button on the creative inventory screen")
-                .define("CosArmorCreativeGuiButton_Hidden", true);
+                .define("CosArmorCreativeGuiButton_Hidden", false);
         CosArmorCreativeGuiButton_Left = BUILDER
                 .comment("Left offset for the cosmetic armor button on the creative inventory screen")
                 .defineInRange("CosArmorCreativeGuiButton_Left", 127, -1000, 1000);

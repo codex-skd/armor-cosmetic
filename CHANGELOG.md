@@ -1,12 +1,16 @@
 # Armor Cosmetic - Changelog
 
-## [1.0.22] - 2026-07-22
+## [1.0.22] - 2026-07-29
 
 ### Cambios
+- **Valores por defecto de configuración**: ancho/alto del botón cosmético normal ahora `20x20` (antes `10x10`) y botón del inventario creativo visible por defecto (`CosArmorCreativeGuiButton_Hidden=false`), alineados con las estadísticas fijas de referencia.
 - **Auditoría de proyecto**: eliminado `TEMPLATE_LICENSE.txt`, movidos templates a `src/main/resources/templates/`, añadido `temp/` al `.gitignore`.
 - **WORKFLOW actualizado**: renombrado a `WORKFLOW_ARMOR_COSMETIC_26-1-2.md` siguiendo el formato del genérico v1.0.0.
 - **Logo**: renombrado a `armor_cosmetic.png` según convención `<mod_id>.png`.
 - **build.gradle**: actualizada ruta de templates a `src/main/resources/templates/`.
+
+### Arreglos
+- **Traducción es_es corrupta**: corregida codificación de caracteres especiales (`Ã³`→`ó`, `Ã©`→`é`) en `es_es.json`, que afectaba a la pantalla de configuración en español.
 
 ## [1.0.21] - 2026-07-16
 
