@@ -1,5 +1,10 @@
 # Armor Cosmetic - Changelog
 
+## [1.0.2] - 2026-07-29
+
+### Changed
+- **Default config values**: cosmetic armor button is now `20x20` by default (was `10x10`), and the creative inventory button is now visible by default (`CosArmorCreativeGuiButton_Hidden=false`).
+
 ## [1.0.1] - 2026-07-27
 
 ### Fix
