@@ -1,5 +1,10 @@
 # Armor Cosmetic - Changelog
 
+## [1.0.3] - 2026-07-30
+
+### Fix
+- **Server crash on load (`NoClassDefFoundError: net/minecraft/client/gui/screens/Screen`)**: `IConfigScreenFactory` registration in the main `ArmorCosmetic` constructor (runs on client AND dedicated server) was touching the client-only `ConfigurationScreen` class unconditionally. Guarded with `FMLEnvironment.getDist() == Dist.CLIENT` so it's never linked on the server classloader.
+
 ## [1.0.2] - 2026-07-29
 
 ### Changed
