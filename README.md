@@ -1,27 +1,29 @@
 # Armor Cosmetic
 
-Un mod para NeoForge (MC 26.1.2) que te permite llevar dos conjuntos de armadura: uno para la protección y otro para la estética.
+> This mod is a fork of **CosmeticArmorReworked** by zlainsama and dmillerw. Not affiliated with or endorsed by the original authors.
 
-## Características
+Wear two sets of armor — one for function, one for fashion. Armor Cosmetic lets you equip a separate cosmetic armor set that displays over your real armor, keeping your best protective gear equipped while showing off any look you want.
 
-- **Sistema de armadura dual**: Lleva una armadura para las estadísticas y otra solo para mostrarla.
-- **GUI de inventario cosmético**: Ábrelo desde tu inventario normal con un solo botón.
-- **Alternar por ranura**: Cada ranura cosmética tiene un botón S/A que oculta la armadura real de esa ranura.
-- **Alternar global**: Desactiva toda la renderización cosmética de un solo clic.
-- **Compatible con Corail Tombstone**: Los objetos cosméticos son capturados por la tumba al morir.
-- **11 idiomas**: Inglés, español, alemán, francés, japonés, portugués, ruso, chino, coreano, turco, checo.
-- **Totalmente configurable**: Posiciones, tamaños y visibilidad de los botones configurables.
-- **Comandos**: `/clearcosarmor` y `/coshat`.
+## Features
 
-## Requisitos
+- **Dual armor system**: Wear one armor set for protection stats, another purely for display. Your real armor stays equipped underneath.
+- **Cosmetic inventory GUI**: Open the cosmetic armor screen from your normal inventory with a single button click.
+- **Per-slot toggles**: Each cosmetic slot has an S/A toggle that hides your real armor for that slot.
+- **Global toggle**: Disable all cosmetic rendering with one click — useful for PvP.
+- **Corail Tombstone compatible**: Cosmetic items are captured by tombstones when you die.
+- **11 languages**: English, Spanish, German, French, Japanese, Portuguese, Russian, Chinese, Korean, Turkish, Czech.
+- **Fully configurable**: Button positions, sizes, and visibility can be customized in the config file.
+- **Commands**: `/clearcosarmor` — clear cosmetic armor from players · `/coshat` — toggle cosmetic helmet visibility.
 
-- NeoForge 26.1.2.76+
+## Requirements
+
 - Minecraft 26.1.2
+- NeoForge 26.1.2.76+
 
-## Compilar
+## Build
 
 ```bash
 gradlew build
 ```
 
-El JAR se generará en `build/libs/armor_cosmetic-26.1.2-neoforge-<versión>.jar`.
+The JAR is generated at `build/libs/armor_cosmetic-26.1.2-neoforge-<version>.jar`.
