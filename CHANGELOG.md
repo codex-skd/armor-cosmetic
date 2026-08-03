@@ -1,5 +1,10 @@
 # Armor Cosmetic - Changelog
 
+## [1.0.23] - 2026-08-04
+
+### Arreglos
+- **Datos de armadura cosmética no se guardaban al desconectarse/parar el servidor** (`IllegalStateException: Can't access registry ResourceKey[minecraft:root / minecraft:enchantment]`): `CAStacksBase.serializeNBT`/`deserializeNBT` codificaba/decodificaba el `ItemStack` con el codec `NbtOps.INSTANCE` puro en vez de usar el `HolderLookup.Provider` recibido, así que los datos del ítem que dependen de registries (p. ej. encantamientos) no se podían resolver y el guardado fallaba silenciosamente. Ahora usa `provider.createSerializationContext(NbtOps.INSTANCE)`.
+
 ## [1.0.22] - 2026-07-29
 
 ### Cambios
