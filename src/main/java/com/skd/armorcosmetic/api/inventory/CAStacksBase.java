@@ -83,7 +83,7 @@ public class CAStacksBase extends ItemStackHandler {
                 CompoundTag tag = new CompoundTag();
                 tag.putInt("Slot", i);
                 if (!stack.isEmpty()) {
-                    Tag stackTag = ItemStack.CODEC.encodeStart(NbtOps.INSTANCE, stack).getOrThrow();
+                    Tag stackTag = ItemStack.CODEC.encodeStart(provider.createSerializationContext(NbtOps.INSTANCE), stack).getOrThrow();
                     tag = (CompoundTag) stackTag;
                     tag.putInt("Slot", i);
                 }
@@ -114,7 +114,7 @@ public class CAStacksBase extends ItemStackHandler {
                     tag.getInt("Slot").ifPresent(slot -> {
                         if (slot >= 0 && slot < stacks.size()) {
                             if (tag.contains("id")) {
-                                ItemStack.CODEC.parse(NbtOps.INSTANCE, tag).resultOrPartial(LOGGER::error).ifPresent(stack -> stacks.set(slot, stack));
+                                ItemStack.CODEC.parse(provider.createSerializationContext(NbtOps.INSTANCE), tag).resultOrPartial(LOGGER::error).ifPresent(stack -> stacks.set(slot, stack));
                             }
                             tag.getBoolean("isSkinArmor").ifPresent(value -> isSkinArmor[slot] = value);
                         }
