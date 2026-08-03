@@ -15,14 +15,14 @@
     "semantic_hash": "58a5df05c6546d7d2671a516793e02e7"
   },
   "src/main/java/com/skd/armorcosmetic/ArmorCosmetic.java": {
-    "mtime": 1785148245.7780142,
-    "ast_hash": "72ea6e5e7bb13df6dc7652f19779c8be",
-    "semantic_hash": "72ea6e5e7bb13df6dc7652f19779c8be"
+    "mtime": 1785492191.9782002,
+    "ast_hash": "2104ca357cac74dcbabc9f0fcb557094",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/armorcosmetic/ArmorCosmeticClient.java": {
-    "mtime": 1785148245.7895014,
-    "ast_hash": "0fbc7834525f754eeca8fd91ee2c143d",
-    "semantic_hash": "0fbc7834525f754eeca8fd91ee2c143d"
+    "mtime": 1785237868.5382073,
+    "ast_hash": "6d5d270313b845fcabf681780b5fdebf",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/armorcosmetic/Config.java": {
     "mtime": 1785148245.7965262,
@@ -40,9 +40,9 @@
     "semantic_hash": "133397d4cd5e58491bbb563a426f1611"
   },
   "src/main/java/com/skd/armorcosmetic/api/inventory/CAStacksBase.java": {
-    "mtime": 1785148245.804986,
-    "ast_hash": "d53b837b61a024f8504117720b3a0830",
-    "semantic_hash": "d53b837b61a024f8504117720b3a0830"
+    "mtime": 1785791519.1081755,
+    "ast_hash": "a0687c5d0f99381fbdf51fda8cb19fed",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/armorcosmetic/impl/InventoryManager.java": {
     "mtime": 1785148245.832518,
@@ -50,9 +50,9 @@
     "semantic_hash": "603009c480d4a998a1959303db33d667"
   },
   "src/main/java/com/skd/armorcosmetic/impl/ModConfigs.java": {
-    "mtime": 1785148245.8285174,
-    "ast_hash": "b9769f387d22f6cea42e04933b45952a",
-    "semantic_hash": "b9769f387d22f6cea42e04933b45952a"
+    "mtime": 1785351433.166778,
+    "ast_hash": "904d65d5ecdc57687f592e4e45f31eff",
+    "semantic_hash": ""
   },
   "src/main/java/com/skd/armorcosmetic/impl/ModObjects.java": {
     "mtime": 1785148245.8305182,
@@ -223,5 +223,90 @@
     "mtime": 1785148248.0200415,
     "ast_hash": "07e7763068d116e6453951bdd92dfb65",
     "semantic_hash": "07e7763068d116e6453951bdd92dfb65"
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1785489187.1860304,
+    "ast_hash": "5819572f831b643fb82e1c2ee8668cef",
+    "semantic_hash": ""
+  },
+  ".gitlab-ci.yml": {
+    "mtime": 1785148208.3580732,
+    "ast_hash": "9676c8e0a26e1f7b47446c1a4ef8fa53",
+    "semantic_hash": ""
+  },
+  "CHANGELOG.md": {
+    "mtime": 1785794784.5472524,
+    "ast_hash": "378d775c682b59148672832784c64781",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1785626728.1746616,
+    "ast_hash": "1518457998850daf2ce75f41bef8d88c",
+    "semantic_hash": ""
+  },
+  "docs/WORKFLOW_ARMOR_COSMETIC_26-2.md": {
+    "mtime": 1785626678.1384213,
+    "ast_hash": "c9aa90364416b8e9823fdf66f721e948",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/project_description.md": {
+    "mtime": 1785148337.5643313,
+    "ast_hash": "45efad0e53e3342f7607a6d846b8e0e6",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/project_vars.md": {
+    "mtime": 1785364885.9912071,
+    "ast_hash": "2df602fb129d8044a0ac1323b136ca6f",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.1.md": {
+    "mtime": 1785161418.47288,
+    "ast_hash": "6fa03a16ff2fb62a9724ff17337dea36",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.0.md": {
+    "mtime": 1785202747.1766007,
+    "ast_hash": "cdb44ea35e0890dbdd50c03697bc9011",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.1.md": {
+    "mtime": 1785238052.559163,
+    "ast_hash": "ddfd8a92684145bec1f7190b5d711f9f",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.2.md": {
+    "mtime": 1785358873.5665135,
+    "ast_hash": "44f6e5c0c40fd28d610bfb4dda005c32",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.3.md": {
+    "mtime": 1785492266.61492,
+    "ast_hash": "873b8083f4d18ad94f8da28fd4cd0a85",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.4.md": {
+    "mtime": 1785794778.5395813,
+    "ast_hash": "2bdf86fc6a5008b15446e380831f4eea",
+    "semantic_hash": ""
+  },
+  "src/main/resources/armor_cosmetic.png": {
+    "mtime": 1785148247.8534055,
+    "ast_hash": "1cb797d141cb5f6b69eb3fb45efbbc5b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/armor_cosmetic/textures/gui/cosarmorinventory.png": {
+    "mtime": 1785148248.0400684,
+    "ast_hash": "98a6bb054273ef56df3fe63cbb34b405",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/armor_cosmetic/textures/gui/icon_chestplate.png": {
+    "mtime": 1785148248.0400684,
+    "ast_hash": "2c111dcbd99e8a962e23378dc0495a34",
+    "semantic_hash": ""
+  },
+  "src/main/resources/logo.png": {
+    "mtime": 1785148247.8843637,
+    "ast_hash": "1cb797d141cb5f6b69eb3fb45efbbc5b",
+    "semantic_hash": ""
   }
 }
