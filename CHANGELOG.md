@@ -1,5 +1,10 @@
 # Armor Cosmetic - Changelog
 
+## [1.0.4] - 2026-08-04
+
+### Fix
+- **Cosmetic armor data failing to save on logout/server stop** (`IllegalStateException: Can't access registry ResourceKey[minecraft:root / minecraft:enchantment]`): `CAStacksBase.serializeNBT`/`deserializeNBT` encoded/decoded `ItemStack` with a plain `NbtOps.INSTANCE` codec instead of the provided `HolderLookup.Provider`, so registry-backed item data (e.g. enchantments) couldn't be resolved and saving silently failed. Now uses `provider.createSerializationContext(NbtOps.INSTANCE)`.
+
 ## [1.0.3] - 2026-07-30
 
 ### Fix
