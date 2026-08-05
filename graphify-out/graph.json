@@ -586,7 +586,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "src_main_java_com_skd_armorcosmetic_api_inventory_castacksbase_castacksbase_setskinarmor",
-      "community": 6,
+      "community": 4,
       "norm_label": ".setskinarmor()"
     },
     {
@@ -1196,7 +1196,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_guihandler_java",
-      "community": 10,
+      "community": 11,
       "norm_label": "guihandler.java"
     },
     {
@@ -1206,7 +1206,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_guihandler_guihandler",
-      "community": 10,
+      "community": 11,
       "norm_label": "guihandler"
     },
     {
@@ -1216,7 +1216,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_guihandler_guihandler_instance",
-      "community": 10,
+      "community": 11,
       "norm_label": "instance"
     },
     {
@@ -1226,7 +1226,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_guihandler_handleguidrawpre",
-      "community": 10,
+      "community": 11,
       "norm_label": "handleguidrawpre()"
     },
     {
@@ -1246,7 +1246,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_guihandler_handleguiinitpost",
-      "community": 7,
+      "community": 11,
       "norm_label": "handleguiinitpost()"
     },
     {
@@ -1256,7 +1256,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "post",
-      "community": 7,
+      "community": 11,
       "norm_label": "post"
     },
     {
@@ -1266,7 +1266,7 @@
       "source_location": "L120",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_guihandler_registerevents",
-      "community": 10,
+      "community": 11,
       "norm_label": "registerevents()"
     },
     {
@@ -2016,7 +2016,7 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_onrecipebookbuttonclick",
-      "community": 11,
+      "community": 3,
       "norm_label": ".onrecipebookbuttonclick()"
     },
     {
@@ -3610,484 +3610,34 @@
       "norm_label": "changelog.md"
     },
     {
-      "label": "Armor Cosmetic - Changelog",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "changelog_armor_cosmetic_changelog",
-      "community": 12,
-      "norm_label": "armor cosmetic - changelog"
-    },
-    {
-      "label": "[1.0.4] - 2026-08-04",
+      "label": "[1.0.5] - 2026-08-05",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "changelog_1_0_4_2026_08_04",
+      "id": "changelog_1_0_5_2026_08_05",
       "community": 12,
-      "norm_label": "[1.0.4] - 2026-08-04"
+      "norm_label": "[1.0.5] - 2026-08-05"
     },
     {
-      "label": "Fix",
+      "label": "Change",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "changelog_fix",
+      "id": "changelog_change",
       "community": 12,
-      "norm_label": "fix"
+      "norm_label": "change"
     },
     {
-      "label": "[1.0.3] - 2026-07-30",
+      "label": "[",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L8",
+      "source_location": "L9",
       "_origin": "ast",
-      "id": "changelog_1_0_3_2026_07_30",
+      "id": "g_proyectos_mods_minecraft_armor_cosmetic_neoforge_26_2_changelog",
       "community": 12,
-      "norm_label": "[1.0.3] - 2026-07-30"
-    },
-    {
-      "label": "Fix",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "changelog_fix_10",
-      "community": 12,
-      "norm_label": "fix"
-    },
-    {
-      "label": "[1.0.2] - 2026-07-29",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L13",
-      "_origin": "ast",
-      "id": "changelog_1_0_2_2026_07_29",
-      "community": 12,
-      "norm_label": "[1.0.2] - 2026-07-29"
-    },
-    {
-      "label": "Changed",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "changelog_changed",
-      "community": 12,
-      "norm_label": "changed"
-    },
-    {
-      "label": "[1.0.1] - 2026-07-27",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "changelog_1_0_1_2026_07_27",
-      "community": 12,
-      "norm_label": "[1.0.1] - 2026-07-27"
-    },
-    {
-      "label": "Fix",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L20",
-      "_origin": "ast",
-      "id": "changelog_fix_20",
-      "community": 12,
-      "norm_label": "fix"
-    },
-    {
-      "label": "[1.0.0] - 2026-07-27",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "changelog_1_0_0_2026_07_27",
-      "community": 12,
-      "norm_label": "[1.0.0] - 2026-07-27"
-    },
-    {
-      "label": "Changes",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L25",
-      "_origin": "ast",
-      "id": "changelog_changes",
-      "community": 12,
-      "norm_label": "changes"
-    },
-    {
-      "label": "[0.0.0-beta.1] - 2026-07-27",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "changelog_0_0_0_beta_1_2026_07_27",
-      "community": 12,
-      "norm_label": "[0.0.0-beta.1] - 2026-07-27"
-    },
-    {
-      "label": "Changes",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L31",
-      "_origin": "ast",
-      "id": "changelog_changes_31",
-      "community": 12,
-      "norm_label": "changes"
-    },
-    {
-      "label": "[1.0.22] - 2026-07-22",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L37",
-      "_origin": "ast",
-      "id": "changelog_1_0_22_2026_07_22",
-      "community": 12,
-      "norm_label": "[1.0.22] - 2026-07-22"
-    },
-    {
-      "label": "Cambios",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L39",
-      "_origin": "ast",
-      "id": "changelog_cambios",
-      "community": 12,
-      "norm_label": "cambios"
-    },
-    {
-      "label": "[1.0.21] - 2026-07-16",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L45",
-      "_origin": "ast",
-      "id": "changelog_1_0_21_2026_07_16",
-      "community": 12,
-      "norm_label": "[1.0.21] - 2026-07-16"
-    },
-    {
-      "label": "Arreglos",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L47",
-      "_origin": "ast",
-      "id": "changelog_arreglos",
-      "community": 12,
-      "norm_label": "arreglos"
-    },
-    {
-      "label": "[1.0.20] - 2026-07-16",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L50",
-      "_origin": "ast",
-      "id": "changelog_1_0_20_2026_07_16",
-      "community": 12,
-      "norm_label": "[1.0.20] - 2026-07-16"
-    },
-    {
-      "label": "Arreglos",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L52",
-      "_origin": "ast",
-      "id": "changelog_arreglos_52",
-      "community": 12,
-      "norm_label": "arreglos"
-    },
-    {
-      "label": "[1.0.19] - 2026-07-14",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L56",
-      "_origin": "ast",
-      "id": "changelog_1_0_19_2026_07_14",
-      "community": 12,
-      "norm_label": "[1.0.19] - 2026-07-14"
-    },
-    {
-      "label": "Cambios",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L58",
-      "_origin": "ast",
-      "id": "changelog_cambios_58",
-      "community": 12,
-      "norm_label": "cambios"
-    },
-    {
-      "label": "[1.0.18] - 2026-07-11",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L64",
-      "_origin": "ast",
-      "id": "changelog_1_0_18_2026_07_11",
-      "community": 12,
-      "norm_label": "[1.0.18] - 2026-07-11"
-    },
-    {
-      "label": "Arreglos",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L66",
-      "_origin": "ast",
-      "id": "changelog_arreglos_66",
-      "community": 12,
-      "norm_label": "arreglos"
-    },
-    {
-      "label": "[1.0.17] - 2026-07-10",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L72",
-      "_origin": "ast",
-      "id": "changelog_1_0_17_2026_07_10",
-      "community": 12,
-      "norm_label": "[1.0.17] - 2026-07-10"
-    },
-    {
-      "label": "Arreglos",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L74",
-      "_origin": "ast",
-      "id": "changelog_arreglos_74",
-      "community": 12,
-      "norm_label": "arreglos"
-    },
-    {
-      "label": "[1.0.16] - 2026-07-10",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L78",
-      "_origin": "ast",
-      "id": "changelog_1_0_16_2026_07_10",
-      "community": 12,
-      "norm_label": "[1.0.16] - 2026-07-10"
-    },
-    {
-      "label": "Arreglos",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L80",
-      "_origin": "ast",
-      "id": "changelog_arreglos_80",
-      "community": 12,
-      "norm_label": "arreglos"
-    },
-    {
-      "label": "[1.0.15] - 2026-07-10",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L85",
-      "_origin": "ast",
-      "id": "changelog_1_0_15_2026_07_10",
-      "community": 12,
-      "norm_label": "[1.0.15] - 2026-07-10"
-    },
-    {
-      "label": "Arreglos",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L87",
-      "_origin": "ast",
-      "id": "changelog_arreglos_87",
-      "community": 12,
-      "norm_label": "arreglos"
-    },
-    {
-      "label": "[1.0.11] - 2026-07-09",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L93",
-      "_origin": "ast",
-      "id": "changelog_1_0_11_2026_07_09",
-      "community": 12,
-      "norm_label": "[1.0.11] - 2026-07-09"
-    },
-    {
-      "label": "Cambios",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L95",
-      "_origin": "ast",
-      "id": "changelog_cambios_95",
-      "community": 12,
-      "norm_label": "cambios"
-    },
-    {
-      "label": "[1.0.10] - 2026-07-09",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L98",
-      "_origin": "ast",
-      "id": "changelog_1_0_10_2026_07_09",
-      "community": 12,
-      "norm_label": "[1.0.10] - 2026-07-09"
-    },
-    {
-      "label": "Changed",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L100",
-      "_origin": "ast",
-      "id": "changelog_changed_100",
-      "community": 12,
-      "norm_label": "changed"
-    },
-    {
-      "label": "[1.0.9] - 2026-07-08",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L103",
-      "_origin": "ast",
-      "id": "changelog_1_0_9_2026_07_08",
-      "community": 12,
-      "norm_label": "[1.0.9] - 2026-07-08"
-    },
-    {
-      "label": "Changed",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L105",
-      "_origin": "ast",
-      "id": "changelog_changed_105",
-      "community": 12,
-      "norm_label": "changed"
-    },
-    {
-      "label": "[1.0.8] - 2026-07-08",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L108",
-      "_origin": "ast",
-      "id": "changelog_1_0_8_2026_07_08",
-      "community": 12,
-      "norm_label": "[1.0.8] - 2026-07-08"
-    },
-    {
-      "label": "Added",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L110",
-      "_origin": "ast",
-      "id": "changelog_added",
-      "community": 12,
-      "norm_label": "added"
-    },
-    {
-      "label": "[1.0.7] - 2026-07-08",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L114",
-      "_origin": "ast",
-      "id": "changelog_1_0_7_2026_07_08",
-      "community": 12,
-      "norm_label": "[1.0.7] - 2026-07-08"
-    },
-    {
-      "label": "Changed",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L116",
-      "_origin": "ast",
-      "id": "changelog_changed_116",
-      "community": 12,
-      "norm_label": "changed"
-    },
-    {
-      "label": "[1.0.6] - 2026-07-08",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L119",
-      "_origin": "ast",
-      "id": "changelog_1_0_6_2026_07_08",
-      "community": 12,
-      "norm_label": "[1.0.6] - 2026-07-08"
-    },
-    {
-      "label": "Changed",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L121",
-      "_origin": "ast",
-      "id": "changelog_changed_121",
-      "community": 12,
-      "norm_label": "changed"
-    },
-    {
-      "label": "[1.0.1] - 2026-07-06",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L125",
-      "_origin": "ast",
-      "id": "changelog_1_0_1_2026_07_06",
-      "community": 12,
-      "norm_label": "[1.0.1] - 2026-07-06"
-    },
-    {
-      "label": "Changed",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L127",
-      "_origin": "ast",
-      "id": "changelog_changed_127",
-      "community": 12,
-      "norm_label": "changed"
-    },
-    {
-      "label": "[1.0.0] - 2026-07-06",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L136",
-      "_origin": "ast",
-      "id": "changelog_1_0_0_2026_07_06",
-      "community": 12,
-      "norm_label": "[1.0.0] - 2026-07-06"
-    },
-    {
-      "label": "First Stable Release",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L138",
-      "_origin": "ast",
-      "id": "changelog_first_stable_release",
-      "community": 12,
-      "norm_label": "first stable release"
-    },
-    {
-      "label": "Features",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L142",
-      "_origin": "ast",
-      "id": "changelog_features",
-      "community": 12,
-      "norm_label": "features"
-    },
-    {
-      "label": "Known Issues",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L156",
-      "_origin": "ast",
-      "id": "changelog_known_issues",
-      "community": 12,
-      "norm_label": "known issues"
-    },
-    {
-      "label": "Credits",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L161",
-      "_origin": "ast",
-      "id": "changelog_credits",
-      "community": 12,
-      "norm_label": "credits"
+      "norm_label": "["
     },
     {
       "label": "README.md",
@@ -4293,7 +3843,7 @@
       "label": "Proyecto",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L3",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_proyecto",
       "community": 13,
@@ -4303,7 +3853,7 @@
       "label": "Tokens",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L11",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_tokens",
       "community": 13,
@@ -4313,7 +3863,7 @@
       "label": "Versi\u00f3n actual",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L21",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_versi\u00f3n_actual",
       "community": 13,
@@ -4323,7 +3873,7 @@
       "label": "Rama",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L30",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_rama",
       "community": 13,
@@ -4333,7 +3883,7 @@
       "label": "Tag",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L36",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_tag",
       "community": 13,
@@ -4343,7 +3893,7 @@
       "label": "Par\u00e1metros del upload",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L41",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_par\u00e1metros_del_upload",
       "community": 13,
@@ -4353,7 +3903,7 @@
       "label": "IDs de `gameVersions` para 26.2",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L51",
+      "source_location": "L57",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_ids_de_gameversions_para_26_2",
       "community": 13,
@@ -4363,7 +3913,7 @@
       "label": "Estructura del changelog (HTML)",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L64",
+      "source_location": "L70",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_estructura_del_changelog_html",
       "community": 13,
@@ -4373,7 +3923,7 @@
       "label": "Subir archivo (JAR)",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L80",
+      "source_location": "L86",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_subir_archivo_jar",
       "community": 13,
@@ -4383,7 +3933,7 @@
       "label": "Verificar con GET",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L117",
+      "source_location": "L123",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_verificar_con_get",
       "community": 13,
@@ -4393,7 +3943,7 @@
       "label": "Changelog",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L124",
+      "source_location": "L130",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_changelog",
       "community": 13,
@@ -4403,7 +3953,7 @@
       "label": "Descripcion del proyecto",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L131",
+      "source_location": "L137",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_descripcion_del_proyecto",
       "community": 13,
@@ -4413,7 +3963,7 @@
       "label": "Flujo completo",
       "file_type": "document",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L135",
+      "source_location": "L141",
       "_origin": "ast",
       "id": "docs_curseforge_project_vars_flujo_completo",
       "community": 13,
@@ -4478,6 +4028,16 @@
       "id": "docs_curseforge_versions_1_0_4",
       "community": 26,
       "norm_label": "1.0.4.md"
+    },
+    {
+      "label": "1.0.5.md",
+      "file_type": "document",
+      "source_file": "docs/curseforge/versions/1.0.5.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_curseforge_versions_1_0_5",
+      "community": 100,
+      "norm_label": "1.0.5.md"
     }
   ],
   "links": [
@@ -9138,230 +8698,20 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "changelog",
-      "target": "changelog_armor_cosmetic_changelog",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L29",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_0_0_0_beta_1_2026_07_27",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L136",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_0_2026_07_06",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_0_2026_07_27",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L98",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_10_2026_07_09",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L93",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_11_2026_07_09",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L85",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_15_2026_07_10",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L78",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_16_2026_07_10",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L72",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_17_2026_07_10",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L64",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_18_2026_07_11",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L56",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_19_2026_07_14",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L125",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_1_2026_07_06",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_1_2026_07_27",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L50",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_20_2026_07_16",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L45",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_21_2026_07_16",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L37",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_22_2026_07_22",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_2_2026_07_29",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_3_2026_07_30",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
       "source_location": "L3",
       "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_4_2026_08_04",
+      "source": "changelog",
+      "target": "changelog_1_0_5_2026_08_05",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L119",
+      "source_location": "L9",
       "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_6_2026_07_08",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L114",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_7_2026_07_08",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L108",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_8_2026_07_08",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L103",
-      "weight": 1.0,
-      "source": "changelog_armor_cosmetic_changelog",
-      "target": "changelog_1_0_9_2026_07_08",
+      "source": "changelog",
+      "target": "g_proyectos_mods_minecraft_armor_cosmetic_neoforge_26_2_changelog",
       "confidence_score": 1.0
     },
     {
@@ -9370,248 +8720,8 @@
       "source_file": "CHANGELOG.md",
       "source_location": "L5",
       "weight": 1.0,
-      "source": "changelog_1_0_4_2026_08_04",
-      "target": "changelog_fix",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "changelog_1_0_3_2026_07_30",
-      "target": "changelog_fix_10",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "changelog_1_0_2_2026_07_29",
-      "target": "changelog_changed",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "changelog_1_0_1_2026_07_27",
-      "target": "changelog_fix_20",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L25",
-      "weight": 1.0,
-      "source": "changelog_1_0_0_2026_07_27",
-      "target": "changelog_changes",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "changelog_0_0_0_beta_1_2026_07_27",
-      "target": "changelog_changes_31",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L39",
-      "weight": 1.0,
-      "source": "changelog_1_0_22_2026_07_22",
-      "target": "changelog_cambios",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L47",
-      "weight": 1.0,
-      "source": "changelog_1_0_21_2026_07_16",
-      "target": "changelog_arreglos",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L52",
-      "weight": 1.0,
-      "source": "changelog_1_0_20_2026_07_16",
-      "target": "changelog_arreglos_52",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L58",
-      "weight": 1.0,
-      "source": "changelog_1_0_19_2026_07_14",
-      "target": "changelog_cambios_58",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L66",
-      "weight": 1.0,
-      "source": "changelog_1_0_18_2026_07_11",
-      "target": "changelog_arreglos_66",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L74",
-      "weight": 1.0,
-      "source": "changelog_1_0_17_2026_07_10",
-      "target": "changelog_arreglos_74",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L80",
-      "weight": 1.0,
-      "source": "changelog_1_0_16_2026_07_10",
-      "target": "changelog_arreglos_80",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L87",
-      "weight": 1.0,
-      "source": "changelog_1_0_15_2026_07_10",
-      "target": "changelog_arreglos_87",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L95",
-      "weight": 1.0,
-      "source": "changelog_1_0_11_2026_07_09",
-      "target": "changelog_cambios_95",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L100",
-      "weight": 1.0,
-      "source": "changelog_1_0_10_2026_07_09",
-      "target": "changelog_changed_100",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L105",
-      "weight": 1.0,
-      "source": "changelog_1_0_9_2026_07_08",
-      "target": "changelog_changed_105",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L110",
-      "weight": 1.0,
-      "source": "changelog_1_0_8_2026_07_08",
-      "target": "changelog_added",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L116",
-      "weight": 1.0,
-      "source": "changelog_1_0_7_2026_07_08",
-      "target": "changelog_changed_116",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L121",
-      "weight": 1.0,
-      "source": "changelog_1_0_6_2026_07_08",
-      "target": "changelog_changed_121",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L127",
-      "weight": 1.0,
-      "source": "changelog_1_0_1_2026_07_06",
-      "target": "changelog_changed_127",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L161",
-      "weight": 1.0,
-      "source": "changelog_1_0_0_2026_07_06",
-      "target": "changelog_credits",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L142",
-      "weight": 1.0,
-      "source": "changelog_1_0_0_2026_07_06",
-      "target": "changelog_features",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L138",
-      "weight": 1.0,
-      "source": "changelog_1_0_0_2026_07_06",
-      "target": "changelog_first_stable_release",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L156",
-      "weight": 1.0,
-      "source": "changelog_1_0_0_2026_07_06",
-      "target": "changelog_known_issues",
+      "source": "changelog_1_0_5_2026_08_05",
+      "target": "changelog_change",
       "confidence_score": 1.0
     },
     {
@@ -9778,7 +8888,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L124",
+      "source_location": "L130",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_curseforge_variables_del_proyecto",
       "target": "docs_curseforge_project_vars_changelog",
@@ -9788,7 +8898,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L131",
+      "source_location": "L137",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_curseforge_variables_del_proyecto",
       "target": "docs_curseforge_project_vars_descripcion_del_proyecto",
@@ -9798,7 +8908,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L64",
+      "source_location": "L70",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_curseforge_variables_del_proyecto",
       "target": "docs_curseforge_project_vars_estructura_del_changelog_html",
@@ -9808,7 +8918,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L135",
+      "source_location": "L141",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_curseforge_variables_del_proyecto",
       "target": "docs_curseforge_project_vars_flujo_completo",
@@ -9818,7 +8928,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L41",
+      "source_location": "L47",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_curseforge_variables_del_proyecto",
       "target": "docs_curseforge_project_vars_par\u00e1metros_del_upload",
@@ -9828,7 +8938,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L3",
+      "source_location": "L9",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_curseforge_variables_del_proyecto",
       "target": "docs_curseforge_project_vars_proyecto",
@@ -9838,7 +8948,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L30",
+      "source_location": "L36",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_curseforge_variables_del_proyecto",
       "target": "docs_curseforge_project_vars_rama",
@@ -9848,7 +8958,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L80",
+      "source_location": "L86",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_curseforge_variables_del_proyecto",
       "target": "docs_curseforge_project_vars_subir_archivo_jar",
@@ -9858,7 +8968,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L36",
+      "source_location": "L42",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_curseforge_variables_del_proyecto",
       "target": "docs_curseforge_project_vars_tag",
@@ -9868,7 +8978,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L11",
+      "source_location": "L17",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_curseforge_variables_del_proyecto",
       "target": "docs_curseforge_project_vars_tokens",
@@ -9878,7 +8988,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L117",
+      "source_location": "L123",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_curseforge_variables_del_proyecto",
       "target": "docs_curseforge_project_vars_verificar_con_get",
@@ -9888,7 +8998,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L21",
+      "source_location": "L27",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_curseforge_variables_del_proyecto",
       "target": "docs_curseforge_project_vars_versi\u00f3n_actual",
@@ -9898,7 +9008,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/curseforge/project_vars.md",
-      "source_location": "L51",
+      "source_location": "L57",
       "weight": 1.0,
       "source": "docs_curseforge_project_vars_par\u00e1metros_del_upload",
       "target": "docs_curseforge_project_vars_ids_de_gameversions_para_26_2",
@@ -9906,5 +9016,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9129e887febb5fa4b4841e3ebf57fa0a651fe78f"
+  "built_at_commit": "48ab245547b0a763127df73c506f308a21d19b02"
 }
