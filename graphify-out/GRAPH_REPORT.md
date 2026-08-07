@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-07)
 
 ## Corpus Check
-- 66 files · ~117,727 words
+- 67 files · ~117,916 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 423 nodes · 523 edges · 101 communities (34 shown, 67 thin omitted)
+- 426 nodes · 527 edges · 100 communities (35 shown, 65 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 9 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e55b9c0e`
+- Built from commit: `33ced943`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -47,8 +47,6 @@
 - GuiGraphicsExtractor
 - OnPress
 - Override
-- Pre
-- RegisterMenuScreensEvent
 - Inventory
 - LoadingCache
 - LoggingOut
@@ -118,19 +116,19 @@
 ## Surprising Connections (you probably didn't know these)
 - `handleClientTick()` --calls--> `PayloadOpenCosArmorInventory`  [INFERRED]
   src/main/java/com/skd/armorcosmetic/impl/client/KeyHandler.java → src/main/java/com/skd/armorcosmetic/impl/network/payload/PayloadOpenCosArmorInventory.java
-- `handleGuiInitPost()` --calls--> `PayloadOpenCosArmorInventory`  [INFERRED]
-  src/main/java/com/skd/armorcosmetic/impl/client/GuiHandler.java → src/main/java/com/skd/armorcosmetic/impl/network/payload/PayloadOpenCosArmorInventory.java
-- `handleGuiInitPost()` --calls--> `PayloadOpenNormalInventory`  [INFERRED]
-  src/main/java/com/skd/armorcosmetic/impl/client/GuiHandler.java → src/main/java/com/skd/armorcosmetic/impl/network/payload/PayloadOpenNormalInventory.java
 - `ArmorCosmetic` --references--> `ContainerCosArmor`  [EXTRACTED]
   src/main/java/com/skd/armorcosmetic/ArmorCosmetic.java → src/main/java/com/skd/armorcosmetic/impl/inventory/ContainerCosArmor.java
 - `InventoryCosArmor` --inherits--> `CAStacksBase`  [EXTRACTED]
   src/main/java/com/skd/armorcosmetic/impl/inventory/InventoryCosArmor.java → src/main/java/com/skd/armorcosmetic/api/inventory/CAStacksBase.java
+- `handleGuiInitPost()` --calls--> `PayloadOpenCosArmorInventory`  [INFERRED]
+  src/main/java/com/skd/armorcosmetic/impl/client/GuiHandler.java → src/main/java/com/skd/armorcosmetic/impl/network/payload/PayloadOpenCosArmorInventory.java
+- `handleGuiInitPost()` --calls--> `PayloadOpenNormalInventory`  [INFERRED]
+  src/main/java/com/skd/armorcosmetic/impl/client/GuiHandler.java → src/main/java/com/skd/armorcosmetic/impl/network/payload/PayloadOpenNormalInventory.java
 
 ## Import Cycles
 - None detected.
 
-## Communities (101 total, 67 thin omitted)
+## Communities (100 total, 65 thin omitted)
 
 ### Community 0 - "InventoryManager"
 Cohesion: 0.08
@@ -141,15 +139,15 @@ Cohesion: 0.13
 Nodes (5): Button, GuiCosArmorButton, GuiCosArmorToggleButton, ICreativeInvWidget, IShiftingWidget
 
 ### Community 2 - "ContainerCosArmor"
-Cohesion: 0.12
-Nodes (12): AbstractCraftingMenu, Container, CraftingContainer, CraftingRecipe, registerMenuScreens(), ContainerCosArmor, ModObjects, RecipeBookType (+4 more)
+Cohesion: 0.13
+Nodes (11): AbstractCraftingMenu, Container, CraftingContainer, CraftingRecipe, ContainerCosArmor, ModObjects, RecipeBookType, RecipeHolder (+3 more)
 
 ### Community 3 - "GuiCosArmorInventory"
-Cohesion: 0.15
+Cohesion: 0.16
 Nodes (13): AbstractRecipeBookScreen, EffectsInInventory, EntityRenderState, LivingEntity, MouseButtonEvent, ScreenPosition, GuiCosArmorInventory, AbstractClientPlayer (+5 more)
 
 ### Community 4 - "InventoryCosArmor"
-Cohesion: 0.13
+Cohesion: 0.14
 Nodes (4): ContentsChangeListener, HiddenFlagsChangeListener, InventoryCosArmor, MenuProvider
 
 ### Community 5 - "PlayerRenderHandler.java"
@@ -157,12 +155,12 @@ Cohesion: 0.50
 Nodes (5): Avatar, CallbackInfo, MixinPlayerRenderer, Inject, Mixin
 
 ### Community 6 - "CAStacksBase"
-Cohesion: 0.12
+Cohesion: 0.11
 Nodes (10): CompoundTag, Event, CosArmorAPI, CosArmorDeathDrops, ICancellableEvent, ItemStackHandler, Provider, CAStacksBase (+2 more)
 
 ### Community 7 - "CustomPacketPayload"
-Cohesion: 0.10
-Nodes (8): CustomPacketPayload, PayloadOpenCosArmorInventory, PayloadOpenNormalInventory, PayloadSetHiddenFlags, PayloadSetSkinArmor, PayloadSyncCosArmor, PayloadSyncHiddenFlags, RegistryFriendlyByteBuf
+Cohesion: 0.09
+Nodes (10): CustomPacketPayload, PayloadOpenCosArmorInventory, PayloadOpenNormalInventory, PayloadSetHiddenFlags, PayloadSetSkinArmor, PayloadSyncCosArmor, PayloadSyncHiddenFlags, Post (+2 more)
 
 ### Community 8 - "ArmorCosmetic.java"
 Cohesion: 0.11
@@ -173,16 +171,16 @@ Cohesion: 0.33
 Nodes (5): handleClientTick(), KeyHandler, INSTANCE, registerKeyMappings(), KeyMapping
 
 ### Community 10 - "ModConfigs.java"
-Cohesion: 0.24
-Nodes (7): BooleanValue, Builder, Config, IntValue, ModConfigSpec, ModContainer, ModConfigs
+Cohesion: 0.13
+Nodes (13): BooleanValue, Builder, Config, IntValue, ModConfigSpec, GuiHandler, INSTANCE, handleGuiDrawPre() (+5 more)
 
 ### Community 11 - "InventoryScreen"
-Cohesion: 0.18
-Nodes (7): Field, GuiHandler, INSTANCE, handleGuiInitPost(), InventoryScreenAccess, InventoryScreen, Post
+Cohesion: 0.33
+Nodes (3): Field, InventoryScreenAccess, InventoryScreen
 
 ### Community 12 - "PayloadSyncCosArmor"
-Cohesion: 0.12
-Nodes (15): [1.0.5] - 2026-08-05, [1.0.6] - 2026-08-07, [1.0.7] - 2026-08-07, [1.0.8] - 2026-08-07, [1.0.9] - 2026-08-07, Change, Enhancement, Estatus (+7 more)
+Cohesion: 0.11
+Nodes (17): [1.0.10] - 2026-08-07, [1.0.5] - 2026-08-05, [1.0.6] - 2026-08-07, [1.0.7] - 2026-08-07, [1.0.8] - 2026-08-07, [1.0.9] - 2026-08-07, Change, Enhancement (+9 more)
 
 ### Community 13 - "InventoryManagerClient"
 Cohesion: 0.13
@@ -213,24 +211,24 @@ Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ## Knowledge Gaps
-- **40 isolated node(s):** `INSTANCE`, `INSTANCE`, `INSTANCE`, `Workflow del mod`, `Prioridad de instrucciones` (+35 more)
+- **41 isolated node(s):** `INSTANCE`, `INSTANCE`, `INSTANCE`, `Workflow del mod`, `Prioridad de instrucciones` (+36 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **67 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **65 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `InventoryCosArmor` connect `InventoryCosArmor` to `ArmorCosmetic.java`, `ContainerCosArmor`, `GuiCosArmorInventory`, `CAStacksBase`?**
-  _High betweenness centrality (0.103) - this node is a cross-community bridge._
+  _High betweenness centrality (0.102) - this node is a cross-community bridge._
 - **Why does `CAStacksBase` connect `CAStacksBase` to `InventoryCosArmor`?**
   _High betweenness centrality (0.055) - this node is a cross-community bridge._
 - **Why does `ContainerCosArmor` connect `ContainerCosArmor` to `ArmorCosmetic.java`, `GuiCosArmorInventory`?**
   _High betweenness centrality (0.049) - this node is a cross-community bridge._
 - **What connects `INSTANCE`, `INSTANCE`, `INSTANCE` to the rest of the system?**
-  _40 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _41 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `InventoryManager` be split into smaller, more focused modules?**
   _Cohesion score 0.08013937282229965 - nodes in this community are weakly interconnected._
 - **Should `GuiHandler.java` be split into smaller, more focused modules?**
   _Cohesion score 0.1286549707602339 - nodes in this community are weakly interconnected._
 - **Should `ContainerCosArmor` be split into smaller, more focused modules?**
-  _Cohesion score 0.12333333333333334 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.13043478260869565 - nodes in this community are weakly interconnected._
