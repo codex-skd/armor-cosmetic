@@ -1,5 +1,13 @@
 ---
 
+## [1.0.11] - 2026-08-07
+
+### Fix
+
+- **Alineación vertical del avatar del jugador**: Corregida la posición vertical del centro del modelo del jugador en la pantalla de inventario cosmético, de `topPos + 75` a `topPos + 80`, garantizando que el avatar esté perfectamente centrado en el área de visualización.
+
+- **Botón de cerrar inventario cosmético**: Añadido un botón dedicado (✕) en la esquina superior derecha de la interfaz de inventario cosmético, permitiendo a los jugadores volver al inventario normal de manera intuitiva sin depender del botón del libro de recetas.
+
 ## [1.0.10] - 2026-08-07
 
 ### Fix
