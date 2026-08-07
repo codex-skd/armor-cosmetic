@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-07)
 
 ## Corpus Check
-- 67 files · ~117,916 words
+- 67 files · ~117,932 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 426 nodes · 527 edges · 100 communities (35 shown, 65 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 9 edges (avg confidence: 0.8)
+- 426 nodes · 529 edges · 100 communities (35 shown, 65 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `33ced943`
+- Built from commit: `c65d34ce`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -143,8 +143,8 @@ Cohesion: 0.13
 Nodes (11): AbstractCraftingMenu, Container, CraftingContainer, CraftingRecipe, ContainerCosArmor, ModObjects, RecipeBookType, RecipeHolder (+3 more)
 
 ### Community 3 - "GuiCosArmorInventory"
-Cohesion: 0.16
-Nodes (13): AbstractRecipeBookScreen, EffectsInInventory, EntityRenderState, LivingEntity, MouseButtonEvent, ScreenPosition, GuiCosArmorInventory, AbstractClientPlayer (+5 more)
+Cohesion: 0.15
+Nodes (14): AbstractRecipeBookScreen, Builder, EffectsInInventory, EntityRenderState, LivingEntity, MouseButtonEvent, ScreenPosition, GuiCosArmorInventory (+6 more)
 
 ### Community 4 - "InventoryCosArmor"
 Cohesion: 0.14
@@ -171,8 +171,8 @@ Cohesion: 0.33
 Nodes (5): handleClientTick(), KeyHandler, INSTANCE, registerKeyMappings(), KeyMapping
 
 ### Community 10 - "ModConfigs.java"
-Cohesion: 0.13
-Nodes (13): BooleanValue, Builder, Config, IntValue, ModConfigSpec, GuiHandler, INSTANCE, handleGuiDrawPre() (+5 more)
+Cohesion: 0.14
+Nodes (12): BooleanValue, Config, IntValue, ModConfigSpec, GuiHandler, INSTANCE, handleGuiDrawPre(), Pre (+4 more)
 
 ### Community 11 - "InventoryScreen"
 Cohesion: 0.33
