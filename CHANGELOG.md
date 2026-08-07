@@ -1,5 +1,13 @@
 ---
 
+## [1.0.10] - 2026-08-07
+
+### Fix
+
+- **Botón Cerrar inventario cosmético**: Corregido comportamiento donde el botón cerraba completamente en lugar de cambiar al inventario normal. El servidor ahora cierra correctamente el contenedor cosmético permitiendo transición suave al inventario vanilla.
+
+- **Posición del avatar del jugador**: Recentrado el modelo del jugador desde `leftPos + 51` a `leftPos + 90` para una alineación perfecta con la zona visual del GUI cosmético.
+
 ## [1.0.9] - 2026-08-07
 
 ### Polish
