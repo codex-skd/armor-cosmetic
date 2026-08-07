@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-07)
 
 ## Corpus Check
-- 67 files · ~117,932 words
+- 68 files · ~118,174 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 426 nodes · 529 edges · 100 communities (35 shown, 65 thin omitted)
+- 429 nodes · 531 edges · 101 communities (36 shown, 65 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c65d34ce`
+- Built from commit: `1bbc9a19`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -128,7 +128,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (100 total, 65 thin omitted)
+## Communities (101 total, 65 thin omitted)
 
 ### Community 0 - "InventoryManager"
 Cohesion: 0.08
@@ -179,8 +179,8 @@ Cohesion: 0.33
 Nodes (3): Field, InventoryScreenAccess, InventoryScreen
 
 ### Community 12 - "PayloadSyncCosArmor"
-Cohesion: 0.11
-Nodes (17): [1.0.10] - 2026-08-07, [1.0.5] - 2026-08-05, [1.0.6] - 2026-08-07, [1.0.7] - 2026-08-07, [1.0.8] - 2026-08-07, [1.0.9] - 2026-08-07, Change, Enhancement (+9 more)
+Cohesion: 0.10
+Nodes (19): [1.0.10] - 2026-08-07, [1.0.11] - 2026-08-07, [1.0.5] - 2026-08-05, [1.0.6] - 2026-08-07, [1.0.7] - 2026-08-07, [1.0.8] - 2026-08-07, [1.0.9] - 2026-08-07, Change (+11 more)
 
 ### Community 13 - "InventoryManagerClient"
 Cohesion: 0.13
@@ -211,7 +211,7 @@ Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ## Knowledge Gaps
-- **41 isolated node(s):** `INSTANCE`, `INSTANCE`, `INSTANCE`, `Workflow del mod`, `Prioridad de instrucciones` (+36 more)
+- **42 isolated node(s):** `INSTANCE`, `INSTANCE`, `INSTANCE`, `Workflow del mod`, `Prioridad de instrucciones` (+37 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **65 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -219,13 +219,13 @@ Nodes (3): gradlew script, die(), warn()
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `InventoryCosArmor` connect `InventoryCosArmor` to `ArmorCosmetic.java`, `ContainerCosArmor`, `GuiCosArmorInventory`, `CAStacksBase`?**
-  _High betweenness centrality (0.102) - this node is a cross-community bridge._
+  _High betweenness centrality (0.101) - this node is a cross-community bridge._
 - **Why does `CAStacksBase` connect `CAStacksBase` to `InventoryCosArmor`?**
-  _High betweenness centrality (0.055) - this node is a cross-community bridge._
+  _High betweenness centrality (0.054) - this node is a cross-community bridge._
 - **Why does `ContainerCosArmor` connect `ContainerCosArmor` to `ArmorCosmetic.java`, `GuiCosArmorInventory`?**
-  _High betweenness centrality (0.049) - this node is a cross-community bridge._
+  _High betweenness centrality (0.048) - this node is a cross-community bridge._
 - **What connects `INSTANCE`, `INSTANCE`, `INSTANCE` to the rest of the system?**
-  _41 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _42 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `InventoryManager` be split into smaller, more focused modules?**
   _Cohesion score 0.08013937282229965 - nodes in this community are weakly interconnected._
 - **Should `GuiHandler.java` be split into smaller, more focused modules?**
