@@ -1,5 +1,13 @@
 ---
 
+## [1.0.8] - 2026-08-07
+
+### Fix
+
+- **Posición del avatar del jugador**: Ajustada posición del modelo del jugador para coincidir con la pantalla de inventario normal. El avatar ahora aparece en el área centro-izquierda, proporcionando una experiencia visual consistente.
+
+- **Comportamiento del botón Cerrar**: Corregido el botón para que abra adecuadamente el inventario normal. Ahora abre la pantalla `InventoryScreen` directamente en lugar de solo cerrar, garantizando transiciones suaves entre modos de inventario.
+
 ## [1.0.7] - 2026-08-07
 
 ### Improvement
