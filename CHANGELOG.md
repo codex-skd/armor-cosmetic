@@ -1,5 +1,18 @@
 ---
 
+## [1.0.9] - 2026-08-07
+
+### Polish
+
+- **Refinamiento de posicionamiento GUI**: Ajustes finales del avatar del jugador para alinación perfecta con la pantalla de inventario vanilla.
+- **Navegación de inventario mejorada**: Transiciones suaves y sin fricciones entre modos de inventario cosmético y normal.
+
+### Estatus
+
+- Sistema de armadura cosmética completamente refinado y pulido.
+- Todas las issues conocidas resueltas.
+- UI/UX optimizada para experiencia de usuario excelente.
+
 ## [1.0.8] - 2026-08-07
 
 ### Fix
