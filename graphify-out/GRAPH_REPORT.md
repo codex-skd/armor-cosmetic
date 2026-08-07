@@ -1,16 +1,16 @@
-# Graph Report - 26.2  (2026-08-07)
+# Graph Report - 26.2  (2026-08-08)
 
 ## Corpus Check
-- 68 files · ~118,174 words
+- 69 files · ~118,451 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 429 nodes · 531 edges · 101 communities (36 shown, 65 thin omitted)
+- 432 nodes · 533 edges · 102 communities (37 shown, 65 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1bbc9a19`
+- Built from commit: `41b257f1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -128,7 +128,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (101 total, 65 thin omitted)
+## Communities (102 total, 65 thin omitted)
 
 ### Community 0 - "InventoryManager"
 Cohesion: 0.08
@@ -147,7 +147,7 @@ Cohesion: 0.15
 Nodes (14): AbstractRecipeBookScreen, Builder, EffectsInInventory, EntityRenderState, LivingEntity, MouseButtonEvent, ScreenPosition, GuiCosArmorInventory (+6 more)
 
 ### Community 4 - "InventoryCosArmor"
-Cohesion: 0.14
+Cohesion: 0.13
 Nodes (4): ContentsChangeListener, HiddenFlagsChangeListener, InventoryCosArmor, MenuProvider
 
 ### Community 5 - "PlayerRenderHandler.java"
@@ -155,7 +155,7 @@ Cohesion: 0.50
 Nodes (5): Avatar, CallbackInfo, MixinPlayerRenderer, Inject, Mixin
 
 ### Community 6 - "CAStacksBase"
-Cohesion: 0.11
+Cohesion: 0.12
 Nodes (10): CompoundTag, Event, CosArmorAPI, CosArmorDeathDrops, ICancellableEvent, ItemStackHandler, Provider, CAStacksBase (+2 more)
 
 ### Community 7 - "CustomPacketPayload"
@@ -179,8 +179,8 @@ Cohesion: 0.33
 Nodes (3): Field, InventoryScreenAccess, InventoryScreen
 
 ### Community 12 - "PayloadSyncCosArmor"
-Cohesion: 0.10
-Nodes (19): [1.0.10] - 2026-08-07, [1.0.11] - 2026-08-07, [1.0.5] - 2026-08-05, [1.0.6] - 2026-08-07, [1.0.7] - 2026-08-07, [1.0.8] - 2026-08-07, [1.0.9] - 2026-08-07, Change (+11 more)
+Cohesion: 0.09
+Nodes (21): [1.0.10] - 2026-08-07, [1.0.11] - 2026-08-07, [1.0.12] - 2026-08-08, [1.0.5] - 2026-08-05, [1.0.6] - 2026-08-07, [1.0.7] - 2026-08-07, [1.0.8] - 2026-08-07, [1.0.9] - 2026-08-07 (+13 more)
 
 ### Community 13 - "InventoryManagerClient"
 Cohesion: 0.13
@@ -211,7 +211,7 @@ Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ## Knowledge Gaps
-- **42 isolated node(s):** `INSTANCE`, `INSTANCE`, `INSTANCE`, `Workflow del mod`, `Prioridad de instrucciones` (+37 more)
+- **43 isolated node(s):** `INSTANCE`, `INSTANCE`, `INSTANCE`, `Workflow del mod`, `Prioridad de instrucciones` (+38 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **65 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -219,13 +219,13 @@ Nodes (3): gradlew script, die(), warn()
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `InventoryCosArmor` connect `InventoryCosArmor` to `ArmorCosmetic.java`, `ContainerCosArmor`, `GuiCosArmorInventory`, `CAStacksBase`?**
-  _High betweenness centrality (0.101) - this node is a cross-community bridge._
+  _High betweenness centrality (0.099) - this node is a cross-community bridge._
 - **Why does `CAStacksBase` connect `CAStacksBase` to `InventoryCosArmor`?**
   _High betweenness centrality (0.054) - this node is a cross-community bridge._
 - **Why does `ContainerCosArmor` connect `ContainerCosArmor` to `ArmorCosmetic.java`, `GuiCosArmorInventory`?**
   _High betweenness centrality (0.048) - this node is a cross-community bridge._
 - **What connects `INSTANCE`, `INSTANCE`, `INSTANCE` to the rest of the system?**
-  _42 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _43 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `InventoryManager` be split into smaller, more focused modules?**
   _Cohesion score 0.08013937282229965 - nodes in this community are weakly interconnected._
 - **Should `GuiHandler.java` be split into smaller, more focused modules?**

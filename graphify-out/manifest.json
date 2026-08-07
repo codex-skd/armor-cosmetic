@@ -95,8 +95,8 @@
     "semantic_hash": "8b6f4a4ee83351b7cff077577e336c51"
   },
   "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java": {
-    "mtime": 1786121693.8879342,
-    "ast_hash": "b46743c05e926510f77de0c565e18f5f",
+    "mtime": 1786146209.5536487,
+    "ast_hash": "1cfe6f1e44579384c1591649b82107b4",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorToggleButton.java": {
@@ -235,8 +235,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786122828.8248017,
-    "ast_hash": "875513a93557a78b7e32187b8ad9b2cf",
+    "mtime": 1786146465.2663631,
+    "ast_hash": "9f07ca2cbb55c99033251c0aa78b395b",
     "semantic_hash": ""
   },
   "README.md": {
@@ -362,6 +362,11 @@
   "docs/curseforge/versions/1.0.11.md": {
     "mtime": 1786122824.712509,
     "ast_hash": "a681782dc3904da75d4ce530079cad4f",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.12.md": {
+    "mtime": 1786146460.2429402,
+    "ast_hash": "3e7760e25188972f46c25a963a44946a",
     "semantic_hash": ""
   }
 }
