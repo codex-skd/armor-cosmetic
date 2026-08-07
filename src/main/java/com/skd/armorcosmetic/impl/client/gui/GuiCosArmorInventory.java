@@ -58,6 +58,10 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
                 }
             }
         }
+        addRenderableWidget(new net.minecraft.client.gui.components.Button.Builder(Component.literal("✕"), btn -> {
+            this.minecraft.setScreenAndShow(new net.minecraft.client.gui.screens.inventory.InventoryScreen(this.minecraft.player));
+        }).pos(leftPos + imageWidth - 20, topPos + 5).size(16, 16).build());
+
         if (menu instanceof ContainerCosArmor container) {
             InventoryCosArmor cosInv = getCosInventory(container);
             if (cosInv != null) {
@@ -149,7 +153,7 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
     private void renderPlayerPreview(GuiGraphicsExtractor graphics, AbstractClientPlayer player, float mouseX, float mouseY) {
         try {
             float centerX = leftPos + 90;
-            float centerY = topPos + 75;
+            float centerY = topPos + 80;
             float x0 = leftPos + 40;
             float y0 = topPos;
             float x1 = leftPos + 140;
