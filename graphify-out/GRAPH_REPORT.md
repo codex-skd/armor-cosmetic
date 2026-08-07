@@ -1,16 +1,16 @@
-# Graph Report - 26.2  (2026-08-06)
+# Graph Report - 26.2  (2026-08-07)
 
 ## Corpus Check
-- 58 files · ~115,822 words
+- 66 files · ~117,727 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 402 nodes · 473 edges · 101 communities (30 shown, 71 thin omitted)
+- 423 nodes · 523 edges · 101 communities (34 shown, 67 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 9 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `48ab2455`
+- Built from commit: `e55b9c0e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,10 +42,6 @@
 - Identifier
 - OnPress
 - Override
-- Component
-- GuiGraphicsExtractor
-- Identifier
-- Inventory
 - Override
 - Component
 - GuiGraphicsExtractor
@@ -108,11 +104,11 @@
 - AvatarRenderState
 
 ## God Nodes (most connected - your core abstractions)
-1. `InventoryManager` - 24 edges
-2. `InventoryCosArmor` - 24 edges
+1. `InventoryCosArmor` - 26 edges
+2. `InventoryManager` - 24 edges
 3. `CAStacksBase` - 21 edges
-4. `GuiCosArmorInventory` - 15 edges
-5. `ContainerCosArmor` - 15 edges
+4. `GuiCosArmorInventory` - 19 edges
+5. `ContainerCosArmor` - 19 edges
 6. `ArmorCosmetic` - 14 edges
 7. `CurseForge — Variables del proyecto` - 13 edges
 8. `Flujo de trabajo — Armor Cosmetic (NeoForge)` - 11 edges
@@ -134,7 +130,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (101 total, 71 thin omitted)
+## Communities (101 total, 67 thin omitted)
 
 ### Community 0 - "InventoryManager"
 Cohesion: 0.08
@@ -149,12 +145,12 @@ Cohesion: 0.12
 Nodes (12): AbstractCraftingMenu, Container, CraftingContainer, CraftingRecipe, registerMenuScreens(), ContainerCosArmor, ModObjects, RecipeBookType (+4 more)
 
 ### Community 3 - "GuiCosArmorInventory"
-Cohesion: 0.16
-Nodes (5): AbstractRecipeBookScreen, EffectsInInventory, GuiCosArmorInventory, MouseButtonEvent, ScreenPosition
+Cohesion: 0.15
+Nodes (13): AbstractRecipeBookScreen, EffectsInInventory, EntityRenderState, LivingEntity, MouseButtonEvent, ScreenPosition, GuiCosArmorInventory, AbstractClientPlayer (+5 more)
 
 ### Community 4 - "InventoryCosArmor"
-Cohesion: 0.10
-Nodes (6): ContentsChangeListener, HiddenFlagsChangeListener, InventoryCosArmor, ModPayloads, MenuProvider, PayloadRegistrar
+Cohesion: 0.13
+Nodes (4): ContentsChangeListener, HiddenFlagsChangeListener, InventoryCosArmor, MenuProvider
 
 ### Community 5 - "PlayerRenderHandler.java"
 Cohesion: 0.50
@@ -169,8 +165,8 @@ Cohesion: 0.10
 Nodes (8): CustomPacketPayload, PayloadOpenCosArmorInventory, PayloadOpenNormalInventory, PayloadSetHiddenFlags, PayloadSetSkinArmor, PayloadSyncCosArmor, PayloadSyncHiddenFlags, RegistryFriendlyByteBuf
 
 ### Community 8 - "ArmorCosmetic.java"
-Cohesion: 0.14
-Nodes (14): DeferredHolder, DeferredRegister, FMLCommonSetupEvent, IEventBus, Mod, RegisterKeyMappingsEvent, RegisterPayloadHandlersEvent, ArmorCosmetic (+6 more)
+Cohesion: 0.11
+Nodes (16): DeferredHolder, DeferredRegister, FMLCommonSetupEvent, IEventBus, Mod, PayloadRegistrar, RegisterKeyMappingsEvent, RegisterPayloadHandlersEvent (+8 more)
 
 ### Community 9 - "PayloadOpenCosArmorInventory"
 Cohesion: 0.33
@@ -185,8 +181,8 @@ Cohesion: 0.18
 Nodes (7): Field, GuiHandler, INSTANCE, handleGuiInitPost(), InventoryScreenAccess, InventoryScreen, Post
 
 ### Community 12 - "PayloadSyncCosArmor"
-Cohesion: 0.50
-Nodes (3): [1.0.5] - 2026-08-05, Change, [
+Cohesion: 0.12
+Nodes (15): [1.0.5] - 2026-08-05, [1.0.6] - 2026-08-07, [1.0.7] - 2026-08-07, [1.0.8] - 2026-08-07, [1.0.9] - 2026-08-07, Change, Enhancement, Estatus (+7 more)
 
 ### Community 13 - "InventoryManagerClient"
 Cohesion: 0.13
@@ -197,8 +193,8 @@ Cohesion: 0.53
 Nodes (4): EventBusSubscriber, ArmorCosmeticClient, FMLClientSetupEvent, SubscribeEvent
 
 ### Community 15 - "gradlew"
-Cohesion: 0.20
-Nodes (7): AbstractClientPlayer, PlayerInventoryHelper, onExtractPlayerRenderState(), onFinishPlayerRenderState(), PlayerRenderHandler, INSTANCE, restoreItems()
+Cohesion: 0.19
+Nodes (6): PlayerInventoryHelper, onExtractPlayerRenderState(), onFinishPlayerRenderState(), PlayerRenderHandler, INSTANCE, restoreItems()
 
 ### Community 16 - "build.gradle"
 Cohesion: 0.17
@@ -217,21 +213,21 @@ Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ## Knowledge Gaps
-- **32 isolated node(s):** `INSTANCE`, `INSTANCE`, `INSTANCE`, `Workflow del mod`, `Prioridad de instrucciones` (+27 more)
+- **40 isolated node(s):** `INSTANCE`, `INSTANCE`, `INSTANCE`, `Workflow del mod`, `Prioridad de instrucciones` (+35 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **71 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **67 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `ContainerCosArmor` connect `ContainerCosArmor` to `ArmorCosmetic.java`?**
-  _High betweenness centrality (0.119) - this node is a cross-community bridge._
-- **Why does `InventoryCosArmor` connect `InventoryCosArmor` to `ContainerCosArmor`, `CAStacksBase`?**
-  _High betweenness centrality (0.076) - this node is a cross-community bridge._
+- **Why does `InventoryCosArmor` connect `InventoryCosArmor` to `ArmorCosmetic.java`, `ContainerCosArmor`, `GuiCosArmorInventory`, `CAStacksBase`?**
+  _High betweenness centrality (0.103) - this node is a cross-community bridge._
 - **Why does `CAStacksBase` connect `CAStacksBase` to `InventoryCosArmor`?**
-  _High betweenness centrality (0.059) - this node is a cross-community bridge._
+  _High betweenness centrality (0.055) - this node is a cross-community bridge._
+- **Why does `ContainerCosArmor` connect `ContainerCosArmor` to `ArmorCosmetic.java`, `GuiCosArmorInventory`?**
+  _High betweenness centrality (0.049) - this node is a cross-community bridge._
 - **What connects `INSTANCE`, `INSTANCE`, `INSTANCE` to the rest of the system?**
-  _32 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _40 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `InventoryManager` be split into smaller, more focused modules?**
   _Cohesion score 0.08013937282229965 - nodes in this community are weakly interconnected._
 - **Should `GuiHandler.java` be split into smaller, more focused modules?**

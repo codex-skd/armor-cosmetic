@@ -1695,8 +1695,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "abstractclientplayer",
-      "community": 15,
+      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_playerrenderhandler_java_abstractclientplayer",
+      "community": 40,
       "norm_label": "abstractclientplayer"
     },
     {
@@ -1885,7 +1885,7 @@
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
       "community": 3,
       "norm_label": "guicosarmorinventory.java"
     },
@@ -1893,9 +1893,9 @@
       "label": "GuiCosArmorInventory",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L21",
+      "source_location": "L31",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
       "community": 3,
       "norm_label": "guicosarmorinventory"
     },
@@ -1915,8 +1915,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_identifier",
-      "community": 38,
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_identifier",
+      "community": 3,
       "norm_label": "identifier"
     },
     {
@@ -1933,9 +1933,9 @@
       "label": ".GuiCosArmorInventory()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L32",
+      "source_location": "L44",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_guicosarmorinventory",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_guicosarmorinventory",
       "community": 3,
       "norm_label": ".guicosarmorinventory()"
     },
@@ -1945,8 +1945,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_inventory",
-      "community": 39,
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_inventory",
+      "community": 3,
       "norm_label": "inventory"
     },
     {
@@ -1955,17 +1955,17 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_component",
-      "community": 36,
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_component",
+      "community": 3,
       "norm_label": "component"
     },
     {
       "label": ".init()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L39",
+      "source_location": "L51",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_init",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_init",
       "community": 3,
       "norm_label": ".init()"
     },
@@ -1975,17 +1975,17 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_override",
-      "community": 40,
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_override",
+      "community": 3,
       "norm_label": "override"
     },
     {
       "label": ".getCosInventory()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L76",
+      "source_location": "L88",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getcosinventory",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getcosinventory",
       "community": 3,
       "norm_label": ".getcosinventory()"
     },
@@ -1993,9 +1993,9 @@
       "label": ".getRecipeBookButtonPosition()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L85",
+      "source_location": "L97",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getrecipebookbuttonposition",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getrecipebookbuttonposition",
       "community": 3,
       "norm_label": ".getrecipebookbuttonposition()"
     },
@@ -2013,9 +2013,9 @@
       "label": ".onRecipeBookButtonClick()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L90",
+      "source_location": "L102",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_onrecipebookbuttonclick",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_onrecipebookbuttonclick",
       "community": 3,
       "norm_label": ".onrecipebookbuttonclick()"
     },
@@ -2023,9 +2023,9 @@
       "label": ".extractLabels()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L96",
+      "source_location": "L108",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractlabels",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractlabels",
       "community": 3,
       "norm_label": ".extractlabels()"
     },
@@ -2035,17 +2035,17 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_guigraphicsextractor",
-      "community": 37,
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_guigraphicsextractor",
+      "community": 3,
       "norm_label": "guigraphicsextractor"
     },
     {
       "label": ".extractRenderState()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L101",
+      "source_location": "L113",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractrenderstate",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractrenderstate",
       "community": 3,
       "norm_label": ".extractrenderstate()"
     },
@@ -2053,9 +2053,9 @@
       "label": ".showsActiveEffects()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L110",
+      "source_location": "L124",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_showsactiveeffects",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_showsactiveeffects",
       "community": 3,
       "norm_label": ".showsactiveeffects()"
     },
@@ -2063,9 +2063,9 @@
       "label": ".isBiggerResultSlot()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L115",
+      "source_location": "L129",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_isbiggerresultslot",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_isbiggerresultslot",
       "community": 3,
       "norm_label": ".isbiggerresultslot()"
     },
@@ -2073,19 +2073,69 @@
       "label": ".extractBackground()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L120",
+      "source_location": "L134",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractbackground",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractbackground",
       "community": 3,
       "norm_label": ".extractbackground()"
+    },
+    {
+      "label": ".renderPlayerPreview()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_renderplayerpreview",
+      "community": 3,
+      "norm_label": ".renderplayerpreview()"
+    },
+    {
+      "label": "AbstractClientPlayer",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_abstractclientplayer",
+      "community": 3,
+      "norm_label": "abstractclientplayer"
+    },
+    {
+      "label": ".renderEntityInInventoryFollowsAngle()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L169",
+      "_origin": "ast",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_renderentityininventoryfollowsangle",
+      "community": 3,
+      "norm_label": ".renderentityininventoryfollowsangle()"
+    },
+    {
+      "label": "LivingEntity",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "livingentity",
+      "community": 3,
+      "norm_label": "livingentity"
+    },
+    {
+      "label": "EntityRenderState",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "entityrenderstate",
+      "community": 3,
+      "norm_label": "entityrenderstate"
     },
     {
       "label": ".removed()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L129",
+      "source_location": "L204",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_removed",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_removed",
       "community": 3,
       "norm_label": ".removed()"
     },
@@ -2093,9 +2143,9 @@
       "label": ".mouseReleased()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L140",
+      "source_location": "L215",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_mousereleased",
+      "id": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_mousereleased",
       "community": 3,
       "norm_label": ".mousereleased()"
     },
@@ -2806,7 +2856,7 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_inventory_inventorycosarmor_inventorycosarmor_sethidden",
-      "community": 4,
+      "community": 8,
       "norm_label": ".sethidden()"
     },
     {
@@ -2875,8 +2925,8 @@
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/network/ModPayloads.java",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_java",
-      "community": 4,
+      "id": "src_main_java_com_skd_armorcosmetic_impl_network_modpayloads",
+      "community": 8,
       "norm_label": "modpayloads.java"
     },
     {
@@ -2885,8 +2935,8 @@
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/network/ModPayloads.java",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads",
-      "community": 4,
+      "id": "src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads",
+      "community": 8,
       "norm_label": "modpayloads"
     },
     {
@@ -2895,8 +2945,8 @@
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/network/ModPayloads.java",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads_setuppayloads",
-      "community": 4,
+      "id": "src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads_setuppayloads",
+      "community": 8,
       "norm_label": ".setuppayloads()"
     },
     {
@@ -2906,7 +2956,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "payloadregistrar",
-      "community": 4,
+      "community": 8,
       "norm_label": "payloadregistrar"
     },
     {
@@ -3610,10 +3660,130 @@
       "norm_label": "changelog.md"
     },
     {
-      "label": "[1.0.5] - 2026-08-05",
+      "label": "[1.0.9] - 2026-08-07",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
       "source_location": "L3",
+      "_origin": "ast",
+      "id": "changelog_1_0_9_2026_08_07",
+      "community": 12,
+      "norm_label": "[1.0.9] - 2026-08-07"
+    },
+    {
+      "label": "Polish",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "changelog_polish",
+      "community": 12,
+      "norm_label": "polish"
+    },
+    {
+      "label": "Estatus",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "changelog_estatus",
+      "community": 12,
+      "norm_label": "estatus"
+    },
+    {
+      "label": "[1.0.8] - 2026-08-07",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "changelog_1_0_8_2026_08_07",
+      "community": 12,
+      "norm_label": "[1.0.8] - 2026-08-07"
+    },
+    {
+      "label": "Fix",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "changelog_fix",
+      "community": 12,
+      "norm_label": "fix"
+    },
+    {
+      "label": "[1.0.7] - 2026-08-07",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "changelog_1_0_7_2026_08_07",
+      "community": 12,
+      "norm_label": "[1.0.7] - 2026-08-07"
+    },
+    {
+      "label": "Improvement",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "changelog_improvement",
+      "community": 12,
+      "norm_label": "improvement"
+    },
+    {
+      "label": "Enhancement",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "changelog_enhancement",
+      "community": 12,
+      "norm_label": "enhancement"
+    },
+    {
+      "label": "Feature",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "changelog_feature",
+      "community": 12,
+      "norm_label": "feature"
+    },
+    {
+      "label": "[1.0.6] - 2026-08-07",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "changelog_1_0_6_2026_08_07",
+      "community": 12,
+      "norm_label": "[1.0.6] - 2026-08-07"
+    },
+    {
+      "label": "Fix",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "changelog_fix_40",
+      "community": 12,
+      "norm_label": "fix"
+    },
+    {
+      "label": "Feature",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "changelog_feature_44",
+      "community": 12,
+      "norm_label": "feature"
+    },
+    {
+      "label": "[1.0.5] - 2026-08-05",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "changelog_1_0_5_2026_08_05",
       "community": 12,
@@ -3623,7 +3793,7 @@
       "label": "Change",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L5",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "changelog_change",
       "community": 12,
@@ -3633,7 +3803,7 @@
       "label": "[",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L9",
+      "source_location": "L54",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_armor_cosmetic_neoforge_26_2_changelog",
       "community": 12,
@@ -4038,6 +4208,46 @@
       "id": "docs_curseforge_versions_1_0_5",
       "community": 100,
       "norm_label": "1.0.5.md"
+    },
+    {
+      "label": "1.0.6.md",
+      "file_type": "document",
+      "source_file": "docs/curseforge/versions/1.0.6.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_curseforge_versions_1_0_6",
+      "community": 36,
+      "norm_label": "1.0.6.md"
+    },
+    {
+      "label": "1.0.7.md",
+      "file_type": "document",
+      "source_file": "docs/curseforge/versions/1.0.7.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_curseforge_versions_1_0_7",
+      "community": 37,
+      "norm_label": "1.0.7.md"
+    },
+    {
+      "label": "1.0.8.md",
+      "file_type": "document",
+      "source_file": "docs/curseforge/versions/1.0.8.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_curseforge_versions_1_0_8",
+      "community": 38,
+      "norm_label": "1.0.8.md"
+    },
+    {
+      "label": "1.0.9.md",
+      "file_type": "document",
+      "source_file": "docs/curseforge/versions/1.0.9.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_curseforge_versions_1_0_9",
+      "community": 39,
+      "norm_label": "1.0.9.md"
     }
   ],
   "links": [
@@ -4101,17 +4311,6 @@
       "source_location": "L5",
       "weight": 1.0,
       "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorbutton_java",
-      "target": "src_main_java_com_skd_armorcosmetic_armorcosmetic",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java",
       "target": "src_main_java_com_skd_armorcosmetic_armorcosmetic",
       "confidence_score": 1.0
     },
@@ -4274,6 +4473,17 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/ArmorCosmetic.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_armorcosmetic",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_network_modpayloads",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/ArmorCosmetic.java",
       "source_location": "L23",
       "weight": 1.0,
       "source": "src_main_java_com_skd_armorcosmetic_armorcosmetic",
@@ -4365,6 +4575,17 @@
       "weight": 1.0,
       "source": "src_main_java_com_skd_armorcosmetic_armorcosmetic",
       "target": "src_main_java_com_skd_armorcosmetic_armorcosmetic_java_registermenuscreensevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_armorcosmetic",
       "confidence_score": 1.0
     },
     {
@@ -4603,17 +4824,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main/java/com/skd/armorcosmetic/ArmorCosmetic.java",
-      "source_location": "L83",
-      "weight": 1.0,
-      "source": "src_main_java_com_skd_armorcosmetic_armorcosmetic_armorcosmetic_setuppayloadhandlers",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads_setuppayloads"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/ArmorCosmetic.java",
@@ -4623,6 +4833,17 @@
       "source": "src_main_java_com_skd_armorcosmetic_armorcosmetic_armorcosmetic_setuppayloadhandlers",
       "target": "registerpayloadhandlersevent",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/com/skd/armorcosmetic/ArmorCosmetic.java",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_armorcosmetic_armorcosmetic_setuppayloadhandlers",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads_setuppayloads"
     },
     {
       "relation": "imports",
@@ -5885,10 +6106,10 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L4",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/GuiHandler.java",
+      "source_location": "L3",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java",
+      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_guihandler_java",
       "target": "src_main_java_com_skd_armorcosmetic_impl_modconfigs",
       "confidence_score": 1.0
     },
@@ -5896,10 +6117,10 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/GuiHandler.java",
-      "source_location": "L3",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L4",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_guihandler_java",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
       "target": "src_main_java_com_skd_armorcosmetic_impl_modconfigs",
       "confidence_score": 1.0
     },
@@ -6101,6 +6322,17 @@
       "weight": 1.0,
       "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_guihandler_java",
       "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_guihandler_registermenuscreens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/GuiHandler.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_guihandler_java",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
       "confidence_score": 1.0
     },
     {
@@ -6345,17 +6577,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L93",
-      "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_onrecipebookbuttonclick",
-      "target": "inventoryscreen"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/InventoryScreenAccess.java",
@@ -6387,6 +6608,17 @@
       "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_inventoryscreenaccess_inventoryscreenaccess_setymouse",
       "target": "inventoryscreen",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_onrecipebookbuttonclick",
+      "target": "inventoryscreen"
     },
     {
       "relation": "contains",
@@ -6524,17 +6756,6 @@
       "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_playerinventoryhelper_playerinventoryhelper_getplayerequipmentslotindex"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/PlayerRenderHandler.java",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_playerrenderhandler_java",
-      "target": "abstractclientplayer",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/PlayerRenderHandler.java",
@@ -6615,17 +6836,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/PlayerRenderHandler.java",
-      "source_location": "L36",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_playerrenderhandler_onextractplayerrenderstate",
-      "target": "abstractclientplayer",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -6634,28 +6844,6 @@
       "weight": 1.0,
       "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_playerrenderhandler_onextractplayerrenderstate",
       "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_playerrenderhandler_restoreitems",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/PlayerRenderHandler.java",
-      "source_location": "L69",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_playerrenderhandler_onfinishplayerrenderstate",
-      "target": "abstractclientplayer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/armorcosmetic/mixins/MixinPlayerRenderer.java",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_mixins_mixinplayerrenderer_java",
-      "target": "abstractclientplayer",
       "confidence_score": 1.0
     },
     {
@@ -6787,9 +6975,9 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
       "target": "abstractrecipebookscreen",
       "confidence_score": 1.0
     },
@@ -6798,20 +6986,10 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
       "target": "effectsininventory",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
       "confidence_score": 1.0
     },
     {
@@ -6819,9 +6997,53 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L14",
+      "source_location": "L20",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
+      "target": "entityrenderstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
+      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_inventory_containercosarmor_containercosarmor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
+      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_inventory_inventorycosarmor_inventorycosarmor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
+      "target": "livingentity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
       "target": "mousebuttonevent",
       "confidence_score": 1.0
     },
@@ -6830,19 +7052,84 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
       "target": "screenposition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_abstractclientplayer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_component",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_guigraphicsextractor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_identifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_inventory",
       "confidence_score": 1.0
     },
     {
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L21",
+      "source_location": "L31",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
       "target": "abstractrecipebookscreen",
       "confidence_score": 1.0
     },
@@ -6850,111 +7137,92 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L25",
+      "source_location": "L35",
       "weight": 1.0,
       "context": "field",
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
       "target": "effectsininventory",
       "confidence_score": 1.0
     },
     {
-      "relation": "method",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L120",
+      "source_location": "L31",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractbackground",
+      "context": "generic_arg",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_inventory_containercosarmor_containercosarmor",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L96",
+      "source_location": "L134",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractlabels",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractbackground",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L101",
+      "source_location": "L108",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractrenderstate",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractlabels",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L76",
+      "source_location": "L195",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getcosinventory",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractrenderstate",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L85",
+      "source_location": "L88",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getrecipebookbuttonposition",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getcosinventory",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L32",
+      "source_location": "L97",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_guicosarmorinventory",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getrecipebookbuttonposition",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L39",
+      "source_location": "L44",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_init",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_guicosarmorinventory",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L115",
+      "source_location": "L51",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_isbiggerresultslot",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L140",
-      "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_mousereleased",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L90",
-      "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_onrecipebookbuttonclick",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_init",
       "confidence_score": 1.0
     },
     {
@@ -6963,18 +7231,79 @@
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
       "source_location": "L129",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_removed",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_isbiggerresultslot",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L110",
+      "source_location": "L215",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_showsactiveeffects",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_mousereleased",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_onrecipebookbuttonclick",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L204",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_removed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_renderentityininventoryfollowsangle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_renderplayerpreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_showsactiveeffects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "field",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_identifier",
       "confidence_score": 1.0
     },
     {
@@ -6982,21 +7311,43 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L34",
+      "source_location": "L46",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_guicosarmorinventory",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_guicosarmorinventory",
       "target": "effectsininventory",
       "confidence_score": 1.0
     },
     {
-      "relation": "calls",
-      "context": "call",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L50",
+      "source_location": "L44",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_init",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getcosinventory",
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_guicosarmorinventory",
+      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_inventory_containercosarmor_containercosarmor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_component",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_guicosarmorinventory",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_inventory",
       "confidence_score": 1.0
     },
     {
@@ -7005,9 +7356,9 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L68",
+      "source_location": "L80",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_init",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_init",
       "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_payload_payloadsetskinarmor_payloadsetskinarmor"
     },
     {
@@ -7015,10 +7366,153 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L132",
+      "source_location": "L62",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_removed",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getcosinventory",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_init",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getcosinventory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L51",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_init",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L134",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractbackground",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L108",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractlabels",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L113",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractrenderstate",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L97",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getrecipebookbuttonposition",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L129",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_isbiggerresultslot",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L215",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_mousereleased",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L102",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_onrecipebookbuttonclick",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L204",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_removed",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L124",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_showsactiveeffects",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L88",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getcosinventory",
+      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_inventory_containercosarmor_containercosarmor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L88",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getcosinventory",
+      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_inventory_inventorycosarmor_inventorycosarmor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L207",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_removed",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getcosinventory",
       "confidence_score": 1.0
     },
     {
@@ -7026,10 +7520,142 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L85",
+      "source_location": "L97",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getrecipebookbuttonposition",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_getrecipebookbuttonposition",
       "target": "screenposition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L108",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractlabels",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_guigraphicsextractor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L134",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractbackground",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_guigraphicsextractor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L113",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractrenderstate",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_guigraphicsextractor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L169",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_renderentityininventoryfollowsangle",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_guigraphicsextractor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L149",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_renderplayerpreview",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_guigraphicsextractor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L195",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractrenderstate",
+      "target": "entityrenderstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L195",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractrenderstate",
+      "target": "livingentity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_renderentityininventoryfollowsangle",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractrenderstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_extractbackground",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_renderplayerpreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_renderplayerpreview",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_renderentityininventoryfollowsangle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L149",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_renderplayerpreview",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_java_abstractclientplayer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
+      "source_location": "L169",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_renderentityininventoryfollowsangle",
+      "target": "livingentity",
       "confidence_score": 1.0
     },
     {
@@ -7038,19 +7664,19 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L135",
+      "source_location": "L210",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_removed",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_removed",
       "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_payload_payloadsetskinarmor_payloadsetskinarmor"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/client/gui/GuiCosArmorInventory.java",
-      "source_location": "L140",
+      "source_location": "L215",
       "weight": 1.0,
       "context": "parameter_type",
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_mousereleased",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_client_gui_guicosarmorinventory_guicosarmorinventory_mousereleased",
       "target": "mousebuttonevent",
       "confidence_score": 1.0
     },
@@ -7918,7 +8544,7 @@
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/network/ModPayloads.java",
       "source_location": "L34",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads_setuppayloads",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads_setuppayloads",
       "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_inventory_inventorycosarmor_inventorycosarmor_sethidden"
     },
     {
@@ -7964,24 +8590,24 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main/java/com/skd/armorcosmetic/impl/network/ModPayloads.java",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_java",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/network/ModPayloads.java",
       "source_location": "L9",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_java",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_network_modpayloads",
       "target": "payloadregistrar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/armorcosmetic/impl/network/ModPayloads.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_armorcosmetic_impl_network_modpayloads",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads",
       "confidence_score": 1.0
     },
     {
@@ -7990,8 +8616,8 @@
       "source_file": "src/main/java/com/skd/armorcosmetic/impl/network/ModPayloads.java",
       "source_location": "L15",
       "weight": 1.0,
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads",
-      "target": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads_setuppayloads",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads",
+      "target": "src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads_setuppayloads",
       "confidence_score": 1.0
     },
     {
@@ -8001,7 +8627,7 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "parameter_type",
-      "source": "g_proyectos_mods_minecraft_armor_cosmetic_26_2_src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads_setuppayloads",
+      "source": "src_main_java_com_skd_armorcosmetic_impl_network_modpayloads_modpayloads_setuppayloads",
       "target": "payloadregistrar",
       "confidence_score": 1.0
     },
@@ -8698,7 +9324,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L3",
+      "source_location": "L48",
       "weight": 1.0,
       "source": "changelog",
       "target": "changelog_1_0_5_2026_08_05",
@@ -8708,7 +9334,47 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L9",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "changelog",
+      "target": "changelog_1_0_6_2026_08_07",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "changelog",
+      "target": "changelog_1_0_7_2026_08_07",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "changelog",
+      "target": "changelog_1_0_8_2026_08_07",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "changelog",
+      "target": "changelog_1_0_9_2026_08_07",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L54",
       "weight": 1.0,
       "source": "changelog",
       "target": "g_proyectos_mods_minecraft_armor_cosmetic_neoforge_26_2_changelog",
@@ -8718,7 +9384,87 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "changelog_1_0_9_2026_08_07",
+      "target": "changelog_estatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
       "source_location": "L5",
+      "weight": 1.0,
+      "source": "changelog_1_0_9_2026_08_07",
+      "target": "changelog_polish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "changelog_1_0_8_2026_08_07",
+      "target": "changelog_fix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "changelog_1_0_7_2026_08_07",
+      "target": "changelog_enhancement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "changelog_1_0_7_2026_08_07",
+      "target": "changelog_feature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "changelog_1_0_7_2026_08_07",
+      "target": "changelog_improvement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "changelog_1_0_6_2026_08_07",
+      "target": "changelog_feature_44",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "changelog_1_0_6_2026_08_07",
+      "target": "changelog_fix_40",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L50",
       "weight": 1.0,
       "source": "changelog_1_0_5_2026_08_05",
       "target": "changelog_change",
@@ -9016,5 +9762,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "48ab245547b0a763127df73c506f308a21d19b02"
+  "built_at_commit": "e55b9c0ea5e5b232b5394d82ffef605bdeaf3e89"
 }
