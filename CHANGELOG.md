@@ -1,5 +1,17 @@
 ---
 
+## [1.0.12] - 2026-08-08
+
+### Fix
+
+- **Posición del modelo del jugador**: Reposicionado el avatar desde el centro hacia la esquina superior derecha de la pantalla de inventario cosmético, mejorando la distribución visual del GUI.
+
+- **Tamaño de la vista previa del jugador**: Aumentado el tamaño de renderizado del modelo de 40 a 50 píxeles para mejor visibilidad y detalle.
+
+- **Botón de cerrar mejorado**: Ampliado el botón de cierre (✕) de 16x16 a 20x20 píxeles para mayor facilidad de interacción. Ajustada su posición para un placement óptimo.
+
+- **Cálculo dinámico del punto central**: Mejorados los cálculos de interacción del ratón calculando el punto central dinámicamente desde los límites del área de renderizado en lugar de coordenadas fijas.
+
 ## [1.0.11] - 2026-08-07
 
 ### Fix
