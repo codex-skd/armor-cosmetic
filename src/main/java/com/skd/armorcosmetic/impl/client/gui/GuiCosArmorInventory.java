@@ -148,11 +148,11 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
 
     private void renderPlayerPreview(GuiGraphicsExtractor graphics, AbstractClientPlayer player, float mouseX, float mouseY) {
         try {
-            float centerX = leftPos + 126;
+            float centerX = leftPos + 51;
             float centerY = topPos + 75;
-            float x0 = leftPos + 100;
-            float y0 = topPos + 10;
-            float x1 = leftPos + 176;
+            float x0 = leftPos;
+            float y0 = topPos;
+            float x1 = leftPos + 103;
             float y1 = topPos + 160;
             int size = 40;
             float offsetY = 0.0625F;
