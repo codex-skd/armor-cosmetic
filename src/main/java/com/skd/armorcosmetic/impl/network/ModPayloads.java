@@ -48,7 +48,9 @@ public class ModPayloads {
         registrar.playToServer(PayloadOpenNormalInventory.TYPE, PayloadOpenNormalInventory.STREAM_CODEC, (payload, context) -> {
             context.enqueueWork(() -> {
                 if (context.player() instanceof ServerPlayer serverPlayer) {
+                    int containerId = serverPlayer.containerMenu.containerId;
                     serverPlayer.doCloseContainer();
+                    serverPlayer.connection.send(new net.minecraft.network.protocol.game.ClientboundContainerClosePacket(containerId));
                 }
             });
         });
