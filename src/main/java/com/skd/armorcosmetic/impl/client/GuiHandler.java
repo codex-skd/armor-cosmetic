@@ -74,7 +74,6 @@ public enum GuiHandler {
                         label, true, tooltip, btn -> {
                     if (isCosInventory) {
                         ClientPacketDistributor.sendToServer(new PayloadOpenNormalInventory());
-                        Minecraft.getInstance().setScreenAndShow(new InventoryScreen(Minecraft.getInstance().player));
                     } else {
                         ClientPacketDistributor.sendToServer(new PayloadOpenCosArmorInventory());
                     }
