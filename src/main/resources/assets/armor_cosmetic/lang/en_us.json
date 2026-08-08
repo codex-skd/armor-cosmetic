@@ -34,5 +34,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Skin armor toggle width",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Skin armor toggle height",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Disable recipe book in cosmetic inventory",
-  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Disable /coshat command"
+  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Disable /coshat command",
+  "cos.gui.tooltip.close": "Close Cosmetic Inventory"
 }

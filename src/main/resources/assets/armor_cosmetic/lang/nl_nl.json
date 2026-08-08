@@ -34,5 +34,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Breedte huirrustingschakelaar",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Hoogte huirrustingschakelaar",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Receptenboek in cosmetisch inventaris uitschakelen",
-  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Commando /coshat uitschakelen"
+  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Commando /coshat uitschakelen",
+  "cos.gui.tooltip.close": "Cosmetische inventaris sluiten"
 }

@@ -34,5 +34,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Larghezza armatura pelle",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Altezza armatura pelle",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Disabilita ricettario in inventario cosmetico",
-  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Disabilita comando /coshat"
+  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Disabilita comando /coshat",
+  "cos.gui.tooltip.close": "Chiudi Inventario Cosmetico"
 }

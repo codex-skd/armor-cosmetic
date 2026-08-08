@@ -34,5 +34,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "個別トグル 幅",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "個別トグル 高さ",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "コスメインベントリのレシピ本を無効化",
-  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "/coshatコマンドを無効化"
+  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "/coshatコマンドを無効化",
+  "cos.gui.tooltip.close": "コスメティックインベントリを閉じる"
 }

@@ -34,5 +34,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Ширина отдельных переключателей",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Высота отдельных переключателей",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Отключить книгу рецептов",
-  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Отключить команду /coshat"
+  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Отключить команду /coshat",
+  "cos.gui.tooltip.close": "Закрыть косметический инвентарь"
 }

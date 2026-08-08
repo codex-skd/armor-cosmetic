@@ -34,5 +34,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Einzel-Toggle Breite",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Einzel-Toggle Höhe",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Rezeptbuch im Kosmetik-Inventar deaktivieren",
-  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "/coshat Befehl deaktivieren"
+  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "/coshat Befehl deaktivieren",
+  "cos.gui.tooltip.close": "Kosmetisches Inventar schließen"
 }

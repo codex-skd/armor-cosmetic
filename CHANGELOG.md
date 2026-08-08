@@ -1,5 +1,17 @@
 ---
 
+## [1.0.13] - 2026-08-08
+
+### Fix
+
+- **Posición del avatar del jugador**: Reposicionado el modelo del jugador al lado izquierdo de la pantalla de inventario cosmético (coordenadas vanilla: `leftPos + 26` a `leftPos + 76`, `topPos + 8` a `topPos + 78`), reemplazando el posicionamiento anterior en la zona central-derecha. Tamaño reducido de 50 a 30 píxeles para coincidir con las proporciones del inventario normal.
+
+- **Tooltip del botón de cierre (✕)**: Añadido tooltip `"cos.gui.tooltip.close"` ("Cerrar Inventario Cosmético") al botón de cierre, mejorando la accesibilidad y claridad de la interfaz.
+
+- **Interacción con inventario normal tras cerrar cosmético**: Corregido bug crítico donde el botón ✕ creaba una `InventoryScreen` solo en cliente sin notificar al servidor, causando que el inventario normal no respondiera a interacciones. Ahora envía `PayloadOpenNormalInventory` al servidor, que ejecuta `doCloseContainer()` sincronizando correctamente el estado.
+
+- **Traducciones del tooltip de cierre**: Añadida clave `cos.gui.tooltip.close` en los 15 archivos de idioma (es_es: "Cerrar Inventario Cosmético", en_us: "Close Cosmetic Inventory", etc.).
+
 ## [1.0.12] - 2026-08-08
 
 ### Fix

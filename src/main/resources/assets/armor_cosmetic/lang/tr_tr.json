@@ -34,5 +34,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Bireysel toggle genişlik",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Bireysel toggle yükseklik",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Kozmetik envanterde tarif kitabını devre dışı bırak",
-  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "/coshat komutunu devre dışı bırak"
+  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "/coshat komutunu devre dışı bırak",
+  "cos.gui.tooltip.close": "Kozmetik Envanteri Kapat"
 }

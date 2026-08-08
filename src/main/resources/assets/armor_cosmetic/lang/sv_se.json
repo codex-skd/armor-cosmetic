@@ -34,5 +34,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Hudrüstningsväljarbredd",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Hudrüstningsväljar höjd",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Inaktivera receptbok i kosmetisk inventar",
-  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Inaktivera /coshat-kommando"
+  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Inaktivera /coshat-kommando",
+  "cos.gui.tooltip.close": "Stäng kosmetisk inventar"
 }
