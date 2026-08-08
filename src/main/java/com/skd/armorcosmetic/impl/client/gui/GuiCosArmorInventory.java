@@ -130,6 +130,10 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
         }
         lastMouseX = mouseX;
         lastMouseY = mouseY;
+        if (closeToInventory) {
+            closeToInventory = false;
+            this.minecraft.setScreenAndShow(new net.minecraft.client.gui.screens.inventory.InventoryScreen(this.minecraft.player));
+        }
     }
 
     @Override
@@ -220,10 +224,6 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
             for (int i = 0; i < 4; i++) {
                 ClientPacketDistributor.sendToServer(new PayloadSetSkinArmor(i, cosInv.isSkinArmor(i)));
             }
-        }
-        if (closeToInventory) {
-            closeToInventory = false;
-            this.minecraft.setScreenAndShow(new net.minecraft.client.gui.screens.inventory.InventoryScreen(this.minecraft.player));
         }
     }
 
