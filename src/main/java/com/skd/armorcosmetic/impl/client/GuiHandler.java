@@ -58,27 +58,40 @@ public enum GuiHandler {
             lastInventoryOpen = true;
         }
 
-        if (event.getScreen() instanceof InventoryScreen || event.getScreen() instanceof GuiCosArmorInventory) {
+        if (event.getScreen() instanceof InventoryScreen) {
             AbstractContainerScreen<?> containerScreen = (AbstractContainerScreen<?>) event.getScreen();
 
             if (!ModConfigs.CosArmorGuiButton_Hidden.get()) {
                 int btnX = containerScreen.getGuiLeft() + ModConfigs.CosArmorGuiButton_Left.get();
                 int btnY = containerScreen.getGuiTop() + ModConfigs.CosArmorGuiButton_Top.get();
-                boolean isCosInventory = event.getScreen() instanceof GuiCosArmorInventory;
-                Component label = Component.translatable(isCosInventory ? "cos.gui.buttonnormal" : "cos.gui.buttoncos");
-                Component tooltip = Component.translatable(isCosInventory ? "cos.gui.tooltip.buttonnormal" : "cos.gui.tooltip.buttoncos");
+                Component label = Component.translatable("cos.gui.buttoncos");
+                Component tooltip = Component.translatable("cos.gui.tooltip.buttoncos");
 
                 event.addListener(new GuiCosArmorButton(btnX, btnY,
                         ModConfigs.CosArmorGuiButton_Width.get(),
                         ModConfigs.CosArmorGuiButton_Height.get(),
                         label, true, tooltip, btn -> {
-                    if (isCosInventory) {
-                        ClientPacketDistributor.sendToServer(new PayloadOpenNormalInventory());
-                    } else {
-                        ClientPacketDistributor.sendToServer(new PayloadOpenCosArmorInventory());
-                    }
+                    ClientPacketDistributor.sendToServer(new PayloadOpenCosArmorInventory());
                 }, null));
             }
+
+            if (!ModConfigs.CosArmorToggleButton_Hidden.get()) {
+                int btnX = containerScreen.getGuiLeft() + ModConfigs.CosArmorToggleButton_Left.get();
+                int btnY = containerScreen.getGuiTop() + ModConfigs.CosArmorToggleButton_Top.get();
+                event.addListener(new GuiCosArmorToggleButton(btnX, btnY,
+                        ModConfigs.CosArmorToggleButton_Width.get(),
+                        ModConfigs.CosArmorToggleButton_Height.get(),
+                        Component.empty(),
+                        PlayerRenderHandler.Disabled ? 1 : 0,
+                        Component.translatable("cos.gui.tooltip.toggle.on"),
+                        Component.translatable("cos.gui.tooltip.toggle.off"),
+                        btn -> {
+                            PlayerRenderHandler.Disabled = !PlayerRenderHandler.Disabled;
+                            ((GuiCosArmorToggleButton) btn).state = PlayerRenderHandler.Disabled ? 1 : 0;
+                        }));
+            }
+        } else if (event.getScreen() instanceof GuiCosArmorInventory) {
+            AbstractContainerScreen<?> containerScreen = (AbstractContainerScreen<?>) event.getScreen();
 
             if (!ModConfigs.CosArmorToggleButton_Hidden.get()) {
                 int btnX = containerScreen.getGuiLeft() + ModConfigs.CosArmorToggleButton_Left.get();
