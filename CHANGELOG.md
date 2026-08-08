@@ -1,5 +1,13 @@
 ---
 
+## [1.0.14] - 2026-08-08
+
+### Fix
+
+- **Botón toggle oculto en inventario cosmético**: Eliminado el GuiCosArmorButton redundante de la pantalla `GuiCosArmorInventory`. El botón toggle para abrir/cerrar el inventario cosmético ahora solo aparece en el `InventoryScreen` normal, ya que el botón ✕ dedicado maneja el cierre desde el inventario cosmético.
+
+- **Botón de cierre (✕) funcional**: Corregido comportamiento del botón ✕ que solo enviaba el packet de cierre al servidor pero no mostraba la pantalla de inventario normal. Ahora envía `PayloadOpenNormalInventory` para sincronizar el estado del servidor Y llama a `setScreenAndShow` para mostrar inmediatamente el `InventoryScreen`.
+
 ## [1.0.13] - 2026-08-08
 
 ### Fix
