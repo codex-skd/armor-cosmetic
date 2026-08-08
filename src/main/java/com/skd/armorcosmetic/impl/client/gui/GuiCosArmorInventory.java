@@ -8,6 +8,7 @@ import com.skd.armorcosmetic.impl.network.payload.PayloadSetSkinArmor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.ImageButton;
+import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.gui.navigation.ScreenPosition;
 import net.minecraft.client.gui.screens.inventory.AbstractRecipeBookScreen;
 import net.minecraft.client.gui.screens.inventory.EffectsInInventory;
@@ -25,6 +26,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.player.Inventory;
 import net.neoforged.neoforge.client.network.ClientPacketDistributor;
+
+import com.skd.armorcosmetic.impl.network.payload.PayloadOpenNormalInventory;
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
 
@@ -59,8 +62,10 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
             }
         }
         addRenderableWidget(new net.minecraft.client.gui.components.Button.Builder(Component.literal("✕"), btn -> {
-            this.minecraft.setScreenAndShow(new net.minecraft.client.gui.screens.inventory.InventoryScreen(this.minecraft.player));
-        }).pos(leftPos + imageWidth - 24, topPos + 4).size(20, 20).build());
+            ClientPacketDistributor.sendToServer(new PayloadOpenNormalInventory());
+        }).pos(leftPos + imageWidth - 24, topPos + 4).size(20, 20)
+                .tooltip(Tooltip.create(Component.translatable("cos.gui.tooltip.close")))
+                .build());
 
         if (menu instanceof ContainerCosArmor container) {
             InventoryCosArmor cosInv = getCosInventory(container);
@@ -152,13 +157,13 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
 
     private void renderPlayerPreview(GuiGraphicsExtractor graphics, AbstractClientPlayer player, float mouseX, float mouseY) {
         try {
-            float x0 = leftPos + 90;
-            float y0 = topPos + 10;
-            float x1 = leftPos + 160;
-            float y1 = topPos + 160;
+            float x0 = leftPos + 26;
+            float y0 = topPos + 8;
+            float x1 = leftPos + 76;
+            float y1 = topPos + 78;
             float centerX = (x0 + x1) / 2.0F;
             float centerY = (y0 + y1) / 2.0F;
-            int size = 50;
+            int size = 30;
             float offsetY = 0.0625F;
 
             float xAngle = (float) Math.atan((centerX - mouseX) / 50.0F);

@@ -34,5 +34,6 @@
   "armor_cosmetic.configuration.SkinArmorToggle_Width": "Szerokość przełącznika zbroi skóry",
   "armor_cosmetic.configuration.SkinArmorToggle_Height": "Wysokość przełącznika zbroi skóry",
   "armor_cosmetic.configuration.CosArmorDisableRecipeBook": "Wyłącz księgę przepisów w kosmetycznym ekwipunku",
-  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Wyłącz polecenie /coshat"
+  "armor_cosmetic.configuration.CosArmorDisableCosHatCommand": "Wyłącz polecenie /coshat",
+  "cos.gui.tooltip.close": "Zamknij ekwipunek kosmetyczny"
 }
