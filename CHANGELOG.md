@@ -1,5 +1,16 @@
 ---
 
+## [1.0.15] - 2026-08-08
+
+### Fix
+
+- **Interacción con inventario normal tras cerrar cosmético**: Corrección definitiva del bug donde el inventario normal no respondía a interacciones después de cerrar el inventario cosmético con el botón ✕. El problema era que `setScreenAndShow` abría `InventoryScreen` en el cliente mientras el servidor aún tenía el contenedor cosmético activo. Ahora el botón ✕ envía `PayloadOpenNormalInventory`, espera a que el servidor cierre el contenedor (lo que dispara `removed()`), y solo entonces abre `InventoryScreen`. Esto garantiza que el servidor ya liberó el contenedor cosmético antes de que el cliente intente interactuar con el inventario normal.
+
+### Technical
+
+- Añadido flag `closeToInventory` a `GuiCosArmorInventory` para diferir la apertura de `InventoryScreen` al momento de `removed()`, cuando el servidor ya procesó el cierre.
+- Eliminada la llamada inmediata a `setScreenAndShow` desde el callback del botón ✕.
+
 ## [1.0.14] - 2026-08-08
 
 ### Fix
