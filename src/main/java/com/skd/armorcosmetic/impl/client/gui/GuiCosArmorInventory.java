@@ -43,7 +43,6 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
     private boolean buttonClicked;
     private float lastMouseX;
     private float lastMouseY;
-    private boolean closeToInventory;
 
     public GuiCosArmorInventory(ContainerCosArmor menu, Inventory playerInventory, Component title) {
         super(menu, new CraftingRecipeBookComponent(menu), playerInventory, title);
@@ -64,7 +63,7 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
         }
         addRenderableWidget(new net.minecraft.client.gui.components.Button.Builder(Component.literal("✕"), btn -> {
             ClientPacketDistributor.sendToServer(new PayloadOpenNormalInventory());
-            closeToInventory = true;
+            this.minecraft.setScreenAndShow(new net.minecraft.client.gui.screens.inventory.InventoryScreen(this.minecraft.player));
         }).pos(leftPos + imageWidth - 24, topPos + 4).size(20, 20)
                 .tooltip(Tooltip.create(Component.translatable("cos.gui.tooltip.close")))
                 .build());
@@ -130,10 +129,6 @@ public class GuiCosArmorInventory extends AbstractRecipeBookScreen<ContainerCosA
         }
         lastMouseX = mouseX;
         lastMouseY = mouseY;
-        if (closeToInventory) {
-            closeToInventory = false;
-            this.minecraft.setScreenAndShow(new net.minecraft.client.gui.screens.inventory.InventoryScreen(this.minecraft.player));
-        }
     }
 
     @Override
