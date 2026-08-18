@@ -1,12 +1,25 @@
 ---
 
+
+## [1.0.18] - 2026-08-18
+
+### Change
+
+- **Actualización de NeoForge**: actualizado de 26.2.0.37-beta a 26.2.0.45-beta.
+- **Nombre de JAR con versión del cargador**: el artefacto ahora se compila como `armor_cosmetic-26.2-neoforge-26.2.0.45-beta-1.0.18.jar`.
+- **Documentación del workflow**: actualizada `docs/WORKFLOW_ARMOR_COSMETIC_26-2.md` para reflejar la nueva rama de trabajo.
+
+
 ## [1.0.17] - 2026-08-13
 
 ### Fix
 
-- **Interacción con inventario normal tras cerrar cosmético (fix definitivo)**: El intento de la versión 1.0.15/1.0.16 (diferir la apertura de `InventoryScreen` a `extractRenderState`, la fase de extracción de estado del renderizado) no resolvía el problema — el inventario normal seguía sin responder a clics tras cerrar el inventario cosmético. La causa real era que `setScreenAndShow` se llamaba desde esa fase de renderizado en vez de al pulsar el botón, dejando la nueva `InventoryScreen` mal inicializada para la interacción del ratón. Ahora el botón ✕ cambia de pantalla directamente en su callback `onPress`, igual que ya hacía el botón del libro de recetas.
+- **Interacción con inventario normal tras cerrar cosmético (fix definitivo)**: El intento de la versión 1.0.15/1.0.16 (diferir la apertura de `InventoryScreen` a `extractRenderState`, la fase de extracción de estado del renderizado) no resolvía el problema — el inventario normal seguía sin responder a clics tras cerrar el inventario cosmético. La causa real era que `setScreenAndShow` se llamaba desde esa fase de renderizado en vez de al pulsar el botón, dejando la nueva `InventoryScreen` mal inicializada para la interacción del ratón. Ahora el botón ✕ cambia de pantalla directamente en su callback `onPress`, igual que ya hacía el botón del libro de recetas. Ahora el botón ✕ cambia de pantalla directamente en su callback `onPress`, igual que ya hacía el botón del libro de recetas.
 
 ### Technical
+
+- Eliminado el flag `closeToInventory` y el bloque diferido en `extractRenderState` de `GuiCosArmorInventory`, ya sin uso tras el fix.
+
 
 - Eliminado el flag `closeToInventory` y el bloque diferido en `extractRenderState` de `GuiCosArmorInventory`, ya sin uso tras el fix.
 
