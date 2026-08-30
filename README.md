@@ -11,14 +11,14 @@ Wear two sets of armor — one for function, one for fashion. Armor Cosmetic let
 - **Per-slot toggles**: Each cosmetic slot has an S/A toggle that hides your real armor for that slot.
 - **Global toggle**: Disable all cosmetic rendering with one click — useful for PvP.
 - **Corail Tombstone compatible**: Cosmetic items are captured by tombstones when you die.
-- **11 languages**: English, Spanish, German, French, Japanese, Portuguese, Russian, Chinese, Korean, Turkish, Czech.
+- **15 languages**: English, Spanish, German, French, Italian, Dutch, Swedish, Polish, Japanese, Portuguese, Russian, Chinese, Korean, Turkish, Czech.
 - **Fully configurable**: Button positions, sizes, and visibility can be customized in the config file.
 - **Commands**: `/clearcosarmor` — clear cosmetic armor from players · `/coshat` — toggle cosmetic helmet visibility.
 
 ## Requirements
 
 - Minecraft 26.2
-- NeoForge 26.2.0.32+
+- NeoForge 26.2.0.57
 
 ## Build
 
@@ -26,4 +26,4 @@ Wear two sets of armor — one for function, one for fashion. Armor Cosmetic let
 gradlew build
 ```
 
-The JAR is generated at `build/libs/armor_cosmetic-26.2-neoforge-<version>.jar`.
+The JAR is generated at `build/libs/armor_cosmetic-26.2-neoforge-26.2.0.57-<version>.jar`.
