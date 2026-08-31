@@ -1,7 +1,19 @@
 {
-  "cos.key.opencosarmorinventory": "OpenCosmeticArmorInventory",
-  "cos.gui.buttoncos": "CosmeticArmor",
+  "cos.key.opencosarmorinventory": "Open Cosmetic Armor Inventory",
+  "cos.gui.buttoncos": "Cosmetic Armor",
   "cos.gui.buttonnormal": "Normal",
   "cos.command.clearcosarmor.success.single": "Removed %s items in cosmetic armor inventory from player %s",
-  "cos.command.clearcosarmor.success.multiple": "Removed %s items in cosmetic armor inventory from %s players"
+  "cos.command.clearcosarmor.success.multiple": "Removed %s items in cosmetic armor inventory from %s players",
+  "cos.config.CosArmorGuiButton_Hidden": "Hide Cosmetic Armor Button",
+  "cos.config.CosArmorGuiButton_Left": "Cosmetic Armor Button X Position",
+  "cos.config.CosArmorGuiButton_Top": "Cosmetic Armor Button Y Position",
+  "cos.config.CosArmorToggleButton_Hidden": "Hide Toggle Button",
+  "cos.config.CosArmorToggleButton_Left": "Toggle Button X Position",
+  "cos.config.CosArmorToggleButton_Top": "Toggle Button Y Position",
+  "cos.config.CosArmorCreativeGuiButton_Hidden": "Hide Creative Cosmetic Armor Button",
+  "cos.config.CosArmorCreativeGuiButton_Left": "Creative Cosmetic Armor Button X Position",
+  "cos.config.CosArmorCreativeGuiButton_Top": "Creative Cosmetic Armor Button Y Position",
+  "cos.config.CosArmorKeepThroughDeath": "Keep Cosmetic Armor on Death",
+  "cos.config.CosArmorDisableRecipeBook": "Disable Recipe Book in Cosmetic Armor Inventory",
+  "cos.config.CosArmorDisableCosHatCommand": "Disable /coshat Command"
 }
