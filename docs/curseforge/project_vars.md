@@ -5,7 +5,7 @@
 project_id = 1600093
 api_token = ee776b0a-ee95-4850-b554-06be02a8657f
 game_versions = 9638, 9639, 16498, 10150
-release_type = release
+release_type = beta
 ## Proyecto
 
 | Variable | Valor |
@@ -36,7 +36,7 @@ Autenticación Core: cabecera `x-api-key`
 ## Rama
 
 ```
-minecraft/1.21.1/neoforge-1.21.1.0.57/production
+minecraft/1.21.1/neoforge-21.1.249/production
 ```
 
 ## Tag
