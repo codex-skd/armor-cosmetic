@@ -1,16 +1,16 @@
 # Graph Report - 1.21.1  (2026-08-31)
 
 ## Corpus Check
-- 55 files · ~114,345 words
+- 56 files · ~114,488 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 382 nodes · 673 edges · 24 communities (22 shown, 2 thin omitted)
+- 385 nodes · 675 edges · 26 communities (25 shown, 1 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0ab6d2bb`
+- Built from commit: `d4af8057`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -35,6 +35,7 @@
 - gradlew
 - [0.0.0-beta.1] - 2026-08-31
 - ModConstants.java
+- PayloadSyncCosArmor
 
 ## God Nodes (most connected - your core abstractions)
 1. `InventoryCosArmor` - 44 edges
@@ -63,11 +64,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (24 total, 2 thin omitted)
+## Communities (26 total, 1 thin omitted)
 
 ### Community 0 - "CustomPacketPayload"
-Cohesion: 0.08
-Nodes (24): CustomPacketPayload, RegistryFriendlyByteBuf, ArmorCosmetic, Logger, FriendlyByteBuf, Override, StreamCodec, Type (+16 more)
+Cohesion: 0.11
+Nodes (18): CustomPacketPayload, ArmorCosmetic, Logger, FriendlyByteBuf, Override, StreamCodec, Type, PayloadOpenNormalInventory (+10 more)
 
 ### Community 1 - "ContainerCosArmor"
 Cohesion: 0.10
@@ -137,24 +138,32 @@ Nodes (4): Armor Cosmetic, Build, Features, Requirements
 Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
+### Community 18 - "[0.0.0-beta.1] - 2026-08-31"
+Cohesion: 0.40
+Nodes (4): [0.0.0-beta.1] - 2026-08-31, [0.0.0-beta.2] - 2026-08-31, Added, Fixed
+
+### Community 24 - "PayloadSyncCosArmor"
+Cohesion: 0.31
+Nodes (6): RegistryFriendlyByteBuf, ItemStack, Override, StreamCodec, Type, PayloadSyncCosArmor
+
 ## Knowledge Gaps
-- **30 isolated node(s):** `INSTANCE`, `INSTANCE`, `INSTANCE`, `ModConstants`, `Added` (+25 more)
+- **31 isolated node(s):** `INSTANCE`, `INSTANCE`, `INSTANCE`, `ModConstants`, `Fixed` (+26 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `InventoryCosArmor` connect `InventoryCosArmor` to `CustomPacketPayload`, `ContainerCosArmor`, `CAStacksBase`, `InventoryManager`, `InventoryManagerClient`, `PayloadSyncHiddenFlags`?**
-  _High betweenness centrality (0.183) - this node is a cross-community bridge._
+- **Why does `InventoryCosArmor` connect `InventoryCosArmor` to `ContainerCosArmor`, `CAStacksBase`, `InventoryManager`, `InventoryManagerClient`, `PayloadSyncHiddenFlags`, `PayloadSyncCosArmor`?**
+  _High betweenness centrality (0.180) - this node is a cross-community bridge._
 - **Why does `ContainerCosArmor` connect `ContainerCosArmor` to `NeoForgeArmorCosmetic.java`, `InventoryManager`, `InventoryManagerClient`, `GuiCosArmorInventory`?**
-  _High betweenness centrality (0.174) - this node is a cross-community bridge._
+  _High betweenness centrality (0.171) - this node is a cross-community bridge._
 - **Why does `CAStacksBase` connect `CAStacksBase` to `InventoryCosArmor`?**
-  _High betweenness centrality (0.082) - this node is a cross-community bridge._
+  _High betweenness centrality (0.081) - this node is a cross-community bridge._
 - **What connects `INSTANCE`, `INSTANCE`, `INSTANCE` to the rest of the system?**
-  _30 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _31 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `CustomPacketPayload` be split into smaller, more focused modules?**
-  _Cohesion score 0.08246225319396051 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10967741935483871 - nodes in this community are weakly interconnected._
 - **Should `ContainerCosArmor` be split into smaller, more focused modules?**
   _Cohesion score 0.10121951219512196 - nodes in this community are weakly interconnected._
 - **Should `InventoryCosArmor` be split into smaller, more focused modules?**
