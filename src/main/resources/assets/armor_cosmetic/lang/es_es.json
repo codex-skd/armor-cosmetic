@@ -3,5 +3,17 @@
   "cos.gui.buttoncos": "Armadura cosmética",
   "cos.gui.buttonnormal": "Normal",
   "cos.command.clearcosarmor.success.single": "Se ha eliminado %s objetos en el inventario de armadura cosmética del jugador %s",
-  "cos.command.clearcosarmor.success.multiple": "Se ha eliminado %s objetos en el inventario de armadura cosmética de %s jugadores"
+  "cos.command.clearcosarmor.success.multiple": "Se ha eliminado %s objetos en el inventario de armadura cosmética de %s jugadores",
+  "cos.config.CosArmorGuiButton_Hidden": "Ocultar botón de armadura cosmética",
+  "cos.config.CosArmorGuiButton_Left": "Posición X del botón de armadura cosmética",
+  "cos.config.CosArmorGuiButton_Top": "Posición Y del botón de armadura cosmética",
+  "cos.config.CosArmorToggleButton_Hidden": "Ocultar botón de alternar",
+  "cos.config.CosArmorToggleButton_Left": "Posición X del botón de alternar",
+  "cos.config.CosArmorToggleButton_Top": "Posición Y del botón de alternar",
+  "cos.config.CosArmorCreativeGuiButton_Hidden": "Ocultar botón de armadura cosmética en creativo",
+  "cos.config.CosArmorCreativeGuiButton_Left": "Posición X del botón de armadura cosmética en creativo",
+  "cos.config.CosArmorCreativeGuiButton_Top": "Posición Y del botón de armadura cosmética en creativo",
+  "cos.config.CosArmorKeepThroughDeath": "Conservar armadura cosmética al morir",
+  "cos.config.CosArmorDisableRecipeBook": "Deshabilitar libro de recetas en inventario de armadura cosmética",
+  "cos.config.CosArmorDisableCosHatCommand": "Deshabilitar comando /coshat"
 }

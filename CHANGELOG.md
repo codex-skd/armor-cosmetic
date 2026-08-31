@@ -1,3 +1,18 @@
+## [1.0.0] - 2026-08-31
+
+### Added
+- Initial stable release
+- Default config values updated for better UI positioning (CosArmorGuiButton_Left=75, CosArmorGuiButton_Top=50, CosArmorToggleButton_Left=77, CosArmorToggleButton_Top=45)
+- Recipe book disabled by default in cosmetic inventory
+- Toggle button positioned above main button
+- Config files organized in `config/armor_cosmetic/` folder (client.toml, common.toml)
+- Full Configured mod integration for hot-reload config editing
+- Fixed tooltip translations (English/Spanish)
+- ASM dependency conflict resolution (forced to 9.10.1)
+
+### Changed
+- Bumped version from 0.0.0-beta.3 to 1.0.0
+
 ## [0.0.0-beta.2] - 2026-08-31
 
 ### Fixed
