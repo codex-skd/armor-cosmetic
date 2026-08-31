@@ -4,7 +4,7 @@
 
 project_id = 1600093
 api_token = ee776b0a-ee95-4850-b554-06be02a8657f
-game_versions = 9638, 9639, 16498, 10150
+game_versions = 9638, 9639, 16115, 10150
 release_type = beta
 ## Proyecto
 
@@ -52,7 +52,7 @@ Ejemplo: `1.21.1-neoforge-0.0.0-beta.1`
 | `changelog` | HTML (no Markdown) | Ver estructura abajo |
 | `changelogType` | `html` | Obligatorio para que se vea bien |
 | `releaseType` | `release` o `beta` | Según el tipo de versión |
-| `gameVersions` | `[9638, 9639, 10150, 16498]` | **IDs numéricos**, no nombres (la API devuelve 400 "Expected Integer but got String" si se envían strings como `"Client"`). Ver tabla de IDs abajo |
+| `gameVersions` | `[9638, 9639, 10150, 16115]` | **IDs numéricos**, no nombres (la API devuelve 400 "Expected Integer but got String" si se envían strings como `"Client"`). Ver tabla de IDs abajo |
 
 ### IDs de `gameVersions` para 1.21.1
 
@@ -63,7 +63,7 @@ Obtenidos de `sortableGameVersions` de un archivo ya subido (`GET /v1/mods/16000
 | `Client` | `9638` | 75208 |
 | `Server` | `9639` | 75208 |
 | `NeoForge` | `10150` | 68441 |
-| `1.21.1` | `16498` | 86297 |
+| `1.21.1` | `16115` | 615 |
 
 > Ojo: `GET https://minecraft.curseforge.com/api/game/versions` (con `X-Api-Token`) devuelve **varias entradas duplicadas** con el mismo nombre `1.21.1` pero distinto `id`/`gameVersionTypeID` (p. ej. `16498`, `16500`). Solo una es la correcta (la que ya usan los archivos existentes) — verificarlo siempre contra un archivo ya publicado antes de asumir un ID.
 
