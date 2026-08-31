@@ -37,6 +37,10 @@ base {
 // Mojang ships Java 25 to end users in 26.1.2, so mods should target Java 25.
 java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
+java {
+    withSourcesJar()
+}
+
 neoForge {
     // Specify the version of NeoForge to use.
     version = project.neo_version
@@ -183,4 +187,9 @@ idea {
         downloadSources = true
         downloadJavadoc = true
     }
+}
+
+// Bundle the MMPL-1.0.1 license (upstream: CosmeticArmorReworked) into every artifact.
+tasks.withType(Jar).configureEach {
+    from(rootProject.file('LICENSE'))
 }

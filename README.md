@@ -27,3 +27,9 @@ gradlew build
 ```
 
 The JAR is generated at `build/libs/armor_cosmetic-26.1.2-neoforge-<version>.jar`.
+
+## License
+
+Armor Cosmetic is a fork of [CosmeticArmorReworked](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-reworked) by **zlainsama** and **dmillerw**, which is licensed under the **Minecraft Mod Public License (MMPL) version 1.0.1**. Under the MMPL, modified versions must remain under the MMPL and their source must be provided at no cost.
+
+Armor Cosmetic is therefore also distributed under the **MMPL 1.0.1** (see [`LICENSE`](LICENSE)), and a `-sources.jar` is published with every release.
