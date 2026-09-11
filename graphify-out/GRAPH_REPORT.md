@@ -1,16 +1,16 @@
-# Graph Report - 1.21.1  (2026-08-31)
+# Graph Report - 1.21.1  (2026-09-11)
 
 ## Corpus Check
-- 56 files · ~114,488 words
+- 57 files · ~115,247 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 385 nodes · 675 edges · 26 communities (25 shown, 1 thin omitted)
+- 393 nodes · 683 edges · 27 communities (26 shown, 1 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d4af8057`
+- Built from commit: `d9c4a62a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -64,23 +64,23 @@
 ## Import Cycles
 - None detected.
 
-## Communities (26 total, 1 thin omitted)
+## Communities (27 total, 1 thin omitted)
 
 ### Community 0 - "CustomPacketPayload"
 Cohesion: 0.11
 Nodes (18): CustomPacketPayload, ArmorCosmetic, Logger, FriendlyByteBuf, Override, StreamCodec, Type, PayloadOpenNormalInventory (+10 more)
 
 ### Community 1 - "ContainerCosArmor"
-Cohesion: 0.10
-Nodes (22): CraftingContainer, CraftingInput, CraftingRecipe, Level, RecipeBookMenu, RecipeBookType, RecipeHolder, ResultContainer (+14 more)
+Cohesion: 0.12
+Nodes (19): CraftingContainer, CraftingInput, CraftingRecipe, Level, RecipeBookMenu, RecipeBookType, RecipeHolder, ResultContainer (+11 more)
 
 ### Community 2 - "InventoryCosArmor"
 Cohesion: 0.12
 Nodes (12): Container, FunctionalInterface, MenuProvider, ContentsChangeListener, HiddenFlagsChangeListener, InventoryCosArmor, AbstractContainerMenu, Component (+4 more)
 
 ### Community 3 - "NeoForgeArmorCosmetic.java"
-Cohesion: 0.11
-Nodes (16): BooleanValue, DeferredHolder, DeferredRegister, FMLClientSetupEvent, FMLCommonSetupEvent, IEventBus, IntValue, Mod (+8 more)
+Cohesion: 0.07
+Nodes (26): BooleanValue, DeferredHolder, DeferredRegister, FMLClientSetupEvent, FMLCommonSetupEvent, IEventBus, IntValue, Mod (+18 more)
 
 ### Community 4 - "CAStacksBase"
 Cohesion: 0.12
@@ -103,8 +103,8 @@ Cohesion: 0.15
 Nodes (16): EquipmentSlot, Inventory, Player, PlayerInventoryHelper, handleLoggedOut(), AbstractClientPlayer, LoggingOut, Override (+8 more)
 
 ### Community 9 - "GuiHandler.java"
-Cohesion: 0.16
-Nodes (11): Field, InventoryScreen, Post, InventoryScreenAccess, GuiHandler, INSTANCE, handleGuiDrawPre(), handleGuiInitPost() (+3 more)
+Cohesion: 0.30
+Nodes (5): Field, InventoryScreen, Post, InventoryScreenAccess, handleGuiInitPost()
 
 ### Community 10 - "PayloadOpenCosArmorInventory"
 Cohesion: 0.17
@@ -131,23 +131,23 @@ Cohesion: 0.33
 Nodes (5): FriendlyByteBuf, Override, StreamCodec, Type, PayloadSyncHiddenFlags
 
 ### Community 16 - "Armor Cosmetic"
-Cohesion: 0.40
-Nodes (4): Armor Cosmetic, Build, Features, Requirements
+Cohesion: 0.33
+Nodes (5): Armor Cosmetic, Build, Features, License, Requirements
 
 ### Community 17 - "gradlew"
 Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ### Community 18 - "[0.0.0-beta.1] - 2026-08-31"
-Cohesion: 0.40
-Nodes (4): [0.0.0-beta.1] - 2026-08-31, [0.0.0-beta.2] - 2026-08-31, Added, Fixed
+Cohesion: 0.20
+Nodes (9): [0.0.0-beta.1] - 2026-08-31, [0.0.0-beta.2] - 2026-08-31, [1.0.0] - 2026-08-31, Added, Added, Changed, Fixed, Fixed (+1 more)
 
 ### Community 24 - "PayloadSyncCosArmor"
 Cohesion: 0.31
 Nodes (6): RegistryFriendlyByteBuf, ItemStack, Override, StreamCodec, Type, PayloadSyncCosArmor
 
 ## Knowledge Gaps
-- **31 isolated node(s):** `INSTANCE`, `INSTANCE`, `INSTANCE`, `ModConstants`, `Fixed` (+26 more)
+- **35 isolated node(s):** `INSTANCE`, `INSTANCE`, `INSTANCE`, `ModConstants`, `Fixed` (+30 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -155,16 +155,16 @@ Nodes (6): RegistryFriendlyByteBuf, ItemStack, Override, StreamCodec, Type, Payl
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `InventoryCosArmor` connect `InventoryCosArmor` to `ContainerCosArmor`, `CAStacksBase`, `InventoryManager`, `InventoryManagerClient`, `PayloadSyncHiddenFlags`, `PayloadSyncCosArmor`?**
-  _High betweenness centrality (0.180) - this node is a cross-community bridge._
+  _High betweenness centrality (0.173) - this node is a cross-community bridge._
 - **Why does `ContainerCosArmor` connect `ContainerCosArmor` to `NeoForgeArmorCosmetic.java`, `InventoryManager`, `InventoryManagerClient`, `GuiCosArmorInventory`?**
-  _High betweenness centrality (0.171) - this node is a cross-community bridge._
+  _High betweenness centrality (0.165) - this node is a cross-community bridge._
 - **Why does `CAStacksBase` connect `CAStacksBase` to `InventoryCosArmor`?**
-  _High betweenness centrality (0.081) - this node is a cross-community bridge._
+  _High betweenness centrality (0.078) - this node is a cross-community bridge._
 - **What connects `INSTANCE`, `INSTANCE`, `INSTANCE` to the rest of the system?**
-  _31 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _35 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `CustomPacketPayload` be split into smaller, more focused modules?**
   _Cohesion score 0.10967741935483871 - nodes in this community are weakly interconnected._
 - **Should `ContainerCosArmor` be split into smaller, more focused modules?**
-  _Cohesion score 0.10121951219512196 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11587301587301588 - nodes in this community are weakly interconnected._
 - **Should `InventoryCosArmor` be split into smaller, more focused modules?**
   _Cohesion score 0.11587301587301588 - nodes in this community are weakly interconnected._

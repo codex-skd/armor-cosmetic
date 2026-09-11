@@ -1,7 +1,7 @@
 {
   "build.gradle": {
-    "mtime": 1788137720.7300503,
-    "ast_hash": "a0528fb4241494d72d5f9e1104a3d52f",
+    "mtime": 1788192012.2569091,
+    "ast_hash": "2dbf2622d367178d43225315557ad40d",
     "semantic_hash": ""
   },
   "gradlew": {
@@ -35,13 +35,13 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/armorcosmetic/impl/InventoryManager.java": {
-    "mtime": 1788138272.573748,
-    "ast_hash": "155e20fd497e08f3901fb6857f62754b",
+    "mtime": 1789086693.222684,
+    "ast_hash": "55454de38aaedfe31f95e4daa776266e",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/armorcosmetic/impl/ModConfigs.java": {
-    "mtime": 1788137591.7034137,
-    "ast_hash": "9ad4cc27517d3e33eb270b848d0b3136",
+    "mtime": 1788188431.2479234,
+    "ast_hash": "f97727b9561cfb00679d1713131c2653",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/armorcosmetic/impl/ModObjects.java": {
@@ -164,11 +164,6 @@
     "ast_hash": "2d7637a22eca6e066e3fdac591c02afe",
     "semantic_hash": ""
   },
-  "src/main/resources/armor_cosmetic.mixins.json": {
-    "mtime": 1788137585.8952043,
-    "ast_hash": "806e96e86e58d0b068615711deb4446c",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/armor_cosmetic/lang/cs_cz.json": {
     "mtime": 1788137591.673127,
     "ast_hash": "d5b33c47c2951cb0aed3ce68c2a1e467",
@@ -180,13 +175,13 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/armor_cosmetic/lang/en_us.json": {
-    "mtime": 1788137591.6766586,
-    "ast_hash": "706f42533d9b80541c6a8c6cc0ded9cd",
+    "mtime": 1788172395.5807784,
+    "ast_hash": "765d46f996ac3fcc0271a46195b97e0f",
     "semantic_hash": ""
   },
   "src/main/resources/assets/armor_cosmetic/lang/es_es.json": {
-    "mtime": 1788137591.6786582,
-    "ast_hash": "8a7f84934228bdbed5408bd3effaa28d",
+    "mtime": 1788172457.249502,
+    "ast_hash": "1afd99f0761ae4c447457d3129cc57d0",
     "semantic_hash": ""
   },
   "src/main/resources/assets/armor_cosmetic/lang/fr_fr.json": {
@@ -250,13 +245,13 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1788139824.9177082,
-    "ast_hash": "f345c398b440afae6fa08904a95f841e",
+    "mtime": 1789086694.2071676,
+    "ast_hash": "9d8a22f5c8ade9ea6854b833291d9ba9",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1788137626.858351,
-    "ast_hash": "82654ef3ee7c44273fdd844184fa02df",
+    "mtime": 1788192055.0152133,
+    "ast_hash": "e17ed7fb0eb5b39a847451962fd37b7a",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_ARMOR_COSMETIC_1-21-1.md": {
@@ -265,13 +260,13 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
-    "mtime": 1788137636.2581563,
-    "ast_hash": "5914830eacb5bfd18ae899f27fbf8879",
+    "mtime": 1788192612.900172,
+    "ast_hash": "ab8217bbde514126577717203789cd43",
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1788139721.3469017,
-    "ast_hash": "bf9cc617ceb13526d8beba3f5135c67f",
+    "mtime": 1788191717.6238832,
+    "ast_hash": "3819ebd6ac7c1962211e2a5116f41e80",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -297,6 +292,16 @@
   "docs/curseforge/versions/0.0.0-beta.2.md": {
     "mtime": 1788139844.812365,
     "ast_hash": "4d225686008b5bc4a0dcbc497a5bf968",
+    "semantic_hash": ""
+  },
+  "src/main/resources/armor_cosmetic-mixins.json": {
+    "mtime": 1788137585.8952043,
+    "ast_hash": "806e96e86e58d0b068615711deb4446c",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.0.md": {
+    "mtime": 1788190998.0317128,
+    "ast_hash": "40e96186377dc34480bf997e4483690d",
     "semantic_hash": ""
   }
 }
