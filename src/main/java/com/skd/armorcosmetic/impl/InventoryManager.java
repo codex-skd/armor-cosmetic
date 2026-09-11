@@ -147,7 +147,8 @@ public class InventoryManager {
 
     private void handlePlayerDrops(LivingDropsEvent event) {
         if (event.getEntity() instanceof Player) {
-            if (event.getEntity().isEffectiveAi() && !((ServerLevel) event.getEntity().getCommandSenderWorld()).getGameRules().getBoolean(GameRules.RULE_KEEPINVENTORY) && !ModConfigs.CosArmorKeepThroughDeath.get()) {
+            // Corail Tombstone captures LivingDropsEvent drops into its grave but never restores them to the external cosmetic inventory, so dropping them would lose the cosmetic set / turn it into real armor.
+            if (event.getEntity().isEffectiveAi() && !((ServerLevel) event.getEntity().getCommandSenderWorld()).getGameRules().getBoolean(GameRules.RULE_KEEPINVENTORY) && !ModConfigs.CosArmorKeepThroughDeath.get() && !ModList.get().isLoaded("tombstone")) {
                 InventoryCosArmor inv = getCosArmorInventory(event.getEntity().getUUID());
                 if (NeoForge.EVENT_BUS.post(new CosArmorDeathDrops((Player) event.getEntity(), inv)).isCanceled())
                     return;

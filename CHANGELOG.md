@@ -1,3 +1,9 @@
+## [Unreleased]
+
+### Fixed
+
+- Compatibilidad con Corail Tombstone: al morir con Tombstone instalado, la armadura cosmética ya no se suelta al suelo ni se transfiere a la tumba; se conserva en sus ranuras cosméticas tras revivir. Antes acababa equipada como armadura principal y las ranuras cosméticas quedaban vacías.
+
 ## [1.0.0] - 2026-08-31
 
 ### Added
