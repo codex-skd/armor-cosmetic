@@ -1,0 +1,67 @@
+plugins {
+    id 'java-library'
+    id 'eclipse'
+    id 'idea'
+    id 'net.neoforged.gradle.userdev' version '7.0.145'
+}
+
+version = mod_version
+group = mod_group_id
+
+repositories {
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'org.ow2.asm:asm:9.10.1'
+        force 'org.ow2.asm:asm-commons:9.10.1'
+        force 'org.ow2.asm:asm-tree:9.10.1'
+        force 'org.ow2.asm:asm-analysis:9.10.1'
+        force 'org.ow2.asm:asm-util:9.10.1'
+    }
+}
+
+base {
+    archivesName = "${mod_id}-${minecraft_version}-neoforge-${neo_version}"
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+java {
+    withSourcesJar()
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+dependencies {
+    implementation "net.neoforged:neoforge:${neo_version}"
+}
+
+tasks.withType(ProcessResources).configureEach {
+    var replaceProperties = [
+            minecraft_version      : minecraft_version,
+            minecraft_version_range: minecraft_version_range,
+            neo_version            : neo_version,
+            neo_version_range      : neo_version_range,
+            loader_version_range   : loader_version_range,
+            mod_id                 : mod_id,
+            mod_name               : mod_name,
+            mod_license            : mod_license,
+            mod_version            : mod_version,
+            mod_authors            : mod_authors,
+            mod_description        : mod_description
+    ]
+    inputs.properties replaceProperties
+    filesMatching(['META-INF/neoforge.mods.toml']) {
+        expand replaceProperties
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+// Bundle the MMPL-1.0.1 license (upstream: CosmeticArmorReworked) into every artifact.
+tasks.withType(Jar).configureEach {
+    from(rootProject.file('LICENSE'))
+}
